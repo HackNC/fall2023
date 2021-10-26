@@ -11,7 +11,7 @@ $(document).ready(function () {
 
             $table.append(
                 $('<tr>')
-                    .append($('<th>').text('Time (EST)'))
+                    .append($('<th>').text('Time (Eastern)'))
                     .append($('<th>').text('Type'))
                     .append($('<th>').text('Event'))
                     .append($('<th>').text('Location'))

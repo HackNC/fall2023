@@ -1,184 +1,100 @@
 [
     {
-        "date": "Friday, 10/16",
+        "date": "Friday, 11/5",
         "schedule": [
-            {
-                "time": "4:00pm",
-                "end": " - 8:00pm",
-                "type": "Workshop",
-                "event": "Workshops (led by HackNC/sponsors)",
-                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
-            },
-            {
-                "time": "8:00pm",
-                "end": " - 9:00pm",
-                "type": "Social",
-                "event": "Team Matching #1 (Glimpse)",
-                "location": "<a href='https://app.joinglimpse.com/room?key=A15D41' target='_blank'>Glimpse</a><br>Discord: #searching-for-teammates"
-            },
-            {
-                "time": "9:00pm",
-                "end": " - 11:00pm",
-                "type": "Social",
-                "event": "Minecraft Challenge: Can you build the best Cryptid?",
-                "location": "Discord: #minecraft-challenge"
-            },
-            {
-                "time": "10:00pm",
-                "end": " - 11:00pm",
-                "type": "Social",
-                "event": "Skribbl.io",
-                "location": "Discord: #skribbl"
-            }
-        ]
-    },
-    {
-        "date": "Saturday, 10/17",
-        "schedule": [
-            {
-                "time": "9:00am",
-                "end": " - 11:00pm",
-                "type": "General",
-                "event": "Pre-Event Troubleshooting",
-                "location": "Discord: #event-support"
-            },
-            {
-                "time": "11:00am",
-                "end": " - 12:00pm",
-                "type": "General",
-                "event": "<b>Opening Ceremony</b>",
-                "location": "Twitch"
-            },
-            {
-                "time": "12:00pm",
-                "end": " - 3:00pm",
-                "type": "Sponsors",
-                "event": "<b>Sponsor Fair!</b>",
-                "location": "<a target='_blank' href='https://app.brazenconnect.com/a/unc-computer-science-dept/e/A3BwQ'>Brazen</a>"
-            },
-            {
-                "time": "12:00pm",
-                "end": "",
-                "type": "General",
-                "event": "<b>Hacking Begins!</b>",
-                "location": "Right Here!"
-            },
-            {
-                "time": "12:00pm",
-                "end": " - 1:00pm",
-                "type": "Social",
-                "event": "Team Matching #2 (Glimpse)",
-                "location": "<a href='https://app.joinglimpse.com/room?key=A15D41' target='_blank'>Glimpse</a><br>Discord: #searching-for-teammates"
-            },
-            {
-                "time": "1:00pm",
-                "end": " - 10:00pm",
-                "type": "Workshop",
-                "event": "Sponsor Workshops",
-                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
-            },
-            {
-                "time": "4:00pm",
-                "end": " - 5:00pm",
-                "type": "Panel",
-                "event": "Panel (HackNC): Diversity in Tech",
-                "location": "<a target='_blank_' href='https://youtu.be/ctoAXoyMu-U'>YouTube</a>"
-            },
             {
                 "time": "5:00pm",
                 "end": " - 7:00pm",
-                "type": "Social",
-                "event": "HackNC Social Hours (Glimpse)",
-                "location": "<a href='https://app.joinglimpse.com/room?key=580A4B' target='_blank'>Glimpse</a>"
-            },
-            {
-                "time": "7:00pm",
-                "end": " - 7:30pm",
                 "type": "General",
-                "event": "MLH: US Air Force CTF Challenge",
-                "location": "TBD"
-            },
-            {
-                "time": "7:30pm",
-                "end": " - 8:00pm",
-                "type": "General",
-                "event": "MLH: Werewolf / Among Us",
-                "location": "TBD"
-            },
-            {
-                "time": "10:00pm",
-                "end": " - 11:00pm",
-                "type": "Social",
-                "event": "Wikirace",
-                "location": "Discord: #wikirace"
-            },
-            {
-                "time": "11:00pm",
-                "end": " - 12:00am",
-                "type": "Social",
-                "event": "Jackbox",
-                "location": "Discord: #jackbox"
+                "event": "ACM x HackNC Kickoff Event",
+                "location": "Polk Place"
             }
         ]
     },
     {
-        "date": "Sunday, 10/18",
+        "date": "Saturday, 11/6",
         "schedule": [
             {
-                "time": "1:00am",
+                "time": "9:00am",
+                "end": " - 10:00am",
+                "type": "General",
+                "event": "Breakfast",
+                "location": "Fetzer Gym A"
+            },
+            {
+                "time": "10:30am",
+                "end": " - 11:30am",
+                "type": "General",
+                "event": "<b>Opening Ceremony</b>",
+                "location": "Virtual"
+            },
+            {
+                "time": "11:30am",
                 "end": "",
                 "type": "General",
-                "event": "Late Night Check-In",
-                "location": "Twitch"
+                "event": "<b>Hacking Begins!</b>",
+                "location": ""
             },
             {
-                "time": "1:00am",
-                "end": " - 2:00am",
-                "type": "Workshop",
-                "event": "Sponsor Workshop",
-                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
+                "time": "11:30am",
+                "end": " - 12:00pm",
+                "type": "Talk",
+                "event": "Maya Ajmera Keynote Talk",
+                "location": "Virtual"
             },
             {
-                "time": "12:00pm",
-                "end": "",
+                "time": "12:15pm",
+                "end": " - 2:00pm",
                 "type": "General",
-                "event": "<b>Initial Devpost submissions due!</b>",
-                "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
+                "event": "Lunch",
+                "location": "Fetzer Gym A"
             },
             {
-                "time": "1:00pm",
+                "time": "6:30pm",
+                "end": " - 8:00pm",
+                "type": "General",
+                "event": "Dinner",
+                "location": "Fetzer Gym A"
+            }
+        ]
+    },
+    {
+        "date": "Sunday, 11/7",
+        "schedule": [
+            {
+                "time": "9:00am",
+                "end": " - 10:00am",
+                "type": "General",
+                "event": "Breakfast",
+                "location": "Fetzer Gym A"
+            },
+            {
+                "time": "11:30am",
                 "end": "",
                 "type": "General",
                 "event": "<b>Hacking Ends! Final Devpost submissions due!</b>",
-                "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
+                "location": "<a target='_blank' href='https://hacknc2021.devpost.com'>Devpost</a>"
             },
             {
-                "time": "1:00pm",
+                "time": "12:00pm",
+                "end": " - 1:30pm",
+                "type": "General",
+                "event": "Lunch",
+                "location": "Fetzer Gym A"
+            },
+            {
+                "time": "12:30pm",
                 "end": " - 4:30pm",
                 "type": "General",
                 "event": "Judging",
-                "location": "Discord"
-            },
-            {
-                "time": "1:30pm",
-                "end": " - 2:30pm",
-                "type": "Panel",
-                "event": "Panel (HackNC): UNC Alum(na)",
-                "location": "<a href='https://unc.zoom.us/j/95110326604?pwd=NG1CaS9FczIvYmdBbXIvdkUwN2wydz09' target='_blank'>Zoom</a><br>PW: hacknc2020"
-            },
-            {
-                "time": "3:00pm",
-                "end": " - 4:00pm",
-                "type": "Workshop",
-                "event": "Sponsor Workshop",
-                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
+                "location": ""
             },
             {
                 "time": "5:00pm",
                 "end": " - 6:00pm",
                 "type": "General",
                 "event": "Closing Ceremony",
-                "location": "Twitch"
+                "location": "Virtual"
             }
         ]
     }
