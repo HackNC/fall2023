@@ -12,7 +12,7 @@
 
 html,
 body {
-  font-family: "Lobster Two";
+  font-family: "Quicksand";
   font-size: 16px;
   margin: 0;
 }
@@ -147,7 +147,7 @@ body {
 }
 h1 {
   letter-spacing: 0.075em;
-  font-family: "creepster";
+  font-family: "Lobster Two";
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -197,9 +197,10 @@ a {
   display: none;
 }
 .banner-info .tagline {
-  font-size: 1.5vw;
+  font-size: 4.5vw;
   text-transform: uppercase;
   margin-bottom: 1vw;
+  text-align: left;
 }
 .banner-info .date {
   margin-top: 0px;
@@ -252,9 +253,10 @@ a {
     margin-bottom: 5vw;
   }
   .banner-info .tagline {
-    font-size: 3vw;
+    font-size: 5vw;
     text-transform: uppercase;
     margin-bottom: 1.5vw;
+    text-align: center;
   }
   .banner-info .date {
     margin-top: 0px;
@@ -299,6 +301,7 @@ a {
     font-size: 4vw;
     text-transform: uppercase;
     margin-bottom: 2vw;
+    text-align: center;
   }
   .banner-info .date {
     margin-top: 0px;
@@ -335,7 +338,7 @@ a {
 nav {
   width: 100%;
   height: 64px;
-  background-color: #754632;
+  background-color: #EB6566;
   font-family: "Quicksand";
   box-shadow: 0px 0px 8px #000000;
   top: 0;
@@ -420,11 +423,11 @@ nav ul a:hover::before {
 }
 
 .about {
-  background: #F7F2D8;
-  color: #4f3426;
+  background: #3d0406;
+  color: #FFF8BB;
 }
 .about p {
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 @media only screen and (max-width: 993px) and (orientation: landscape) {
   .about {
