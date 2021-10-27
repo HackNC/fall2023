@@ -12,7 +12,7 @@
 
 html,
 body {
-  font-family: "Quicksand";
+  font-family: "Lobster Two";
   font-size: 16px;
   margin: 0;
 }
@@ -172,13 +172,13 @@ a {
 }
 
 .splash {
-  background-color: #F7F2D8;
+  background-color: #3d0406;
   position: relative;
 }
 
 .banner {
-  background-image: url("/static/assets/images/art/front.svg");
-  background-position: center;
+  background-image: url("/static/assets/images/art/option2.png");
+  background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
   width: 57vw;
@@ -191,7 +191,7 @@ a {
   position: absolute;
   right: 5px;
   top: 27.5vh;
-  color: #4f3426;
+  color: #FFF8BB;
 }
 .banner-info .apply {
   display: none;
@@ -214,7 +214,7 @@ a {
   }
 
   .banner {
-    background-image: url("/static/assets/images/art/front.svg");
+    background-image: url("/static/assets/images/art/landingGraphic.png");
     background-position: 50% 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -233,13 +233,13 @@ a {
     right: auto;
     left: 50%;
     margin-left: -40%;
-    color: #4f3426;
+    color: #FFF8BB;
     text-align: center;
   }
   .banner-info .apply {
     text-decoration: none;
     display: block;
-    background-color: #116f9e;
+    background-color: #EB6566;
     color: white;
     font-weight: bold;
     width: max-content;
@@ -270,7 +270,7 @@ a {
   }
 
   .banner {
-    background-image: url("/static/assets/images/art/front.svg");
+    background-image: url("/static/assets/images/art/landingGraphic.png");
     background-position: 50% 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ a {
     right: auto;
     left: 50%;
     margin-left: -40%;
-    color: #4f3426;
+    color: #FFF8BB;
     text-align: center;
   }
   .banner-info .apply {
@@ -316,13 +316,13 @@ a {
   margin-top: 5px;
   border-radius: 10px;
   transition: transform 0.15s;
-  background-color: #116f9e;
+  background-color: #EB6566;
   padding: 1vw;
-  font-family: "Quicksand";
+  font-family: "Lobster Two";
   font-size: 4.5vw;
 }
 .live-button a {
-  color: #F7F2D8;
+  color: #FFF8BB;
   text-decoration: none;
   font-weight: bold;
 }
