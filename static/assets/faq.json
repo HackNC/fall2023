@@ -4,8 +4,8 @@
         "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
     },
     {
-        "question": "How does an online hackathon work?",
-        "answer": "We are working around the clock to make sure that this year’s virtual hackathon is as normal as possible. You will still be able to meet new people, work on awesome projects, and network with our sponsors. We will announce more information on the specifics as we get closer to HackNC."
+        "question": "How does a hybrid hackathon work?",
+        "answer": "We are working around the clock to make sure that this year’s hybrid hackathon is as normal as possible. You will still be able to meet new people, work on awesome projects, and network with our sponsors. We will announce more information on the specifics as we get closer to HackNC."
     },
     {
         "question": "Will there still be swag?",
@@ -21,7 +21,7 @@
     },
     {
         "question": "What is a track?",
-        "answer": "At a hackathon, a track is designed to help focus your ideas into one specific subject area. We have six tracks for you to choose from, including a general one intended for projects that don’t fit into one of the other five. "
+        "answer": "At a hackathon, a track is designed to help focus your ideas into one specific subject area. We have three tracks for you to choose from, including a general one intended for projects that don’t fit into one of the other two. "
     },
     {
         "question": "How do teams work?",
@@ -29,7 +29,7 @@
     },
     {
         "question": "Can I do a hardware hack?",
-        "answer": "Unfortunately, we are unable to provide hardware this year due to the virtual nature of our hackathon. However, you are still welcome to use your own hardware if you really want to!"
+        "answer": "Unfortunately, we are unable to provide hardware this year due to the hybrid nature of our hackathon. However, you are still welcome to use your own hardware if you really want to!"
     },
     {
         "question": "Can I use old code?",
