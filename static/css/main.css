@@ -567,8 +567,8 @@ nav ul a:hover::before {
 }
 
 .schedule {
-  background: #F7F2D8;
-  color: #4f3426;
+  background: #BD3636;
+  color: #FFF8BB;
 }
 .schedule p {
   margin-bottom: 120px;
@@ -681,8 +681,8 @@ th {
 }
 
 .faq {
-  background: #F7F2D8;
-  color: #4f3426;
+  background: #F06163;
+  color: #FFF8BB;
 }
 
 #faq-container {
