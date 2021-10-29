@@ -502,7 +502,7 @@ nav ul a:hover::before {
   -webkit-transform: scale(1.1);
 }
 .tracks .background {
-  height: 40vw;
+  height: 100vw;
   display: block;
   margin: 0 auto;
 }
