@@ -529,13 +529,7 @@ nav ul a:hover::before {
     font-size: large;
 
   }
-  /* .tracks #boatsquatch {
-    top: 48%;
-    left: 7%;
-  }
-  .tracks #boatsquatch img {
-    height: 5.5vw;
-  } */
+  
   .tracks #krakenlake {
     left: 40%;
     top: 42%;
@@ -719,6 +713,7 @@ th {
 }
 
 #faq-container {
+  padding-top: 50px;;
   display: flex;
   flex-wrap: wrap;
   margin: -1vw;
@@ -747,10 +742,15 @@ th {
     font-size: 2rem;
   }
 }
-#faq-container div h2 img {
+#faq-container div h2 {
   height: 40px;
   margin-right: 20px;
 }
+#faq-container  img{
+  height: 75px;
+  margin-right: 20px;
+}
+
 
 #faq-footer {
   background-image: url("/static/assets/images/art/borders.svg");
