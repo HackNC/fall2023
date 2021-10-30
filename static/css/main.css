@@ -8,6 +8,11 @@
 }
 .center {
   text-align: center;
+  
+}
+
+.sponsorFooter{
+  margin-bottom: 40px;
 }
 
 html,
@@ -194,6 +199,7 @@ a {
   color: #FFF8BB;
 }
 .banner-info .apply {
+  margin-top: 40px;
   display: none;
 }
 .banner-info .tagline {
@@ -241,7 +247,7 @@ a {
     text-decoration: none;
     display: block;
     background-color: #EB6566;
-    color: white;
+    color: #FFF8BB;
     font-weight: bold;
     width: max-content;
     padding: 5px 10px;
@@ -370,7 +376,7 @@ nav ul a {
   position: relative;
 }
 nav ul a.apply {
-  background-color: #116f9e;
+  background-color: #a12027;
   height: 27px;
   padding: 0px 5px;
   margin: 0px 10px;
@@ -436,8 +442,8 @@ nav ul a:hover::before {
 }
 
 .tracks {
-  background: #F7F2D8;
-  color: #4f3426;
+  background: #5f1717;
+  color: #FFF8BB;
 }
 .tracks div {
   text-align: center;
@@ -502,31 +508,49 @@ nav ul a:hover::before {
   -webkit-transform: scale(1.1);
 }
 .tracks .background {
-  height: 40vw;
-  display: block;
+  height: 55vw;
+  display: flex;
   margin: 0 auto;
+  margin-left: -35px;
 }
 @media only screen and (min-width: 993px) {
   .tracks #nessie {
-    left: 10.5%;
-    top: 14.5%;
+    left: 9%;
+    top: 30%;
   }
   .tracks #nessie img {
-    height: 4.5vw;
+    height: 13vw;
   }
-  .tracks #boatsquatch {
+  #socialGoods{
+    padding: 10px;
+    background-color:#FFF8BB;
+    color: rgb(41, 30, 30);
+    border-radius: 3px;
+    font-size: large;
+
+  }
+  /* .tracks #boatsquatch {
     top: 48%;
     left: 7%;
   }
   .tracks #boatsquatch img {
     height: 5.5vw;
-  }
+  } */
   .tracks #krakenlake {
-    left: 28.8%;
-    top: 28.5%;
+    left: 40%;
+    top: 42%;
+  }
+  #general{
+    margin-top: 55px;
+    padding: 10px;
+    background-color:#FFF8BB;
+    color: rgb(41, 30, 30);
+    border-radius: 3px;
+    font-size: large;
+
   }
   .tracks #krakenlake img {
-    height: 11.1vw;
+    height: 13vw;
   }
   .tracks #krakenlake h2 {
     position: relative;
@@ -558,16 +582,23 @@ nav ul a:hover::before {
 }
 @media only screen and (min-width: 993px) {
   .tracks #ram {
-    left: 75%;
-    top: 60%;
+    left: 70%;
+    top: 30%;
   }
   .tracks #ram img {
-    height: 10.5vw;
+    height: 13vw;
+  }
+  #game{
+    padding: 15px;
+    background-color:#FFF8BB;
+    color: rgb(41, 30, 30);
+    border-radius: 3px;
+    font-size: large;
   }
 }
 
 .schedule {
-  background: #BD3636;
+  background: #882323;
   color: #FFF8BB;
 }
 .schedule p {
@@ -586,6 +617,7 @@ nav ul a:hover::before {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   height: 330px;
+  visibility: hidden;
 }
 
 .table-row-odd {
@@ -681,8 +713,9 @@ th {
 }
 
 .faq {
-  background: #F06163;
+  background: #a84143;
   color: #FFF8BB;
+  padding-bottom: 50px;
 }
 
 #faq-container {
@@ -783,8 +816,8 @@ th {
 
 footer {
   height: 10vh;
-  background: #4f3426;
-  color: white;
+  background: #3d0406;
+  color: #FFF8BB;
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
