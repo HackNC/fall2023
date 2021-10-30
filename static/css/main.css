@@ -278,7 +278,7 @@ a {
   }
 
   .banner {
-    background-image: url("/static/assets/images/art/landingGraphic.png");
+    background-image: url("/static/assets/images/art/plainLanding.png");
     background-position: 50% 100%;
     background-size: contain;
     background-repeat: no-repeat;
