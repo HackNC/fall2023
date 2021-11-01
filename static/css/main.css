@@ -70,7 +70,7 @@ body {
 .modal-content.get-involved div a {
   text-decoration: none;
   cursor: pointer;
-  background: #116f9e;
+  background: #752323;
   color: white;
   text-align: center;
   font-size: 3vw;
@@ -86,7 +86,7 @@ body {
   }
 }
 .modal-content.get-involved div a:hover {
-  background-color: #11539e;
+  background-color: rgb(218, 124, 168)
 }
 .modal-content.get-involved p {
   text-align: center;
