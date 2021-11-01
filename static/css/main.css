@@ -86,7 +86,7 @@ body {
   }
 }
 .modal-content.get-involved div a:hover {
-  background-color: rgb(218, 124, 168)
+  background-color: rgb(212, 109, 109)
 }
 .modal-content.get-involved p {
   text-align: center;
@@ -341,6 +341,30 @@ a {
   transition: transform 0.3s;
 }
 
+.involve-button{
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: transform 0.15s;
+  background-color: #EB6566;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-family: "Lobster Two";
+  font-size: large;
+  margin-right: 30px;
+}
+.involve-button a {
+  color: #FFF8BB;
+  text-decoration: none;
+  font-weight: bold;
+}
+.involve-button:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
 nav {
   width: 100%;
   height: 64px;
@@ -394,7 +418,7 @@ nav ul a.apply:hover {
   -webkit-transform: scale(1.05) translateY(-50%);
   transform: scale(1.05) translateY(-50%);
   transition: transform 0.3s;
-  background-color: #116f9e;
+  background-color: #c53043;
   color: #F7F2D8;
   position: relative;
   top: 50%;
