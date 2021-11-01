@@ -729,11 +729,12 @@ th {
     flex: 0 1 100%;
   }
 }
-#faq-container div h2 {
+
+#faq-container h2 div{
   font-size: 2rem;
   text-align: left;
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   align-items: center;
   margin-top: 15px;
 }
