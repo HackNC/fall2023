@@ -713,7 +713,7 @@ th {
 }
 
 #faq-container {
-  padding-top: 50px;;
+  /* padding-top: 50px; */
   display: flex;
   flex-wrap: wrap;
   margin: -1vw;
@@ -734,7 +734,7 @@ th {
   font-size: 2rem;
   text-align: left;
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   align-items: center;
   margin-top: 15px;
 
@@ -744,11 +744,7 @@ th {
     font-size: 2rem;
   }
 }
-#faq-container div h2 {
-  height: 40px;
-  margin-right: 20px;
-  margin-bottom: 80px;
-}
+
 #faq-container  img{
   height: 75px;
   margin-right: 20px;
