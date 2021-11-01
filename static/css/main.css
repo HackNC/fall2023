@@ -709,7 +709,7 @@ th {
 .faq {
   background: #a84143;
   color: #FFF8BB;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 #faq-container {
@@ -737,6 +737,7 @@ th {
   margin-bottom: 80px;
   align-items: center;
   margin-top: 15px;
+  /* margin-bottom: 40px; */
 }
 @media only screen and (max-width: 993px) {
   #faq-container div h2 {
@@ -746,6 +747,7 @@ th {
 #faq-container div h2 {
   height: 40px;
   margin-right: 20px;
+  margin-bottom: 80px;
 }
 #faq-container  img{
   height: 75px;
