@@ -626,6 +626,7 @@ nav ul a:hover::before {
   .schedule p {
     margin-bottom: 50px;
   }
+
 }
 
 .sch-img {
@@ -647,6 +648,7 @@ nav ul a:hover::before {
   color: #4f3426;
   background: #E7D8BC;
 }
+
 
 h3 {
   font-size: 4vh;
