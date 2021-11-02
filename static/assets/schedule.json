@@ -32,15 +32,15 @@
             {
                 "time": "7:00pm",
                 "end": " - 8:00pm",
-                "type": "Beginner Workshop #3 3D game with Thress.js",
-                "event": "Workshop",
+                "type": "Workshop",
+                "event": "Beginner Workshop #3 3D game with Thress.js",
                 "location": "Virtual"
             },
             {
                 "time": "8:00pm",
                 "end": " - 9:00pm",
-                "type": "Beginner Workshop #4 Intro to Backend",
-                "event": "Workshop",
+                "type": "Workshop",
+                "event": "Beginner Workshop #4 Intro to Backend",
                 "location": "Virtual"
             }
         ]
