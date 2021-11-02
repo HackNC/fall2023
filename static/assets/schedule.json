@@ -1,4 +1,24 @@
-[
+[   {
+        "date":"Thursday, 11/4",
+        "schedule": [
+            {
+                "time": "6:00pm",
+                "end" : "- 7:00pm",
+                "type": "Workshop",
+                "event": "Beginner Workshop #1 Html & CSS",
+                "location" : "Virtual"
+            },
+            {
+                "time": "7:00pm",
+                "end" : "- 8:00pm",
+                "type": "Workshop",
+                "event": "Beginner Workshop #2 2D Game with React.js",
+                "location" : "Virtual"
+            }
+
+        ]
+
+    },
     {
         "date": "Friday, 11/5",
         "schedule": [
@@ -8,6 +28,20 @@
                 "type": "General",
                 "event": "ACM x HackNC Kickoff Event",
                 "location": "Polk Place"
+            },
+            {
+                "time": "7:00pm",
+                "end": " - 8:00pm",
+                "type": "Beginner Workshop #3 3D game with Thress.js",
+                "event": "Workshop",
+                "location": "Virtual"
+            },
+            {
+                "time": "8:00pm",
+                "end": " - 9:00pm",
+                "type": "Beginner Workshop #4 Intro to Backend",
+                "event": "Workshop",
+                "location": "Virtual"
             }
         ]
     },
@@ -22,11 +56,18 @@
                 "location": "Fetzer Gym A"
             },
             {
+                "time": "9:00am",
+                "end": " - 10:00am",
+                "type": "Workshop",
+                "event": "Beginner Workshop #5 APIs",
+                "location": "Virtual"
+            },
+            {
                 "time": "10:30am",
                 "end": " - 11:30am",
                 "type": "General",
                 "event": "<b>Opening Ceremony</b>",
-                "location": "Virtual"
+                "location": "Sitterson/Classroom 109"
             },
             {
                 "time": "11:30am",
@@ -50,17 +91,69 @@
                 "location": "Fetzer Gym A"
             },
             {
+                "time": "1:45pm",
+                "end": " - 2:30pm",
+                "type": "General",
+                "event": "Boba",
+                "location": "Fetzer Gym A"
+            },
+            {
+                "time": "2:30pm",
+                "end": " - 4:30pm",
+                "type": "Sponsor",
+                "event": "Sponsor Fair",
+                "location": "Brazen"
+            },
+            {
+                "time": "4:30pm",
+                "end": " - 5:30pm",
+                "type": "Sponsor",
+                "event": "John Deere: Scaffolding a webapp from scratch: a code-along adventure",
+                "location": "Virtual"
+            },
+            {
+                "time": "5:30pm",
+                "end": " - 6:30pm",
+                "type": "Sponsor",
+                "event": "Infosys: Infosys InStep Summer 2022 Tech Internship - Info Session",
+                "location": "Fetzer 109"
+            },
+
+            {
                 "time": "6:30pm",
                 "end": " - 8:00pm",
                 "type": "General",
                 "event": "Dinner",
                 "location": "Fetzer Gym A"
+            },
+            {
+                "time": "8:00pm",
+                "end": " - 8:30pm",
+                "type": "General",
+                "event": "Goodies",
+                "location": "Fetzer Gym A"
+            },
+            {
+                "time": "9:30pm",
+                "end": " - 10:30pm",
+                "type": "General",
+                "event": "Game",
+                "location": "Virtual"
             }
+            
+
         ]
     },
     {
         "date": "Sunday, 11/7",
         "schedule": [
+            {
+                "time": "8:15am",
+                "end": " - 9:00am",
+                "type": "General",
+                "event": "Yoga",
+                "location": "Fetzer Gym A"
+            },
             {
                 "time": "9:00am",
                 "end": " - 10:00am",
@@ -69,11 +162,24 @@
                 "location": "Fetzer Gym A"
             },
             {
+                "time": "10:30am",
+                "end": " - 11:30am",
+                "type": "General",
+                "event": "In-Person Workshop",
+                "location": "Fetzer 109"
+            },
+            {
                 "time": "11:30am",
                 "end": "",
                 "type": "General",
-                "event": "<b>Hacking Ends! Final Devpost submissions due!</b>",
-                "location": "<a target='_blank' href='https://hacknc2021.devpost.com'>Devpost</a>"
+                "event": "<b>Hacking Ends!</b>",
+                "location": ""
+            },{
+                "time": "12:30am",
+                "end": "",
+                "type": "General",
+                "event": "<b>Final Devpost submissions due!</b>",
+                "location": ""
             },
             {
                 "time": "12:00pm",
@@ -86,15 +192,37 @@
                 "time": "12:30pm",
                 "end": " - 4:30pm",
                 "type": "General",
-                "event": "Judging",
+                "event": "Judging begins",
                 "location": ""
             },
+            {
+                "time": "1:30pm",
+                "end": " - 2:30pm",
+                "type": "General",
+                "event": "Game 2",
+                "location": "Virtual"
+            },
+            {
+                "time": "2:00pm",
+                "end": " - 4:30pm",
+                "type": "Workshop",
+                "event": "Postman Sponsor Workshop API 101",
+                "location": "Fetzer 109"
+            },
+            {
+                "time": "4:30pm",
+                "end": " - 4:30pm",
+                "type": "General",
+                "event": "Judging ends",
+                "location": ""
+            },
+            
             {
                 "time": "5:00pm",
                 "end": " - 6:00pm",
                 "type": "General",
                 "event": "Closing Ceremony",
-                "location": "Virtual"
+                "location" : "Fetzer 109"
             }
         ]
     }

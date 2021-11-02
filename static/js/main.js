@@ -80,6 +80,7 @@ $(document).ready(function () {
                         .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time (Eastern)'))
                         .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Type'))
                         .append($('<th>', { "style": "width:57.5%; text-align: left;" }).text('Event'))
+                        .append($('<th>',{"style": "width:5%; text-align: left;" }).text('Location'))
                 )
             );
 
@@ -91,6 +92,7 @@ $(document).ready(function () {
                         .append($('<td>').html(element['time']))
                         .append($('<td>').html(element['type']))
                         .append($('<td>').html(element['event']))
+                        .append($('<td>').html(element['location']))
                 )
             });
 
