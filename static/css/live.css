@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "creepster";
+  font-family: "Creepster";
   src: url("/static/assets/Creepster-Regular.ttf") format("truetype");
 }
 @font-face {
@@ -12,7 +12,7 @@
 
 html,
 body {
-  background-color: #F7F2D8;
+  background-color: #882323;
   font-family: "Quicksand";
   font-size: 16px;
   margin: 0;
@@ -48,7 +48,7 @@ h2 {
 }
 h1 {
   letter-spacing: 0.075em;
-  font-family: "creepster";
+  font-family: "lobster two";
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -78,7 +78,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 99;
-  background-color: #754632;
+  background-color: #EB6566;
   font-family: "Quicksand";
   box-shadow: 0px 0px 8px #000000;
   text-align: center;
@@ -105,7 +105,7 @@ nav ul a {
   position: relative;
 }
 nav ul a.selected {
-  color: #adbf88;
+  color: #882323;
 }
 
 .card {

@@ -21,6 +21,7 @@ $(document).ready(function () {
             var j = 0;
 
             date['schedule'].forEach(function (element) {
+
                 $expandable = $('<div>', {"class": "to_expand"}).append($('<p>').text(element['description']));
                 if (element['resources'] != null) {
                     $ul = $('<ul>');

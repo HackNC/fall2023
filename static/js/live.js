@@ -38,10 +38,12 @@ $(document).ready(function () {
     });
 });
 
-var countDownDate = new Date("October 18 2020 13:00:00 EDT").getTime();
+var countDownDate = new Date("November 06 2021 11:00:00 EDT").getTime();
 var myfunc = setInterval(function () {
 
+
     var now = new Date().getTime();
+ 
     var timeleft = countDownDate - now;
 
     var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
