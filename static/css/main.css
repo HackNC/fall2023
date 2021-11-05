@@ -326,9 +326,10 @@ a {
   border-radius: 10px;
   transition: transform 0.15s;
   background-color: #EB6566;
-  padding: 1vw;
+  padding-left: 1vw;
   font-family: "Lobster Two";
   font-size: 4.5vw;
+
 }
 .live-button a {
   color: #FFF8BB;
