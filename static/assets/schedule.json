@@ -139,6 +139,13 @@
                 "type": "General",
                 "event": "Game",
                 "location": "Virtual"
+            },
+            {
+                "time": "11:30pm",
+                "end": "",
+                "type": "Notes",
+                "event": "<b> Fetzer close at 11:30 (no over night stay)</b>",
+                "location": ""
             }
             
 
