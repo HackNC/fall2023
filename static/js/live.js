@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 });
 
-var countDownDate = new Date("November 06 2021 11:30:00 EDT").getTime();
+var countDownDate = new Date("November 07 2021 12:30:00 EDT").getTime();
 var myfunc = setInterval(function () {
 
 
