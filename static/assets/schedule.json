@@ -169,13 +169,6 @@
                 "location": "Fetzer Gym A"
             },
             {
-                "time": "10:30am",
-                "end": " - 11:30am",
-                "type": "General",
-                "event": "In-Person Workshop TBH",
-                "location": "Fetzer 109"
-            },
-            {
                 "time": "11:30am",
                 "end": "",
                 "type": "General",
@@ -211,11 +204,19 @@
             },
             {
                 "time": "2:00pm",
-                "end": " - 4:30pm",
-                "type": "Workshop",
+                "end": " - 3:00pm",
+                "type": " Sponsor Workshop",
                 "event": "Postman Sponsor Workshop API 101",
-                "location": "Fetzer 109"
+                "location": "Virtual"
             },
+            {
+                "time": "3:00pm",
+                "end": " - 4:00pm",
+                "type": "Sponsor Workshop",
+                "event": "Applications of Sentiment Analysis",
+                "location": "Virtual"
+            },
+
             {
                 "time": "4:30pm",
                 "end": " - 4:30pm",

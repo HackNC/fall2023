@@ -64,6 +64,14 @@
                 "host": "Postman",
                 "difficulty": "Intermediate",
                 "location": "<a target='blank' href='https://unc.zoom.us/j/97488576870'>Zoom</a>"
+            },
+            {
+                "time": "4:00pm - 5:00pm",
+                "event": "Applications of Sentiment Analysis",
+                "description": "Sentiment Analysis is one of the pillars of Natural Language Processing. In this workshop, we'll cover not only how to do sentiment analysis, but also cover some ways in which it can be applied in a business setting. ",
+                "host": "Yujian Tang",
+                "difficulty": "Intermediate",
+                "location": "<a target='blank' href='https://unc.zoom.us/j/97488576870'>Zoom</a>"
             }
         ]
     }
