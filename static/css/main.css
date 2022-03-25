@@ -8,10 +8,9 @@
 }
 .center {
   text-align: center;
-  
 }
 
-.sponsorFooter{
+.sponsorFooter {
   margin-bottom: 40px;
 }
 
@@ -23,7 +22,7 @@ body {
 }
 
 .mentor {
-  background: #F7F2D8;
+  background: #f7f2d8;
   color: #4f3426;
 }
 
@@ -86,7 +85,7 @@ body {
   }
 }
 .modal-content.get-involved div a:hover {
-  background-color: rgb(212, 109, 109)
+  background-color: rgb(212, 109, 109);
 }
 .modal-content.get-involved p {
   text-align: center;
@@ -196,7 +195,7 @@ a {
   position: absolute;
   right: 5px;
   top: 27.5vh;
-  color: #FFF8BB;
+  color: #fff8bb;
 }
 .banner-info .apply {
   margin-top: 40px;
@@ -240,14 +239,14 @@ a {
     right: auto;
     left: 50%;
     margin-left: -40%;
-    color: #FFF8BB;
+    color: #fff8bb;
     text-align: center;
   }
   .banner-info .apply {
     text-decoration: none;
     display: block;
-    background-color: #EB6566;
-    color: #FFF8BB;
+    background-color: #eb6566;
+    color: #fff8bb;
     font-weight: bold;
     width: max-content;
     padding: 5px 10px;
@@ -297,7 +296,7 @@ a {
     right: auto;
     left: 50%;
     margin-left: -40%;
-    color: #FFF8BB;
+    color: #fff8bb;
     text-align: center;
   }
   .banner-info .apply {
@@ -325,14 +324,13 @@ a {
   margin-top: 5px;
   border-radius: 10px;
   transition: transform 0.15s;
-  background-color: #EB6566;
+  background-color: #eb6566;
   padding-left: 1vw;
   font-family: "Lobster Two";
   font-size: 4.5vw;
-
 }
 .live-button a {
-  color: #FFF8BB;
+  color: #fff8bb;
   text-decoration: none;
   font-weight: bold;
 }
@@ -342,21 +340,22 @@ a {
   transition: transform 0.3s;
 }
 
-.involve-button{
+.involve-button {
   margin-top: 20px;
   border-radius: 10px;
   transition: transform 0.15s;
-  background-color: #EB6566;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  background-color: #eb6566;
+  border-color: #ce5050;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
   font-family: "Lobster Two";
   font-size: large;
   margin-right: 30px;
 }
 .involve-button a {
-  color: #FFF8BB;
+  color: #fff8bb;
   text-decoration: none;
   font-weight: bold;
 }
@@ -369,7 +368,7 @@ a {
 nav {
   width: 100%;
   height: 64px;
-  background-color: #EB6566;
+  background-color: #eb6566;
   font-family: "Quicksand";
   box-shadow: 0px 0px 8px #000000;
   top: 0;
@@ -393,7 +392,7 @@ nav ul a {
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  color: #F7F2D8;
+  color: #f7f2d8;
   padding: 0px 10px;
   height: 64px;
   font-size: 1.2rem;
@@ -420,7 +419,7 @@ nav ul a.apply:hover {
   transform: scale(1.05) translateY(-50%);
   transition: transform 0.3s;
   background-color: #c53043;
-  color: #F7F2D8;
+  color: #f7f2d8;
   position: relative;
   top: 50%;
 }
@@ -434,7 +433,7 @@ nav ul a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #F7F2D8;
+  background-color: #f7f2d8;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -455,7 +454,7 @@ nav ul a:hover::before {
 
 .about {
   background: #3d0406;
-  color: #FFF8BB;
+  color: #fff8bb;
 }
 .about p {
   margin-bottom: 15px;
@@ -468,7 +467,7 @@ nav ul a:hover::before {
 
 .tracks {
   background: #5f1717;
-  color: #FFF8BB;
+  color: #fff8bb;
 }
 .tracks div {
   text-align: center;
@@ -546,27 +545,25 @@ nav ul a:hover::before {
   .tracks #nessie img {
     height: 13vw;
   }
-  #socialGoods{
+  #socialGoods {
     padding: 10px;
-    background-color:#FFF8BB;
+    background-color: #fff8bb;
     color: rgb(41, 30, 30);
     border-radius: 3px;
     font-size: large;
-
   }
-  
+
   .tracks #krakenlake {
     left: 40%;
     top: 42%;
   }
-  #general{
+  #general {
     margin-top: 55px;
     padding: 10px;
-    background-color:#FFF8BB;
+    background-color: #fff8bb;
     color: rgb(41, 30, 30);
     border-radius: 3px;
     font-size: large;
-
   }
   .tracks #krakenlake img {
     height: 13vw;
@@ -607,9 +604,9 @@ nav ul a:hover::before {
   .tracks #ram img {
     height: 13vw;
   }
-  #game{
+  #game {
     padding: 15px;
-    background-color:#FFF8BB;
+    background-color: #fff8bb;
     color: rgb(41, 30, 30);
     border-radius: 3px;
     font-size: large;
@@ -618,7 +615,7 @@ nav ul a:hover::before {
 
 .schedule {
   background: #882323;
-  color: #FFF8BB;
+  color: #fff8bb;
 }
 .schedule p {
   margin-bottom: 120px;
@@ -627,7 +624,6 @@ nav ul a:hover::before {
   .schedule p {
     margin-bottom: 50px;
   }
-
 }
 
 .sch-img {
@@ -642,14 +638,13 @@ nav ul a:hover::before {
 
 .table-row-odd {
   color: #4f3426;
-  background: #F7F2D8;
+  background: #f7f2d8;
 }
 
 .table-row-even {
   color: #4f3426;
-  background: #E7D8BC;
+  background: #e7d8bc;
 }
-
 
 h3 {
   font-size: 4vh;
@@ -690,7 +685,7 @@ th {
 }
 @supports (-webkit-touch-callout: none) {
   td,
-th {
+  th {
     padding: 3px;
   }
 }
@@ -701,8 +696,8 @@ th {
   /* width: 20%; */
   padding-left: 20px;
   text-align: center;
-  background-color: #F7F2D8;
-  border: 3px solid #E7D8BC;
+  background-color: #f7f2d8;
+  border: 3px solid #e7d8bc;
   color: #4f3426;
   line-height: 1.5em;
   font-size: 2.5vw;
@@ -730,13 +725,13 @@ th {
 }
 .day-selector.active {
   transition: background-color 0.15s ease-in-out;
-  background-color: #E7D8BC;
+  background-color: #e7d8bc;
   color: #4f3426;
 }
 
 .faq {
   background: #a84143;
-  color: #FFF8BB;
+  color: #fff8bb;
   padding-bottom: 60px;
 }
 
@@ -758,14 +753,13 @@ th {
   }
 }
 
-#faq-container h2 div{
+#faq-container h2 div {
   font-size: 2rem;
   text-align: left;
   display: flex;
   margin-bottom: 120px;
   align-items: center;
   margin-top: 15px;
-
 }
 @media only screen and (max-width: 993px) {
   #faq-container div h2 {
@@ -773,11 +767,10 @@ th {
   }
 }
 
-#faq-container  img{
+#faq-container img {
   height: 75px;
   margin-right: 20px;
 }
-
 
 #faq-footer {
   background-image: url("/static/assets/images/art/borders.svg");
@@ -844,7 +837,7 @@ th {
 footer {
   height: 10vh;
   background: #3d0406;
-  color: #FFF8BB;
+  color: #fff8bb;
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
