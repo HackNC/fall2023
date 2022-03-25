@@ -346,10 +346,10 @@ a {
   transition: transform 0.15s;
   background-color: #eb6566;
   border-color: #ce5050;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-top: 4vw;
-  padding-bottom: 4vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
   font-family: "Lobster Two";
   font-size: large;
   margin-right: 30px;
