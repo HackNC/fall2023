@@ -213,7 +213,12 @@ a {
   font-size: 2.5vw;
   text-transform: capitalize;
 }
-
+.banner-info .update {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+}
 @media only screen and (max-width: 993px) {
   .splash {
     min-height: 100vh;
@@ -346,10 +351,10 @@ a {
   transition: transform 0.15s;
   background-color: #eb6566;
   border-color: #ce5050;
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   font-family: "Lobster Two";
   font-size: large;
   margin-right: 30px;
