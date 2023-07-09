@@ -14,3 +14,4 @@
     cd fall2023
     python -m http.server
     ```
+  - Navigate to http://localhost:8000/
