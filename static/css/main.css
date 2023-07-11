@@ -213,6 +213,19 @@ a {
   font-size: 2.5vw;
   text-transform: capitalize;
 }
+
+.banner-info .countdown {
+  color: #fff8bb;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-items: left;
+}
+
+.banner-info .countdown .time {
+  margin-right: 2vw;
+}
+
 .banner-info .update {
   margin-top: 0px;
   font-weight: bold;
@@ -470,17 +483,11 @@ nav ul a:hover::before {
   }
 }
 
-.countdown-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-}
-
 .tracks {
   background: #5f1717;
   color: #fff8bb;
 }
+
 .tracks div {
   text-align: center;
 }
