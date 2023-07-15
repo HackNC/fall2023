@@ -772,7 +772,7 @@ th {
   }
 }
 
-#faq-container img {
+.faq-container img {
   height: 75px;
   margin-right: 20px;
 }

@@ -33,17 +33,18 @@ $(document).ready(function () {
 
     $.getJSON("/static/assets/faq.json", function (data) {
         data.forEach(function (question) {
-            var $faq = $('<div>');
             var $header = $('<h2>')
+            var $faq = $('<div>');
+            var $faq_answer = $('<div class="panel">');
 
             $header.append($('<img>', { "src": "static/assets/images/art/fork.png", "alt": "fork and Knif" }));
             $header.append(question['question']);
-            $faq.append($header);
-            $faq.append(
-                $('<p>')
-                    .html(question['answer'])
-            )
-            $('#faq-container').append($faq);
+            $faq.append($header)
+            $('.faq-container').append($faq);
+
+            $faq_answer.append($('<p>').html(question['answer']))
+            $faq.append($faq_answer)
+            $('.faq_container').append($faq)
         });
     });
 
