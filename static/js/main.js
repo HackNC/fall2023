@@ -33,18 +33,18 @@ $(document).ready(function () {
 
     $.getJSON("/static/assets/faq.json", function (data) {
         data.forEach(function (question) {
-            var $header = $('<h2>')
+            var $header = $('<h2 class="accordion-header">')
             var $faq = $('<div>');
-            var $faq_answer = $('<div class="panel">');
+            var $faq_answer = $('<div class="accordion-body">');
 
-            $header.append($('<img>', { "src": "static/assets/images/art/fork.png", "alt": "fork and Knif" }));
+            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/art/fork.png", "alt": "fork and Knif" }));
             $header.append(question['question']);
             $faq.append($header)
-            $('.faq-container').append($faq);
+            $('#faq-container').append($faq);
 
             $faq_answer.append($('<p>').html(question['answer']))
             $faq.append($faq_answer)
-            $('.faq_container').append($faq)
+            $('#faq_container').append($faq)
         });
     });
 
@@ -116,5 +116,15 @@ $(document).ready(function () {
                 behavior: 'smooth'
             });
         });
+    });
+
+    //functionality for FAQ accordion dropdown
+    $('#faq-container').on('click','.accordion-header', function() {   //selecting #faq-container here since its a parent static element, click() has issues working with dynamic elements
+        //console.log("clicked!");
+        $(this).next('.accordion-body').slideToggle();
+        $('.accordion-body').not($(this).next('.accordion-body')).slideUp();
+        $(this).children().toggleClass('spin');
+        $(this).toggleClass('active');
+        $('.accordion-header').not($(this)).removeClass('active');
     });
 });
