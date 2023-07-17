@@ -38,11 +38,11 @@ $(document).ready(function () {
             var $faq_answer = $('<div class="accordion-body">');
 
             $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/art/fork.png", "alt": "fork and Knif" }));
-            $header.append(question['question']);
+            $header.append($('<p class="faq-question">').html(question['question']));
             $faq.append($header)
             $('#faq-container').append($faq);
 
-            $faq_answer.append($('<p>').html(question['answer']))
+            $faq_answer.append($('<p class="faq-answer">').html(question['answer']))
             $faq.append($faq_answer)
             $('#faq_container').append($faq)
         });
@@ -120,10 +120,9 @@ $(document).ready(function () {
 
     //functionality for FAQ accordion dropdown
     $('#faq-container').on('click','.accordion-header', function() {   //selecting #faq-container here since its a parent static element, click() has issues working with dynamic elements
-        //console.log("clicked!");
         $(this).next('.accordion-body').slideToggle();
         $('.accordion-body').not($(this).next('.accordion-body')).slideUp();
-        $(this).children().toggleClass('spin');
+        $(this).children("img").toggleClass('spin');
         $(this).toggleClass('active');
         $('.accordion-header').not($(this)).removeClass('active');
     });

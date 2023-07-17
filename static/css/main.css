@@ -741,15 +741,15 @@ th {
 }
 
 #faq-container {
-  /* padding-top: 50px; */
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   margin: -1vw;
-  align-items: flex-start;
+  align-items:flex-start;
 }
 #faq-container div {
   flex: 0 1 50%;
-  padding: 0.7vw 1vw;
+  padding: 5px;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 993px) {
@@ -758,13 +758,11 @@ th {
   }
 }
 
-#faq-container h2 div {
+#faq-container div {
   font-size: 2rem;
   text-align: left;
-  display: flex;
-  margin-bottom: 120px;
-  align-items: left ;
-  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 @media only screen and (max-width: 993px) {
   #faq-container div h2 {
@@ -772,19 +770,26 @@ th {
   }
 }
 
-#faq-container img {
-  height: 65px;
+.accordion-header {
+  cursor: pointer;
+  background-color: #98383a;
+  color: #e7d8bc;
+  padding: 16px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.accordion-header img.faq-img {
+  height: 50px;
   margin-right: 20px;
 }
 
-.accordion-header {
-  cursor: pointer;
-  background-color: #a84143;
-  color: #e7d8bc;
-  padding: 18px;
-  border: none;
-  border-radius: 20px;
-  justify-content: center;
+.accordion-header p.faq-question {
+  margin: 5px; 
 }
 
 .active, .accordion-header:hover {
