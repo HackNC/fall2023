@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- This is a test -->
 <head lang="en-us">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -24,9 +22,21 @@
 </head>
 
 <body>
-   
-    <main id="content container">
+    <!-- This is the navigation bar -->
+    <nav class="hide-on-med-and-down">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <!-- <li><a class="apply" target="_blank" href="https://tinyurl.com/hacknc2021application">Register</a></li> -->
+            <li><a id="get-involved" class="apply">Volunteer and Mentor Sign Up Here!</a></li>
+        </ul>
+    </nav>
 
+    <main id="content container">
         <div id="nessie-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -117,19 +127,7 @@
             </div>
         </div>
 
-        <!-- Navigation Bar -->
-        <nav class="hide-on-med-and-down">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tracks">Tracks</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <!-- <li><a class="apply" target="_blank" href="https://tinyurl.com/hacknc2021application">Register</a></li> -->
-                <li><a id="get-involved" class="apply">Volunteer and Mentor Sign Up Here!</a></li>
-            </ul>
-        </nav>
+       
 
         <!-- About -->
         <div class="section about">
@@ -291,7 +289,6 @@
             <u>© HackNC 2023 </u>
         </div>
     </footer>
-    <script src="static/js/main.js"></script>
-</body>
+    <script src="static/js/main.js"></script></body>
 
 </html>
