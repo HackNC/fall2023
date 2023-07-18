@@ -830,53 +830,46 @@ th {
 .sponsors {
   background: white;
   color: #4f3426;
-}
-.sponsors p {
-  margin-bottom: 0px;
-}
-
-.sponsor-image {
-  transition: transform 0.15s;
-  max-height: 100%;
-  max-width: 100%;
-}
-.sponsor-image:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transition: transform 0.3s;
-}
-
-.tier-4 {
-  width: 80%;
-  min-width: 350px;
-}
-
-.tier-3 {
-  width: 40%;
-  min-width: 260px;
-}
-
-.tier-2 {
-  width: 30%;
-  min-width: 180px;
-}
-
-.tier-1 {
-  width: 20%;
-  min-width: 125px;
-}
-
-.sponsor-row {
   margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-.sponsor-row a {
-  margin: 50px;
+
+#sponsor-section{
+  background-color: #f9edd5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor-container{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 25px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+.small-sponsor-image {
+  transition: transform 0.15s;
+  height: auto;   /*image height changes with image width and image width depends on viewport width*/
+  width: 15vw;    /*as a result, image just decreases in size on decreasing viewport size, not much wrapping happens which would otherwise look unneat*/
+  padding: 0.2rem;
+}
+
+.sponsor-image{
+  height: auto;
+  width: 10vw;
+  padding: 0.5rem;
+}
+
+.sponsor-image:hover, .small-sponsor-image:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
 footer {
