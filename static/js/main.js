@@ -1,17 +1,4 @@
 $(document).ready(function () {
-    var tracks = document.getElementsByClassName('track');
-
-    for (var i = 0; i < tracks.length; i++) {
-        tracks[i].onclick = function () {
-            if (window.innerWidth > 993) {
-                var id = this.id + '-modal';
-                document.getElementById(id).style.display = "block";
-            } else {
-                this.classList.toggle('focus');
-                this.lastElementChild.classList.toggle('visible');
-            }
-        }
-    }
 
     $('.close').on('click', function () {
         $(this).closest('.modal').css("display", "none");
