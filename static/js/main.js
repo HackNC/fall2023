@@ -13,14 +13,6 @@ $(document).ready(function () {
         }
     }
 
-    document.getElementById('mobile-get-involved').onclick = function () {
-        document.getElementById('get-involved-modal').style.display = "block";
-    }
-
-    document.getElementById('get-involved').onclick = function () {
-        document.getElementById('get-involved-modal').style.display = "block";
-    }
-
     $('.close').on('click', function () {
         $(this).closest('.modal').css("display", "none");
     })
