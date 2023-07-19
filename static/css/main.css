@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.sponsorFooter {
-  margin-bottom: 40px;
-}
-
 html,
 body {
   font-family: "Quicksand";
@@ -854,33 +850,52 @@ th {
   flex-direction: column;
 }
 
+.sponsorFooter {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .sponsor-container{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 15px;
   column-gap: 25px;
   padding-bottom: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right:10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right:20px;
 }
 
-.small-sponsor-image {
-  transition: transform 0.15s;
-  height: auto;   /*image height changes with image width and image width depends on viewport width*/
-  width: 15vw;    /*as a result, image just decreases in size on decreasing viewport size, not much wrapping happens which would otherwise look unneat*/
-  padding: 0.2rem;
+#JohnDeere-logo{
+  height: 7rem;
+  width: 10rem;
 }
 
-.sponsor-image{
-  height: auto;
-  width: 10vw;
-  padding: 0.5rem;
+#KTP-logo, #DeutscheBank-logo{
+  height: 5rem;
 }
 
-.sponsor-image:hover, .small-sponsor-image:hover{
+#CapitalOne-logo{
+  height: 4rem;
+  width: 10rem;
+}
+
+#Infosys-logo {
+  height: 3rem; 
+}
+
+#CreditSuisse-logo{
+  height: 3rem;
+}
+
+#CoStar-logo, #Accenture-logo, #Genesys-logo, #Optum-logo, #UltraPress-logo{
+  height: 3rem;
+}
+
+.sponsor-image:hover{
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transition: transform 0.3s;
