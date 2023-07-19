@@ -21,6 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="static/js/main.js"></script>
+    <script src="static/js/countdown.js"></script>
     <link rel="stylesheet" href="static/css/main.css">
 </head>
 
@@ -82,19 +83,6 @@
             </div>
         </div>
 
-        <div id="get-involved-modal" class="modal">
-            <div class="modal-content get-involved">
-                <span class="close">&times;</span>
-                <h2>I'm interested in being a...</h2>
-                <div>
-                    <a href="https://docs.google.com/spreadsheets/d/1brDmb9RtSuVgOwvwAfSwn0kNwU9rEnLeXllD4V5GblI/edit#gid=0" target="_blank">Volunteer</a>
-                    <a href="https://tinyurl.com/hacknc2021-mentor-signup" target="_blank">Mentor</a>
-                </div>
-                <p>Interested in learning more about being a mentor? Check out our <a
-                        href="becoming-a-mentor.html">mentoring at a hackathon 101</a>.</p>
-            </div>
-        </div>
-
         <!-- Logo and header -->
         <div class="splash">
             <a class="nav-anchor" id="home"></a>
@@ -102,14 +90,31 @@
                 <div class="banner-info">
                     <h1 class="tagline">HackNC 2023</h1>
                     <h2 class="date">October 27-29, 2023</h2>
+
+                    <!-- Countdown -->
+                    <div class="countdown">
+                        <div class="time">
+                            <p id="days"></p>
+                            <p>Days</p>
+                        </div>
+                        <div class="time">
+                            <p id="hours"></p>
+                            <p>Hours</p>
+                        </div>
+                        <div class="time">
+                            <p id="mins"></p> 
+                            <p>Minutes</p>
+                        </div>
+                        <div class="time">
+                            <p id="secs"></p> 
+                            <p>Seconds</p>
+                        </div>
+                    </div>
                    
+
                     <button class="involve-button hide-on-med-and-down"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform">2023 Organizer Interest form</a></button>
                     <a class="apply" href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform">2023 Organizer Interest form</a>
-                   
-                    <a id="mobile-get-involved" class="apply">Volunteer and mentor Sign up</a>
 
-
-                   
                 </div>
             </div>
         </div>
@@ -123,8 +128,6 @@
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#sponsors">Sponsors</a></li>
-                <!-- <li><a class="apply" target="_blank" href="https://tinyurl.com/hacknc2021application">Register</a></li> -->
-                <li><a id="get-involved" class="apply">Volunteer and Mentor Sign Up Here!</a></li>
             </ul>
         </nav>
 
