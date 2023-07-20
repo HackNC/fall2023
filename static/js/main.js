@@ -13,14 +13,6 @@ $(document).ready(function () {
         }
     }
 
-    document.getElementById('mobile-get-involved').onclick = function () {
-        document.getElementById('get-involved-modal').style.display = "block";
-    }
-
-    document.getElementById('get-involved').onclick = function () {
-        document.getElementById('get-involved-modal').style.display = "block";
-    }
-
     $('.close').on('click', function () {
         $(this).closest('.modal').css("display", "none");
     })
@@ -33,17 +25,18 @@ $(document).ready(function () {
 
     $.getJSON("/static/assets/faq.json", function (data) {
         data.forEach(function (question) {
+            var $header = $('<h2 class="accordion-header">')
             var $faq = $('<div>');
-            var $header = $('<h2>')
+            var $faq_answer = $('<div class="accordion-body">');
 
-            $header.append($('<img>', { "src": "static/assets/images/art/fork.png", "alt": "fork and Knif" }));
-            $header.append(question['question']);
-            $faq.append($header);
-            $faq.append(
-                $('<p>')
-                    .html(question['answer'])
-            )
+            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/art/fork.png", "alt": "fork and Knif" }));
+            $header.append($('<p class="faq-question">').html(question['question']));
+            $faq.append($header)
             $('#faq-container').append($faq);
+
+            $faq_answer.append($('<p class="faq-answer">').html(question['answer']))
+            $faq.append($faq_answer)
+            $('#faq_container').append($faq)
         });
     });
 
@@ -115,5 +108,14 @@ $(document).ready(function () {
                 behavior: 'smooth'
             });
         });
+    });
+
+    //functionality for FAQ accordion dropdown
+    $('#faq-container').on('click','.accordion-header', function() {   //selecting #faq-container here since its a parent static element, click() has issues working with dynamic elements
+        $(this).next('.accordion-body').slideToggle();
+        $('.accordion-body').not($(this).next('.accordion-body')).slideUp();
+        $(this).children("img").toggleClass('spin');
+        $(this).toggleClass('active');
+        $('.accordion-header').not($(this)).removeClass('active');
     });
 });
