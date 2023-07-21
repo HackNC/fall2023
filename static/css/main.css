@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.sponsorFooter {
-  margin-bottom: 40px;
-}
-
 html,
 body {
   font-family: "Quicksand";
@@ -844,53 +840,65 @@ th {
 .sponsors {
   background: white;
   color: #4f3426;
-}
-.sponsors p {
-  margin-bottom: 0px;
-}
-
-.sponsor-image {
-  transition: transform 0.15s;
-  max-height: 100%;
-  max-width: 100%;
-}
-.sponsor-image:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transition: transform 0.3s;
-}
-
-.tier-4 {
-  width: 80%;
-  min-width: 350px;
-}
-
-.tier-3 {
-  width: 40%;
-  min-width: 260px;
-}
-
-.tier-2 {
-  width: 30%;
-  min-width: 180px;
-}
-
-.tier-1 {
-  width: 20%;
-  min-width: 125px;
-}
-
-.sponsor-row {
   margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-.sponsor-row a {
-  margin: 50px;
+
+#sponsor-section{
+  background-color: #f9edd5;
+  border-radius: 20px;
   display: flex;
+  flex-direction: column;
+}
+
+.sponsorFooter {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sponsor-container{
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 25px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+#JohnDeere-logo{
+  height: 7rem;
+  width: 10rem;
+}
+
+#KTP-logo, #DeutscheBank-logo{
+  height: 5rem;
+}
+
+#CapitalOne-logo{
+  height: 4rem;
+  width: 10rem;
+}
+
+#Infosys-logo {
+  height: 3rem; 
+}
+
+#CreditSuisse-logo{
+  height: 3rem;
+}
+
+#CoStar-logo, #Accenture-logo, #Genesys-logo, #Optum-logo, #UltraPress-logo{
+  height: 3rem;
+}
+
+.sponsor-image:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
 footer {
