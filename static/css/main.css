@@ -334,13 +334,18 @@ a {
   }
 }
 .hamburger-btn{
+  appearance: none;
   color: var(--main-text-color);
+  -webkit-text-stroke: 1px black;
   visibility: hidden;
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   font-size: 1cm;
+}
+.hamburger-btn.fa-bars:checked::before{
+  content: 'X';
 }
 @media only screen and (max-width: 993px) {
   .hide-on-med-and-down {
