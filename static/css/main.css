@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+:root{
+  --main-text-color: #fff8bb;
+}
+
 html,
 body {
   font-family: "Quicksand";
@@ -191,7 +195,7 @@ a {
   position: absolute;
   right: 5px;
   top: 27.5vh;
-  color: #fff8bb;
+  color: var(--main-text-color);
 }
 .banner-info .apply {
   margin-top: 40px;
@@ -211,15 +215,15 @@ a {
 }
 
 .banner-info .countdown {
-  color: #fff8bb;
+  color: var(--main-text-color);
   display: flex;
   justify-content: left;
   text-align: center;
   align-items: left;
-}
 
-.banner-info .countdown .time {
-  margin-right: 2vw;
+  @media screen and (max-width: 993px) {
+    justify-content: space-evenly;
+  }
 }
 
 .banner-info .update {
@@ -253,14 +257,14 @@ a {
     right: auto;
     left: 50%;
     margin-left: -40%;
-    color: #fff8bb;
+    color: var(--main-text-color);
     text-align: center;
   }
   .banner-info .apply {
     text-decoration: none;
     display: block;
     background-color: #eb6566;
-    color: #fff8bb;
+    color: var(--main-text-color);
     font-weight: bold;
     width: max-content;
     padding: 5px 10px;
@@ -310,7 +314,7 @@ a {
     right: auto;
     left: 50%;
     margin-left: -40%;
-    color: #fff8bb;
+    color: var(--main-text-color);
     text-align: center;
   }
   .banner-info .apply {
@@ -329,9 +333,21 @@ a {
     text-transform: capitalize;
   }
 }
+.hamburger-btn{
+  color: var(--main-text-color);
+  visibility: hidden;
+  z-index: 999;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1cm;
+}
 @media only screen and (max-width: 993px) {
   .hide-on-med-and-down {
     display: none !important;
+  }
+  .hamburger-btn{
+    visibility: visible;
   }
 }
 .live-button {
@@ -344,7 +360,7 @@ a {
   font-size: 4.5vw;
 }
 .live-button a {
-  color: #fff8bb;
+  color: var(--main-text-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -369,7 +385,7 @@ a {
   margin-right: 30px;
 }
 .involve-button a {
-  color: #fff8bb;
+  color: var(--main-text-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -468,7 +484,7 @@ nav ul a:hover::before {
 
 .about {
   background: #3d0406;
-  color: #fff8bb;
+  color: var(--main-text-color);
 }
 .about p {
   margin-bottom: 15px;
@@ -481,7 +497,7 @@ nav ul a:hover::before {
 
 .tracks {
   background: #5f1717;
-  color: #fff8bb;
+  color: var(--main-text-color);
 }
 
 .tracks div {
@@ -562,7 +578,7 @@ nav ul a:hover::before {
   }
   #socialGoods {
     padding: 10px;
-    background-color: #fff8bb;
+    background-color: var(--main-text-color);
     color: rgb(41, 30, 30);
     border-radius: 3px;
     font-size: large;
@@ -575,7 +591,7 @@ nav ul a:hover::before {
   #general {
     margin-top: 55px;
     padding: 10px;
-    background-color: #fff8bb;
+    background-color: var(--main-text-color);
     color: rgb(41, 30, 30);
     border-radius: 3px;
     font-size: large;
@@ -621,7 +637,7 @@ nav ul a:hover::before {
   }
   #game {
     padding: 15px;
-    background-color: #fff8bb;
+    background-color: var(--main-text-color);
     color: rgb(41, 30, 30);
     border-radius: 3px;
     font-size: large;
@@ -630,7 +646,7 @@ nav ul a:hover::before {
 
 .schedule {
   background: #882323;
-  color: #fff8bb;
+  color: var(--main-text-color);
 }
 .schedule p {
   margin-bottom: 120px;
@@ -746,7 +762,7 @@ th {
 
 .faq {
   background: #a84143;
-  color: #fff8bb;
+  color: var(--main-text-color);
   padding-bottom: 60px;
 }
 
@@ -904,7 +920,7 @@ th {
 footer {
   height: 10vh;
   background: #3d0406;
-  color: #fff8bb;
+  color: var(--main-text-color);
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
