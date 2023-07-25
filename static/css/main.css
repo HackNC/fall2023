@@ -920,4 +920,16 @@ footer u {
   font-weight: bold;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body {
+  margin-top: 40px; 
+}
+
+
+
 /*# sourceMappingURL=main.css.map */
