@@ -177,10 +177,6 @@ a {
 }
 
 .banner {
-  background-image: url("/static/assets/images/art/option2.png");
-  background-position: left;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 57vw;
   min-height: calc(100vh - 64px);
   margin-left: 3vw;
