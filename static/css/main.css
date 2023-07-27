@@ -10,7 +10,7 @@ body {
 
 /* Main Containers */
 .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -41,21 +41,22 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 a {
   color: red;
 }
 
-.section {
-  padding: 35px 0px 35px 0px;
-}
-
 /* Main Banner */
 .splash {
   background-color: #292348;
+  background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/banner smoke.svg");
+  background-position: 0% 0%, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover; 
   position: relative;
+  padding-bottom: 80px;
 }
 
 .banner {
@@ -64,12 +65,17 @@ a {
   margin-left: 3vw;
 }
 
+#banner-graphic {
+  height: 400px;
+  padding-top: 40px;
+}
+
 .banner-info {
   width: calc(38vw - 20px);
   position: absolute;
   right: 5px;
   top: 15vh;
-  color: #d5cbef;
+  color: #d5cbef;  
 }
 
 .banner-info .apply {
@@ -77,11 +83,19 @@ a {
   display: none;
 }
 
+.banner-info .haunted {
+  text-transform: lowercase;
+  font-style: oblique;
+  color: #bb5c0e;
+  font-size: 3rem;
+}
+
 .banner-info .tagline {
-  font-size: 4.5vw;
+  font-size: 4rem;
   text-transform: uppercase;
   margin-bottom: 1vw;
   text-align: left;
+  line-height: 3.5rem;
 }
 
 .banner-info .date {
@@ -250,8 +264,17 @@ nav {
   background-color: #292348;
   top: 0;
   z-index: 99;
-  position: -webkit-sticky;
   position: sticky;
+}
+
+nav .home {
+  display: flex;
+  align-items: center;
+}
+
+nav .home img {
+  height: 40px;
+  margin-right: 10px;
 }
 
 nav li:first-child {
@@ -345,8 +368,42 @@ nav ul a:hover::before {
 
 /* About */
 .about {
-  background: #463a71;
+  background: #4a3974 url("/static/assets/images/halloween-art/about\ smoke.svg") no-repeat center center;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 20vh 0 23vh 0;
   color: #d5cbef;
+}
+
+.about-description {
+  background-color: #d5cbef;
+  color:#23183b;
+  border-radius: 5px;
+  border-color: #23183b;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.about-heading {
+  text-align: left;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-detail {
+  flex: 2 1 0;
+}
+
+#about-graphic {
+  height: 300px;
 }
 
 /* [Mobile] About */
@@ -358,13 +415,17 @@ nav ul a:hover::before {
 
 /* FAQ */
 .faq {
-  background: #392751;
+  background: #3c2654 url("/static/assets/images/halloween-art/faq\ smoke.svg") bottom no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  padding: 0 0 20vh 0;
   color: #d5cbef;
-  padding-bottom: 60px;
 }
 
 #faq-container {
-  padding-top: 50px;
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   margin: -1vw;
@@ -410,8 +471,8 @@ nav ul a:hover::before {
 }
 
 .accordion-header img.faq-img {
-  height: 50px;
-  margin-right: 20px;
+  height: 30px;
+  margin-right: 15px;
 }
 
 .accordion-header p.faq-question {
@@ -430,7 +491,7 @@ nav ul a:hover::before {
 }
 
 .accordion-body p.faq-answer {
-  margin: 0 0 0 70px;
+  margin: 0 0 0 55px;
   padding: 1rem;
   background-color: #d5cbef;
   color: #392751;
@@ -453,19 +514,14 @@ nav ul a:hover::before {
   }
 }
 
-#faq-footer {
-  background-image: url("/static/assets/images/art/borders.svg");
-  background-position: center bottom;
-  height: 15vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  margin-bottom: -8px;
-}
-
 /* Sponsors */
 .sponsors {
-  background: #23183b;
+  background: #25173d url("/static/assets/images/halloween-art/footer\ smoke.svg") bottom no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  padding:  0 0 15vh 0;
   color: #d5cbef;
 }
 
@@ -490,7 +546,7 @@ nav ul a:hover::before {
   color:#796bae;
 }
 
-.sponsor-container{
+.sponsor-container {
   background-color: #d5cbef;
   border-radius: 5px;
   border-color: #23183b;
@@ -538,10 +594,17 @@ nav ul a:hover::before {
 
 footer {
   height: max-content;
-  background: #463a71;
+  background: #4a3974;
   color: #d5cbef;
   font-size: 1.3rem;
+  text-align: center;
+  padding-bottom:5vh;
 }
+
+footer p {
+  margin-top: 0;
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     height: 15vh;
@@ -549,11 +612,17 @@ footer {
 }
 footer a {
   color: white;
+  margin: 0 10px;
+}
+
+footer .contact-info {
+  margin-bottom: 15px;
 }
 
 footer u {
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

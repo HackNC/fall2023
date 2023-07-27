@@ -29,7 +29,7 @@ $(document).ready(function () {
             var $faq = $('<div>');
             var $faq_answer = $('<div class="accordion-body">');
 
-            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/halloween-art/pumpkin (behind raven).svg", "alt": "pumpkin" }));
+            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/halloween-art/moon.svg", "alt": "pumpkin" }));
             $header.append($('<p class="faq-question">').html(question['question']));
             $faq.append($header)
             $('#faq-container').append($faq);

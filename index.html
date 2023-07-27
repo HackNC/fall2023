@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://hacknc.com/static/assets/images/art/favicon.png" />
 
     <title>HackNC 2023</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/images/art/option2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/images/halloween-art/ram.svg">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
         rel="stylesheet">
         
@@ -31,10 +31,18 @@
 
 <body>
     <!-- Navigation Bar -->
+    <!-- TO-DO: Make nav bar transparent on banner page and NOT take up extra space. -->
     <nav class="hide-on-med-and-down">
         <ul>
             <!-- TO-DO: Create and add logo -->
-            <li><a href="#home">HackNC</a></li>
+            <li>
+                <a href="#home">
+                    <div class="home">
+                    <img src="/static/assets/images/halloween-art/ram.svg"/>
+                    HackNC
+                    </div>
+                </a>
+            </li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <!-- TO-DO: Add drop down/links to get involved as a hacker/volunteer/mentor/sponsor -->
@@ -46,6 +54,7 @@
         <div class="splash">
             <a class="nav-anchor" id="home"></a>
             <div class="banner">
+                <img id="banner-graphic" src="/static/assets/images/halloween-art/combined banner graphic.svg" alt="Banner Graphic SVG"/>
                 <div class="banner-info">
                     <!-- Images -->
                     <!-- TO-DO: Format/Stack/Resize Images! -->
@@ -55,8 +64,7 @@
                     <img id="cauldron-svg" src="/static/assets/images/halloween-art/cauldron.svg" alt="Cauldron SVG"/>
                     <img id="pumpkin-svg" src="/static/assets/images/halloween-art/pumpkin (behind ram).svg" alt="Pumpkin Behind RamSVG"/> -->
 
-                    <!-- TO-DO: Style Header and Title According to New Design -->
-                    <h1 class="tagline">Haunted HackNC</h1>
+                    <h1 class="tagline"><span class="haunted">Haunted</span><br>HackNC</h1>
                     <h2 class="date">{ October 27 - 29, 2023 }</h2>
 
                     <!-- Countdown -->
@@ -80,38 +88,38 @@
                         </div>
                     </div>
                    
-                    <!-- Replace with Register Button -->
+                    <!-- TO-DO: Replace w/ Register Button + Style! -->
                     <button class="involve-button hide-on-med-and-down"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform">2023 Organizer Interest form</a></button>
-                    <a class="apply" href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform">2023 Organizer Interest form</a>
+                    <a class="apply" href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform"></a>
 
                 </div>
             </div>
         </div>
 
-       
-
         <!-- About -->
         <div class="section about">
             <a class="nav-anchor" id="about"></a>
             <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <!-- Images -->
-                        <!-- TO-DO: Format/Stack/Resize Images! -->
-                        <!-- <img id="raven-svg" src="/static/assets/images/halloween-art/raven.svg" alt="Raven SVG"/>
-                        <img id="moon-svg" src="/static/assets/images/halloween-art/moon.svg" alt="Moon SVG"/>
-                        <img id="pumpkin-svg" src="/static/assets/images/halloween-art/pumpkin (behind raven).svg" alt="Pumpkin Behind Raven SVG"/> -->
-
+                <div class="about-info">
+                    <!-- Images -->
+                    <!-- TO-DO: Format/Stack/Resize Images! -->
+                    <!-- <img id="raven-svg" src="/static/assets/images/halloween-art/raven.svg" alt="Raven SVG"/>
+                    <img id="moon-svg" src="/static/assets/images/halloween-art/moon.svg" alt="Moon SVG"/>
+                    <img id="pumpkin-svg" src="/static/assets/images/halloween-art/pumpkin (behind raven).svg" alt="Pumpkin Behind Raven SVG"/> -->
+                    
+                    <div class="about-detail">
                         <h1 class="about-heading">What is HackNC?</h1>
-                        <!-- TO-DO: Rewrite description -->
+                        <!-- TO-DO: Rewrite Description -->
                         <p class="about-description">
-                            HackNC is an annual, student-run hackathon hosted by the University of North Carolina at
-                            Chapel Hill. Every fall, hundreds of students arrive at UNC to spend the weekend inventing
-                            something amazing. We’re one of the largest hackathons in the southeastern United States.
+                            HackNC is a weekend for students of all skill levels to broaden their talents. Your challenge is to make an awesome project in just 24 hours. 
+                            You will have access to hands-on workshops and demos from our sponsors, as well as exciting talks about the awesome things happening right now 
+                            with computer science and technology - not to mention all of the free food, shirts, stickers, and swag!
                         </p>
-
                         <!-- TO-DO: Add and Implement Past Projects Button -->
                     </div>
+                    
+                    <img id="about-graphic" src="/static/assets/images/halloween-art/combined about graphic.svg" alt="Raven, Full Moon, and Pumpkin SVG"/>
+                    
                 </div>
             </div>
         </div>
@@ -122,6 +130,7 @@
             <div class="container">
                 <h1 class="faq-header">FAQ</h1>
                 <!-- TO-DO: Only expand one side of accordion when opening answer -->
+                <!-- TO-DO: Update FAQ questions -->
                 <div id="faq-container"></div>
             </div>
         </div>
@@ -182,18 +191,20 @@
             <p>MLH Code of Conduct</p>
 
             <!-- TO-DO: Find Cleaner Icons and Style Contact Icons -->
-            <a aria-label="HackNC email" target="_blank" href="mailto:hello@hacknc.com">
-                <i class="fa fa-envelope-square fa-2x"></i></a>
+            <div class="contact-info">
+                <a aria-label="HackNC email" target="_blank" href="mailto:hello@hacknc.com">
+                    <i class="fa fa-envelope-square fa-2x"></i></a>
 
-            <a aria-label="HackNC facebook" target="_blank" href="https://www.facebook.com/thehacknc/">
-                <i class="fa fa-facebook-square fa-2x"></i></a>
+                <a aria-label="HackNC facebook" target="_blank" href="https://www.facebook.com/thehacknc/">
+                    <i class="fa fa-facebook-square fa-2x"></i></a>
 
-            <a aria-label="HackNC twitter" target="_blank" href="https://twitter.com/thehacknc">
-                <i class="fa fa-twitter-square fa-2x"></i></a>
+                <a aria-label="HackNC twitter" target="_blank" href="https://twitter.com/thehacknc">
+                    <i class="fa fa-twitter-square fa-2x"></i></a>
 
-            <a aria-label="HackNC instagram" target="_blank" href="https://www.instagram.com/thehacknc/">
-                <i class="fa fa-instagram fa-2x"></i></a>
-            <br>
+                <a aria-label="HackNC instagram" target="_blank" href="https://www.instagram.com/thehacknc/">
+                    <i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+
             <u>© HackNC 2023 </u>
         </div>
     </footer>
