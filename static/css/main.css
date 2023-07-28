@@ -479,16 +479,6 @@ nav ul a:hover::before {
   }
 }
 
-
-  #game {
-    padding: 15px;
-    background-color: #fff8bb;
-    color: rgb(41, 30, 30);
-    border-radius: 3px;
-    font-size: large;
-  }
-
-
 .table-row-odd {
   color: #4f3426;
   background: #f7f2d8;
