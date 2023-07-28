@@ -592,6 +592,10 @@ nav ul a:hover::before {
   transition: transform 0.3s;
 }
 
+.sponsor-description{
+  color: #4a3974;
+}
+
 footer {
   height: max-content;
   background: #4a3974;
