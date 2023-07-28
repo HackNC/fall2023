@@ -395,7 +395,7 @@ nav ul a:hover::before {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 8vw;
 }
 
 .about-detail {
@@ -611,7 +611,7 @@ footer p {
   }
 }
 footer a {
-  color: white;
+  color: #d5cbef;
   margin: 0 10px;
 }
 
