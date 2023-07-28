@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head lang="en-us">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,13 +19,25 @@
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/countdown.js"></script>
     <link rel="stylesheet" href="static/css/main.css">
 </head>
 
 <body>
-   
-    <main id="content container">
+    <!-- Navigation Bar -->
+    <nav class="hide-on-med-and-down">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+        </ul>
+    </nav>
 
+    <main id="content container">
         <div id="nessie-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -81,19 +92,6 @@
             </div>
         </div>
 
-        <div id="get-involved-modal" class="modal">
-            <div class="modal-content get-involved">
-                <span class="close">&times;</span>
-                <h2>I'm interested in being a...</h2>
-                <div>
-                    <a href="https://docs.google.com/spreadsheets/d/1brDmb9RtSuVgOwvwAfSwn0kNwU9rEnLeXllD4V5GblI/edit#gid=0" target="_blank">Volunteer</a>
-                    <a href="https://tinyurl.com/hacknc2021-mentor-signup" target="_blank">Mentor</a>
-                </div>
-                <p>Interested in learning more about being a mentor? Check out our <a
-                        href="becoming-a-mentor.html">mentoring at a hackathon 101</a>.</p>
-            </div>
-        </div>
-
         <!-- Logo and header -->
         <div class="splash">
             <a class="nav-anchor" id="home"></a>
@@ -101,35 +99,36 @@
                 <div class="banner-info">
                     <h1 class="tagline">HackNC 2023</h1>
                     <h2 class="date">October 27-29, 2023</h2>
-                   <!-- <p class = "update"> Event Ended ...Stay tune for 2022 </p> -->
-                    
-                    <!-- <button class="live-button hide-on-med-and-down"><a href="https://www.hacknc.com/live/">→ Event Live</a></button> -->
-                    <!-- <button class="involve-button hide-on-med-and-down"><a href="https://forms.gle/cqkwFZum1BihNbpKA">2022 Hacker Interest form</a></button> -->
-                     <button class="involve-button hide-on-med-and-down"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform">2023 Organizer Interest form</a></button>
+
+                    <!-- Countdown -->
+                    <div class="countdown">
+                        <div class="time">
+                            <p id="days"></p>
+                            <p>Days</p>
+                        </div>
+                        <div class="time">
+                            <p id="hours"></p>
+                            <p>Hours</p>
+                        </div>
+                        <div class="time">
+                            <p id="mins"></p> 
+                            <p>Minutes</p>
+                        </div>
+                        <div class="time">
+                            <p id="secs"></p> 
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                   
+
+                    <button class="involve-button hide-on-med-and-down"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform">2023 Organizer Interest form</a></button>
                     <a class="apply" href="https://docs.google.com/forms/d/e/1FAIpQLSdobyqr0nq4ZXEZi0pdTGTBIuOZeEr5B26Wz71sij77ds15Xw/viewform">2023 Organizer Interest form</a>
-                   
-                   <!-- <a id="mobile-get-involved" class="apply" href="https://forms.gle/cqkwFZum1BihNbpKA">2022 Hacker Interest form</a> -->
-                    <a id="mobile-get-involved" class="apply">Volunteer and mentor Sign up</a>
 
-
-                   
                 </div>
             </div>
         </div>
 
-        <!-- Navigation Bar -->
-        <nav class="hide-on-med-and-down">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tracks">Tracks</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <!-- <li><a class="apply" target="_blank" href="https://tinyurl.com/hacknc2021application">Register</a></li> -->
-                <li><a id="get-involved" class="apply">Volunteer and Mentor Sign Up Here!</a></li>
-            </ul>
-        </nav>
+       
 
         <!-- About -->
         <div class="section about">
@@ -188,74 +187,52 @@
                 <h1>Any Questions?</h1>
                 <div id="faq-container"></div>
             </div>
-           
         </div>
 
         <!-- Sponsors -->
         <div class="section sponsors">
             <a class="nav-anchor" id="sponsors"></a>
-            <div class="container">
+            <div class="container" id="sponsor-section">
                 <h1>Sponsors</h1>
-                
-                <!-- tier 2 -->
-                <div class="sponsor-row">
-                    <a class="tier-3" target="_blank" href='https://campus.capitalone.com/'>
-                        <img alt="Capital One logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/capitalone.png'></a>
-                    <a class="tier-3" target="_blank" href='https://www.costar.com/'>
-                        <img alt="CoStar logo" class='sponsor-image' src='static/assets/images/sponsors/costar.png'></a>
-                </div>
-              
-                <div class="sponsor-row">
-                    <a class="tier-3" target="_blank" href='https://www.credit-suisse.com/'>
-                        <img alt="Credit Suisse logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/creditsuisse.png'></a>
-                    <a class="tier-3" target="_blank" href='https://www.infosys.com/'>
-                        <img alt="Infosys logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/infosys.png'></a>
-                </div>
-                <div class="sponsor-row">
-                    <a class="tier-3" target="_blank" href='https://www.deere.com/en/our-company/john-deere-careers/jobs-for-students/internships-and-part-time-students/'>
-                        <img alt="John Deere logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/johndeere.png'></a>
-                </div>
-
-                <!-- tier 1  -->
-                <div class="sponsor-row">
-                    <a class="tier-2" target="_blank" href='https://www.accenture.com/'>
-                        <img alt="Accenture logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/Accenture.png'></a>
-                    <a class="tier-2" target="_blank" href='https://www.optum.com/'>
-                                <img alt="Optum logo" class='sponsor-image' src='static/assets/images/sponsors/optum.png'></a>
-                </div>
-                <div class="sponsor-row">
-                    <a class="tier-2" target="_blank" href='https://www.db.com/company/index.htm'>
-                        <img alt="Deutsche bank logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/deutsche_bank.jpg'></a>
-                    <a class="tier-2" target="_blank" href='https://www.genesys.com/'>
-                            <img alt="Genesys logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/genesys.png'></a>
-                </div>
-                <!-- custom package below tier 1 -->
-                <div class="sponsor-row">
-                    <a class="tier-1" target="_blank" href='https://ktp.cs.unc.edu/'>
-                        <img alt="KTP logo" class='sponsor-image'
-                            src='static/assets/images/sponsors/ktp_logo.jpg'></a>
-                    
-                    
-                </div>
-                <div class="sponsor-row">
-                    <a class="tier-1" target="_blank" href='https://ultrapress.com/'>
-                        <img alt="Ultra_press" class='sponsor-image'
-                            src='static/assets/images/sponsors/ultraPress.png'></a>
-                    
-                    
-                </div>
-
-
-
                 <p class="center sponsorFooter">Looking to sponsor HackNC 2023? Email us at <a class="sponsor-email"
-                        href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a></p>
+                    href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a></p> 
+                
+                
+                <div class="sponsor-container">
+                    <a target="_blank" href='https://campus.capitalone.com/'>
+                        <img alt="Capital One logo" id="CapitalOne-logo" class="sponsor-image"
+                            src='static/assets/images/sponsors/capitalone.png'></a>
+                    <a target="_blank" href='https://www.costar.com/'>
+                        <img alt="CoStar logo" id="CoStar-logo" class='sponsor-image' 
+                            src='static/assets/images/sponsors/costar.png'></a>
+                    <a target="_blank" href='https://www.credit-suisse.com/'>
+                        <img alt="Credit Suisse logo" id="CreditSuisse-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/creditsuisse.png'></a>
+                    <a target="_blank" href='https://www.accenture.com/'>
+                        <img alt="Accenture logo" id="Accenture-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/Accenture.png'></a>
+                    <a target="_blank" href='https://www.deere.com/en/our-company/john-deere-careers/jobs-for-students/internships-and-part-time-students/'>
+                        <img alt="John Deere logo" id="JohnDeere-logo" class='sponsor-image' 
+                            src='static/assets/images/sponsors/johndeere.png'></a>
+                    <a target="_blank" href='https://www.infosys.com/'>
+                        <img alt="Infosys logo" id="Infosys-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/infosys.png'></a>
+                    <a target="_blank" href='https://ktp.cs.unc.edu/'>
+                        <img alt="KTP logo" id="KTP-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/ktp_logo.jpg'></a>
+                    <a target="_blank" href='https://www.db.com/company/index.htm'>
+                        <img alt="Deutsche bank logo" id="DeutscheBank-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/deutsche_bank.jpg'></a>
+                    <a target="_blank" href='https://www.genesys.com/'>
+                        <img alt="Genesys logo" id="Genesys-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/genesys.png'></a>
+                    <a target="_blank" href='https://www.optum.com/'>
+                        <img alt="Optum logo" id="Optum-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/optum.png'></a>
+                    <a target="_blank" href='https://ultrapress.com/'>
+                        <img alt="Ultra_press" id="UltraPress-logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/ultraPress.png'></a>
+                </div>
             </div>
         </div>
 
@@ -275,14 +252,9 @@
 
             <a aria-label="HackNC instagram" target="_blank" href="https://www.instagram.com/thehacknc/">
                 <i class="fa fa-instagram fa-2x"></i></a>
-
-            <a aria-label="HackNC snapchat" target="_blank" href="https://www.snapchat.com/add/hacknc">
-                <i class="fa fa-snapchat-square fa-2x"></i></a>
             <br>
             <u>© HackNC 2023 </u>
         </div>
     </footer>
-    <script src="static/js/main.js"></script>
 </body>
-
 </html>

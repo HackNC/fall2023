@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.sponsorFooter {
-  margin-bottom: 40px;
-}
-
 html,
 body {
   font-family: "Quicksand";
@@ -213,6 +209,19 @@ a {
   font-size: 2.5vw;
   text-transform: capitalize;
 }
+
+.banner-info .countdown {
+  color: #fff8bb;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-items: left;
+}
+
+.banner-info .countdown .time {
+  margin-right: 2vw;
+}
+
 .banner-info .update {
   margin-top: 0px;
   font-weight: bold;
@@ -474,6 +483,7 @@ nav ul a:hover::before {
   background: #5f1717;
   color: #fff8bb;
 }
+
 .tracks div {
   text-align: center;
 }
@@ -719,15 +729,15 @@ th {
 }
 
 #faq-container {
-  /* padding-top: 50px; */
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   margin: -1vw;
-  align-items: flex-start;
+  align-items:flex-start;
 }
 #faq-container div {
   flex: 0 1 50%;
-  padding: 0.7vw 1vw;
+  padding: 5px;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 993px) {
@@ -736,13 +746,11 @@ th {
   }
 }
 
-#faq-container h2 div {
+#faq-container div {
   font-size: 2rem;
   text-align: left;
-  display: flex;
-  margin-bottom: 120px;
-  align-items: center;
-  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 @media only screen and (max-width: 993px) {
   #faq-container div h2 {
@@ -750,9 +758,51 @@ th {
   }
 }
 
-#faq-container img {
-  height: 75px;
+.accordion-header {
+  cursor: pointer;
+  background-color: #98383a;
+  color: #e7d8bc;
+  padding: 16px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.accordion-header img.faq-img {
+  height: 50px;
   margin-right: 20px;
+}
+
+.accordion-header p.faq-question {
+  margin: 5px; 
+}
+
+.active, .accordion-header:hover {
+  cursor: pointer;
+  background-color: #893234;
+  color: #e7d8bc;
+}
+
+.accordion-body {
+  display: none;
+}
+
+.spin {
+  animation-duration: 500ms;
+  animation-name: spin;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 
 #faq-footer {
@@ -768,53 +818,65 @@ th {
 .sponsors {
   background: white;
   color: #4f3426;
-}
-.sponsors p {
-  margin-bottom: 0px;
-}
-
-.sponsor-image {
-  transition: transform 0.15s;
-  max-height: 100%;
-  max-width: 100%;
-}
-.sponsor-image:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transition: transform 0.3s;
-}
-
-.tier-4 {
-  width: 80%;
-  min-width: 350px;
-}
-
-.tier-3 {
-  width: 40%;
-  min-width: 260px;
-}
-
-.tier-2 {
-  width: 30%;
-  min-width: 180px;
-}
-
-.tier-1 {
-  width: 20%;
-  min-width: 125px;
-}
-
-.sponsor-row {
   margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-.sponsor-row a {
-  margin: 50px;
+
+#sponsor-section{
+  background-color: #f9edd5;
+  border-radius: 20px;
   display: flex;
+  flex-direction: column;
+}
+
+.sponsorFooter {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sponsor-container{
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 25px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+#JohnDeere-logo{
+  height: 7rem;
+  width: 10rem;
+}
+
+#KTP-logo, #DeutscheBank-logo{
+  height: 5rem;
+}
+
+#CapitalOne-logo{
+  height: 4rem;
+  width: 10rem;
+}
+
+#Infosys-logo {
+  height: 3rem; 
+}
+
+#CreditSuisse-logo{
+  height: 3rem;
+}
+
+#CoStar-logo, #Accenture-logo, #Genesys-logo, #Optum-logo, #UltraPress-logo{
+  height: 3rem;
+}
+
+.sponsor-image:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
 footer {
@@ -835,5 +897,17 @@ footer u {
   text-decoration: none;
   font-weight: bold;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body {
+  margin-top: 40px; 
+}
+
+
 
 /*# sourceMappingURL=main.css.map */
