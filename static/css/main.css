@@ -628,28 +628,6 @@ nav ul a:hover::before {
   }
 }
 
-.schedule {
-  background: #882323;
-  color: #fff8bb;
-}
-.schedule p {
-  margin-bottom: 120px;
-}
-@media only screen and (max-width: 600px) {
-  .schedule p {
-    margin-bottom: 50px;
-  }
-}
-
-.sch-img {
-  position: absolute;
-  left: calc(50%);
-  bottom: -250px;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  height: 330px;
-  visibility: hidden;
-}
 
 .table-row-odd {
   color: #4f3426;
