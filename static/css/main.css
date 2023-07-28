@@ -565,6 +565,16 @@ nav ul a:hover::before {
   width: 10rem;
 }
 
+#capTech-logo {
+  height: 7rem;
+  width: 10rem;
+}
+
+#bandwidth-logo {
+  height: 10rem;
+  width: 10rem;
+}
+
 #KTP-logo, #DeutscheBank-logo{
   height: 5rem;
 }
