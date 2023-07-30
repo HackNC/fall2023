@@ -586,6 +586,14 @@ nav ul a:hover::before {
   height: 3rem;
 }
 
+#CapTech-logo {
+  height: 6rem;
+}
+
+#Bandwidth-logo {
+  height: 9rem;
+}
+
 .sponsor-image:hover{
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
