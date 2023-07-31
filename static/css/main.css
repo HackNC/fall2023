@@ -347,12 +347,34 @@ a {
 .hamburger-btn.fa-bars:checked::before{
   content: 'X';
 }
+.hamburger-menu{
+  position: fixed;
+  right: -50%;
+  transition: all 0.8s ease;
+  z-index: 998;
+  background-color: rgb(235, 101, 102);
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hamburger-menu *{
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 1cm;
+}
 @media only screen and (max-width: 993px) {
   .hide-on-med-and-down {
     display: none !important;
   }
   .hamburger-btn{
     visibility: visible;
+  }
+  .hamburger-btn.fa-bars:checked + .hamburger-menu{
+    right: 0;
   }
 }
 .live-button {
