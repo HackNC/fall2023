@@ -14,12 +14,12 @@ body {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (min-width: 1500px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .container {
     width: 90%;
   }
@@ -34,15 +34,16 @@ h1 {
   text-transform: uppercase;  
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 736px) {
   h1 {
-    font-size: 10vw;
+    font-size: 3.5vw;
   }
 }
 
 p {
   font-size: 1rem;
 }
+
 
 a {
   color: red;
@@ -81,6 +82,7 @@ a {
 .banner-info .apply {
   margin-top: 40px;
   display: none;
+  text-align: right;
 }
 
 .banner-info .haunted {
@@ -108,9 +110,9 @@ a {
 .banner-info .countdown {
   color: #d5cbef;
   display: flex;
-  justify-content: left;
-  text-align: center;
-  align-items: left;
+  justify-content: center;
+  text-align: right;
+  align-items: right;
 }
 
 .banner-info .countdown .time {
@@ -125,7 +127,8 @@ a {
 }
 
 /* [Mobile] Main Banner */
-@media only screen and (max-width: 993px) {
+
+@media only screen and (min-width: 374px) and (max-width: 601px) {
   .splash {
     min-height: 100vh;
   }
@@ -137,23 +140,39 @@ a {
     position: relative;
   }
 
+  #banner-graphic {
+    height: 400px;
+    width: 450px;
+    padding-top: 70px;
+  }
+
   .banner-info {
-    height: max-content;
-    width: 80%;
+    height: 10px;
+    vertical-align: bottom;
+    width: 100%;
     margin: auto;
     position: absolute;
     top: 10vh;
-    right: auto;
+    right: 100%;
     left: 50%;
+    bottom: 0;
+    left: 100%;
     margin-left: -40%;
     color: #d5cbef;
-    text-align: center;
+    text-align: left;
+  }
+
+  .banner-info .haunted {
+    vertical-align: bottom;
+    font-size: 2rem;
+    padding-top: 10px;
   }
 
   .banner-info .apply {
     text-decoration: none;
-    display: block;
+    
     background-color: #d5cbef;
+    display:block;
     color: #292348;
     font-weight: bold;
     width: max-content;
@@ -178,10 +197,15 @@ a {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 1rem;
     text-transform: capitalize;
   }
+
+  .banner-info .countdown {
+    text-align: right;
+  }
 }
+
 @media only screen and (max-width: 600px) {
   .splash {
     min-height: 80vh;
@@ -204,7 +228,7 @@ a {
     left: 50%;
     margin-left: -40%;
     color: #d5cbef;
-    text-align: center;
+    text-align: right;
   }
 
   .banner-info .apply {
@@ -215,16 +239,51 @@ a {
     font-size: 4vw;
     text-transform: uppercase;
     margin-bottom: 2vw;
-    text-align: center;
+    text-align: right;
   }
   .banner-info .date {
     margin-top: 0px;
     font-weight: bold;
     font-size: 5vw;
     text-transform: capitalize;
+    text-align: right;
+  }
+
+  .banner-info .haunted {
+    font-size: 2rem;
+  }
+
+  #banner-graphic {
+    height: 200px;
+    width: 240px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .banner-info .haunted {
+    font-size: 1.5rem;
+  }
+  #banner-graphic {
+    height: 190px;
+    width: 190px;
+  }
+  .banner-info {
+    height: max-content;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 30vh;
+    right: auto;
+    left: 50%;
+    margin-left: -40%;
+    color: #d5cbef;
+    text-align: right;
   }
 }
-@media only screen and (max-width: 993px) {
+
+@media only screen and (max-width: 599px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -407,9 +466,27 @@ nav ul a:hover::before {
 }
 
 /* [Mobile] About */
-@media only screen and (max-width: 993px) and (orientation: landscape) {
+@media only screen and (max-width: 600px) {
   .about {
     padding-top: 12.5vw;
+  }
+  .about-heading {
+    font-size: 1.7rem;
+  }
+  .about-description {
+    font-size: .8rem;
+  }
+  #about-graphic {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #about-graphic {
+    width: 110px;
+  }
+  .about-description {
+    font-size: .75rem;
   }
 }
 
@@ -514,6 +591,13 @@ nav ul a:hover::before {
   }
 }
 
+/* [Mobile] FAQ */
+@media only screen and (max-width: 736px) {
+  .faq-header {
+    font-size: 1.7rem;
+  }
+}
+
 /* Sponsors */
 .sponsors {
   background: #25173d url("/static/assets/images/halloween-art/footer\ smoke.svg") bottom no-repeat;
@@ -590,6 +674,16 @@ nav ul a:hover::before {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transition: transform 0.3s;
+}
+
+/* [Mobile] Sponsors */
+@media only screen and (max-width: 736px) {
+  .sponsors-header {
+    font-size: 1.8rem;
+  }
+  .sponsorFooter {
+    font-size: .9rem;
+  }
 }
 
 footer {
