@@ -86,7 +86,7 @@ a {
 .banner-info .haunted {
   text-transform: lowercase;
   font-style: oblique;
-  color: #bb5c0e;
+  color: #dc5612;
   font-size: 3rem;
 }
 
@@ -106,7 +106,7 @@ a {
 }
 
 .banner-info .countdown {
-  color: #d5cbef;
+  color: #8169bf;
   display: flex;
   justify-content: left;
   text-align: center;
