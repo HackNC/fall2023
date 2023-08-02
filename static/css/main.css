@@ -592,6 +592,14 @@ nav ul a:hover::before {
   height: 3rem;
 }
 
+#CapTech-logo {
+  height: 6rem;
+}
+
+#Bandwidth-logo {
+  height: 9rem;
+}
+
 .sponsor-image{
   mix-blend-mode: multiply;
 }
