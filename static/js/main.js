@@ -11,20 +11,29 @@ $(document).ready(function () {
         }
     }
 
+    var i = -1;     //index of each question in faq.json
     $.getJSON("/static/assets/faq.json", function (data) {
         data.forEach(function (question) {
-            var $header = $('<h2 class="accordion-header">')
+            
+            i++;
+            var $header = $('<h2 class="accordion-header">');
             var $faq = $('<div>');
             var $faq_answer = $('<div class="accordion-body">');
 
-            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/halloween-art/moon.svg", "alt": "pumpkin" }));
-            $header.append($('<p class="faq-question">').html(question['question']));
-            $faq.append($header)
-            $('#faq-container').append($faq);
+            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/halloween-art/moon.svg", "alt": "moon" }));
+            $header.append($('<p class="faq-question">').html(question['question'+(i%2+1)]));   //gets either question1 or question2 according to the index
+            $faq.append($header);
 
-            $faq_answer.append($('<p class="faq-answer">').html(question['answer']))
-            $faq.append($faq_answer)
-            $('#faq_container').append($faq)
+            $faq_answer.append($('<p class="faq-answer">').html(question['answer'+(i%2+1)]));   //similarly gets answer1 or answer2
+            $faq.append($faq_answer);
+
+            if(i%2==0){
+                $('#faq-column-1').append($faq);
+            }
+            else{
+                $('#faq-column-2').append($faq);
+            }
+
         });
     });
 

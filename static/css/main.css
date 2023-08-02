@@ -455,6 +455,13 @@ nav ul a:hover::before {
   }
 }
 
+.faq-column {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* FAQ Questions */
 .accordion-header {
   cursor: pointer;
@@ -482,7 +489,7 @@ nav ul a:hover::before {
 
 .active, .accordion-header:hover {
   cursor: pointer;
-  color: #d5cbef;
+  background-color: #2e1c40;
 }
 
 .accordion-body {
@@ -591,6 +598,10 @@ nav ul a:hover::before {
 
 #Bandwidth-logo {
   height: 9rem;
+}
+
+.sponsor-image{
+  mix-blend-mode: multiply;
 }
 
 .sponsor-image:hover{
