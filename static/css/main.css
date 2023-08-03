@@ -45,7 +45,7 @@ p {
 }
 
 a {
-  color: red;
+  color: rgb(185, 39, 39);
 }
 
 /* Main Banner */
@@ -75,7 +75,7 @@ a {
   position: absolute;
   right: 5px;
   top: 15vh;
-  color: #4c2ba1;  
+  color: #ac90f3;  
 }
 
 .banner-info .apply {
@@ -86,7 +86,7 @@ a {
 .banner-info .haunted {
   text-transform: lowercase;
   font-style: oblique;
-  color: #dc5612;
+  color: #da500b;
   font-size: 3rem;
 }
 
@@ -106,7 +106,7 @@ a {
 }
 
 .banner-info .countdown {
-  color: #8169bf;
+  color: #bdb1e3;
   display: flex;
   justify-content: left;
   text-align: center;
@@ -146,7 +146,7 @@ a {
     right: auto;
     left: 50%;
     margin-left: -40%;
-    color: #d5cbef;
+    color: #d45207;
     text-align: center;
   }
 
@@ -235,7 +235,7 @@ a {
   border-radius: 10px;
   transition: transform 0.15s;
   background-color: #d5cbef;
-  border-color: #292348;
+  border-color: #312a55;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 1vw;
