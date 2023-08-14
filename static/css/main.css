@@ -19,14 +19,14 @@ body {
 
 @media only screen and (max-width: 993px) {
   .container {
-    width: 85%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .container {
     width: 90%;
   }
 }
+/* @media only screen and (max-width: 736px) {
+  .container {
+    width: 90%;
+  }
+} */
 
 h1 {
   letter-spacing: 0.075em;
@@ -37,15 +37,16 @@ h1 {
   text-transform: uppercase;  
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 736px) {
   h1 {
-    font-size: 10vw;
+    font-size: 3.5vw;
   }
 }
 
 p {
   font-size: 1rem;
 }
+
 
 a {
   color: red;
@@ -127,6 +128,7 @@ a {
 .banner-info .apply {
   margin-top: 40px;
   display: none;
+  text-align: right;
 }
 
 .banner-info .haunted {
@@ -154,9 +156,9 @@ a {
 .banner-info .countdown {
   color: #d5cbef;
   display: flex;
-  justify-content: left;
-  text-align: center;
-  align-items: left;
+  justify-content: center;
+  text-align: right;
+  align-items: right;
 }
 
 .banner-info .countdown .time {
@@ -171,9 +173,14 @@ a {
 }
 
 /* [Mobile] Main Banner */
-@media only screen and (max-width: 993px) {
+
+@media only screen and (min-width: 320px) and (max-width: 601px) {
   .splash {
-    min-height: 100vh;
+  /* background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover; 
+  position: relative;
+  padding-bottom: 80px; */
+  min-height: 50vh;
   }
 
   .banner {
@@ -183,23 +190,41 @@ a {
     position: relative;
   }
 
+  #banner-graphic {
+    display: block;
+    margin-left: 17%;
+    margin-right: 10%;
+    width: 58%;
+    height: 55%;
+  } 
+
   .banner-info {
-    height: max-content;
-    width: 80%;
+    /* height: 20px; */
+    /* vertical-align: bottom; */
+    width: 100%;
     margin: auto;
-    position: absolute;
-    top: 10vh;
-    right: auto;
+    /* position: relative; */
+    top: 54%;
+    right: 100%;
     left: 50%;
-    margin-left: -40%;
+    bottom: 0%;
+    margin-left: -51%;
     color: #d5cbef;
     text-align: center;
+    
+  }
+
+  .banner-info .haunted {
+    text-align: center;
+    font-size: 2.1rem;
+    padding-top: 50px;
+    margin-bottom: 0px;
   }
 
   .banner-info .apply {
     text-decoration: none;
-    display: block;
     background-color: #d5cbef;
+    display:block;
     color: #292348;
     font-weight: bold;
     width: max-content;
@@ -210,67 +235,114 @@ a {
   }
 
   .banner-info .apply:last-child {
-    margin-bottom: 5vw;
+    margin-bottom: 0px;
   }
 
   .banner-info .tagline {
-    font-size: 5vw;
+    font-size: 2.1rem;
     text-transform: uppercase;
-    margin-bottom: 1.5vw;
     text-align: center;
+    margin-bottom: 10px;
+    line-height: 2.5rem;
   }
 
   .banner-info .date {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 1.45rem;
     text-transform: capitalize;
+    margin-bottom: 1px;
+  }
+
+  .banner-info .countdown {
+    margin-left: 2%;
+    text-align: center;
   }
 }
-@media only screen and (max-width: 600px) {
-  .splash {
-    min-height: 80vh;
-  }
+
+
+@media only screen and (max-width: 320px) {
+
 
   .banner {
     width: 95vw;
-    height: 50vh;
+    height: 70vh;
     min-height: auto;
     position: relative;
   }
 
+  .banner {
+    width: 95vw;
+    height: 70vh;
+    min-height: auto;
+    position: relative;
+  }
+
+  #banner-graphic {
+    display: block;
+    margin-left: 17%;
+    margin-right: 10%;
+    width: 58%;
+    height: 55%;
+  } 
+
   .banner-info {
-    height: max-content;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    position: absolute;
-    top: 50vh;
-    right: auto;
+    /* position: relative; */
+    top: 54%;
+    right: 100%;
     left: 50%;
-    margin-left: -40%;
+    bottom: 0%;
+    margin-left: -51%;
     color: #d5cbef;
     text-align: center;
+    
+  }
+
+  .banner-info .haunted {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 50px;
+    margin-bottom: 0px;
   }
 
   .banner-info .apply {
-    font-size: 4vw;
+    text-decoration: none;
+    background-color: #d5cbef;
+    display:block;
+    color: #292348;
+    font-weight: bold;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 3vw;
   }
 
+  
+
   .banner-info .tagline {
-    font-size: 4vw;
+    font-size: 1.7rem;
     text-transform: uppercase;
-    margin-bottom: 2vw;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.8rem;
+  }
+
+  .banner-info .date {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+  }
+
+  .banner-info .countdown {
+    margin-left: 2%;
     text-align: center;
   }
-  .banner-info .date {
-    margin-top: 0px;
-    font-weight: bold;
-    font-size: 5vw;
-    text-transform: capitalize;
-  }
 }
-@media only screen and (max-width: 993px) {
+
+@media only screen and (max-width: 599px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -452,9 +524,65 @@ nav ul a:hover::before {
 }
 
 /* [Mobile] About */
-@media only screen and (max-width: 993px) and (orientation: landscape) {
+@media only screen and (max-width: 600px) {
   .about {
-    padding-top: 12.5vw;
+    min-height: 0vh;
+  }
+  .about-info {
+    position: relative;
+    top: -110px;
+  }
+  .about-heading {
+    font-size: 1.4rem;
+    width: max-content;
+  }
+  .about-description {
+    font-size: .8rem;
+    margin-bottom: 10px;
+    width: 145%;
+    margin-right: 5px;
+  }
+  #about-graphic {
+    width: 170px;
+    position: relative;
+    top: 230px;
+    right: 100px;
+
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about-info {
+    top: -90px;
+  }
+  .about-heading {
+    font-size: 1.2rem;
+  }
+  #about-graphic {
+    width: 160px;
+    right: 90px;
+  }
+  .about-description {
+    font-size: .80rem;
+    width: 149%;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .about-info{
+    top: -60px;
+  }
+  .about-heading {
+    font-size: 1.2rem;
+  }
+  #about-graphic {
+    width: 120px;
+    right: 70px;
+    top: 197px;
+  }
+  .about-description {
+    font-size: .75rem;
+    width: 128%;
   }
 }
 
@@ -501,6 +629,13 @@ nav ul a:hover::before {
   }
 }
 
+.faq-column {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* FAQ Questions */
 .accordion-header {
   cursor: pointer;
@@ -528,7 +663,7 @@ nav ul a:hover::before {
 
 .active, .accordion-header:hover {
   cursor: pointer;
-  color: #d5cbef;
+  background-color: #2e1c40;
 }
 
 .accordion-body {
@@ -556,6 +691,19 @@ nav ul a:hover::before {
   }
   to {
       transform:rotate(360deg);
+  }
+}
+
+/* [Mobile] FAQ */
+@media only screen and (max-width: 600px) {
+  .faq-header {
+    font-size: 1.7rem;
+  }
+  .accordion-header p.faq-question {
+    font-size: .9rem;
+  }
+  .accordion-body p.faq-answer {
+    font-size: .8rem;
   }
 }
 
@@ -639,10 +787,24 @@ nav ul a:hover::before {
   height: 9rem;
 }
 
+.sponsor-image{
+  mix-blend-mode: multiply;
+}
+
 .sponsor-image:hover{
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transition: transform 0.3s;
+}
+
+/* [Mobile] Sponsors */
+@media only screen and (max-width: 736px) {
+  .sponsors-header {
+    font-size: 1.8rem;
+  }
+  .sponsorFooter {
+    font-size: .9rem;
+  }
 }
 
 footer {
