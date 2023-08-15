@@ -477,6 +477,28 @@ nav ul a:hover::before {
   height: 300px;
 }
 
+#about-past-projects{
+  margin: 10px 30px 20px 0px;
+  border-radius: 5px;
+  transition: transform 0.15s;
+  background-color: #292348;
+  border-color: #292348;
+  padding: 1vw 2vw;
+  font-size: large;
+}
+
+#about-past-projects a {
+  color: #d5cbef;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#about-past-projects:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
 /* [Mobile] About */
 @media only screen and (max-width: 600px) {
   .about {
