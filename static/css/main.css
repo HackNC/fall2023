@@ -716,21 +716,12 @@ nav ul a:hover::before {
   height: 5rem;
 }
 
-#CapitalOne-logo{
+#WellsFargo-logo {
+  height: 7rem; 
+}
+
+#Pearson-logo, #Lucid-logo, #Infosys-logo{
   height: 4rem;
-  width: 10rem;
-}
-
-#Infosys-logo {
-  height: 3rem; 
-}
-
-#CreditSuisse-logo{
-  height: 3rem;
-}
-
-#CoStar-logo, #Accenture-logo, #Genesys-logo, #Optum-logo, #UltraPress-logo{
-  height: 3rem;
 }
 
 #CapTech-logo {
