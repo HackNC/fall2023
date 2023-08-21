@@ -92,6 +92,17 @@ a {
   font-size: 3rem;
 }
 
+.banner-info .techortreat {
+  text-transform: lowercase;
+  font-style: italic;
+  color: #bb5c0e;
+  font-size: 3rem;
+  margin-top: 0.1rem; 
+  margin-bottom: 0.1rem; 
+}
+
+
+
 .banner-info .tagline {
   font-size: 4rem;
   text-transform: uppercase;
