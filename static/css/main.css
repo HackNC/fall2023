@@ -300,6 +300,9 @@ a {
   .hide-on-med-and-down {
     display: none !important;
   }
+  #mlh-trust-badge {
+    display: none !important;
+  }
 }
 
 .involve-button {
@@ -350,6 +353,10 @@ nav .home img {
 
 nav li:first-child {
   margin-right: auto;
+}
+
+nav li:last-child {
+  margin-right: 150px;
 }
 
 nav li {
