@@ -79,7 +79,7 @@ a {
   color: #d5cbef;  
 }
 
-.banner-info .apply {
+.banner-info .mobile-registration-link {
   margin-top: 40px;
   display: none;
   text-align: right;
@@ -175,7 +175,7 @@ a {
     margin-bottom: 0px;
   }
 
-  .banner-info .apply {
+  .banner-info .mobile-registration-link {
     text-decoration: none;
     background-color: #d5cbef;
     display:block;
@@ -188,7 +188,7 @@ a {
     font-size: 3vw;
   }
 
-  .banner-info .apply:last-child {
+  .banner-info .mobile-registration-link:last-child {
     margin-bottom: 0px;
   }
 
@@ -260,7 +260,7 @@ a {
     margin-bottom: 0px;
   }
 
-  .banner-info .apply {
+  .banner-info .mobile-registration-link {
     text-decoration: none;
     background-color: #d5cbef;
     display:block;
@@ -380,7 +380,7 @@ nav ul a {
   position: relative;
 }
 
-nav ul a.apply {
+nav ul a.mobile-registration-link {
   background-color: #a12027;
   height: 27px;
   padding: 0px 5px;
@@ -396,7 +396,7 @@ nav ul a.apply {
   -webkit-transform: translateY(-50%);
 }
 
-nav ul a.apply:hover {
+nav ul a.mobile-registration-link:hover {
   -webkit-transform: scale(1.05) translateY(-50%);
   transform: scale(1.05) translateY(-50%);
   transition: transform 0.3s;
@@ -406,7 +406,7 @@ nav ul a.apply:hover {
   top: 50%;
 }
 
-nav ul a.apply:hover::before {
+nav ul a.mobile-registration-link:hover::before {
   visibility: hidden;
 }
 
