@@ -110,9 +110,22 @@ a {
 .banner-info .countdown {
   color: #d5cbef;
   display: flex;
-  justify-content: center;
-  text-align: right;
-  align-items: right;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.countdown-text {
+  font-size: 1rem;
+}
+
+#days, #hours, #mins, #secs {
+  font-weight: bold;
 }
 
 .banner-info .countdown .time {
@@ -210,6 +223,16 @@ a {
   .banner-info .countdown {
     margin-left: 2%;
     text-align: center;
+    justify-content: center;
+  }
+
+  .countdown-number {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+
+  .countdown-text {
+    font-size: 1rem;
   }
 }
 
