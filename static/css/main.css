@@ -115,13 +115,28 @@ a {
   align-items: center;
 }
 
+.time {
+  background-color:#2e1c40;
+  border-radius: 10px;
+  border-color:#4a3974;
+  border-width: 1px;
+  border-style: solid;
+  width: 7vw;
+  height: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .countdown-number {
   font-size: 2rem;
-  margin: 0;
+  margin: 5px;
 }
 
 .countdown-text {
   font-size: 1rem;
+  margin: 5px;
 }
 
 #days, #hours, #mins, #secs {
@@ -296,8 +311,6 @@ a {
     font-size: 3vw;
   }
 
-  
-
   .banner-info .tagline {
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -330,20 +343,22 @@ a {
 
 .involve-button {
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 35px;
   transition: transform 0.15s;
   background-color: #d5cbef;
   border-color: #292348;
+  border-width: 1px;
+  border-style: solid;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  font-size: large;
+  font-size: 1rem;
   margin-right: 30px;
 }
 
 .involve-button a {
-  color: #292348;
+  color: #25173d;
   text-decoration: none;
   font-weight: bold;
 }
