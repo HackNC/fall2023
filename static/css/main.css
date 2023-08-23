@@ -55,7 +55,7 @@ a {
   background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/banner smoke.svg");
   background-position: 0% 0%, bottom;
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover; 
+  background-size: 89%, cover; 
   position: relative;
   padding-bottom: 80px;
 }
@@ -88,7 +88,8 @@ a {
 .banner-info .haunted {
   text-transform: lowercase;
   font-style: oblique;
-  color: #bb5c0e;
+  color: #d25f00;
+  text-shadow: #603f88 -3px 3px;
   font-size: 3rem;
 }
 
