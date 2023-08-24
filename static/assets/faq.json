@@ -5,23 +5,15 @@
     },
     {
         "question2": "Is this hackathon in-person or hybrid?",
-        "answer2": "This year, we are returning to a completely in-person hackathon! We have lots of fun events and workshops for you all and most importantly, free food!"
+        "answer2": "This year, we are running a completely in-person hackathon! We have lots of fun events and workshops for you all and most importantly, free food!"
     },
     {
-        "question1": "Will there still be swag?",
-        "answer1": "Yes, although we are only able to ship to within the continental United States. Make sure to indicate that you are interested in recieving swag when you apply."
+        "question1": "What if I've never hacked before?",
+        "answer1": "That's totally fine! We'll have plenty of resources to help you get started, including beginner workshops, mentors, and more."
     },
     {
-        "question2": "What if I've never hacked before?",
-        "answer2": "That's totally fine! We'll have plenty of resources to help you get started, including beginner workshops, mentors, and more."
-    },
-    {
-        "question1": "Can I hack?",
-        "answer1": "High schoolers over 18, undergraduates, and graduate students are welcome to participate as hackers. Professionals interested in mentorship should click the \"Get Involved\" link in the navbar to get started."
-    },
-    {
-        "question2": "What is a track?",
-        "answer2": "At a hackathon, a track is designed to help focus your ideas into one specific subject area. We have three tracks for you to choose from, including a general one intended for projects that don’t fit into one of the other two. "
+        "question2": "Can I hack?",
+        "answer2": "High schoolers over 18, undergraduates, and graduate students are welcome to participate as hackers. Professionals interested in mentorship should click the \"Mentor Registration\" button to get started."
     },
     {
         "question1": "How do teams work?",
@@ -29,7 +21,7 @@
     },
     {
         "question2": "Can I do a hardware hack?",
-        "answer2": "Unfortunately, we are unable to provide hardware this year due to the hybrid nature of our hackathon. However, you are still welcome to use your own hardware if you really want to!"
+        "answer2": "Unfortunately, we are unable to provide hardware this year. However, you are still welcome to use your own hardware if you really want to!"
     },
     {
         "question1": "Can I use old code?",

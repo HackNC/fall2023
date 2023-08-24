@@ -46,7 +46,7 @@ p {
 
 
 a {
-  color: red;
+  color: #23183b;
 }
 
 /* Main Banner */
@@ -628,6 +628,8 @@ nav ul a:hover::before {
   padding: 0 0 20vh 0;
   color: #d5cbef;
 }
+
+
 
 #faq-container {
   padding-top: 30px;
