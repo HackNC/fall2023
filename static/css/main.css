@@ -55,7 +55,7 @@ a {
   background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/banner smoke.svg");
   background-position: 0% 0%, bottom;
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover; 
+  background-size: 89%, cover; 
   position: relative;
   padding-bottom: 80px;
 }
@@ -88,7 +88,8 @@ a {
 .banner-info .haunted {
   text-transform: lowercase;
   font-style: oblique;
-  color: #bb5c0e;
+  color: #d25f00;
+  text-shadow:#292348 -3px 3px;
   font-size: 3rem;
 }
 
@@ -121,9 +122,37 @@ a {
 .banner-info .countdown {
   color: #d5cbef;
   display: flex;
-  justify-content: center;
-  text-align: right;
-  align-items: right;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+}
+
+.time {
+  background-color:#2e1c40;
+  border-radius: 10px;
+  border-color:#4a3974;
+  border-width: 1px;
+  border-style: solid;
+  width: 7vw;
+  height: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.countdown-text {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+#days, #hours, #mins, #secs {
+  font-weight: bold;
 }
 
 .banner-info .countdown .time {
@@ -157,10 +186,10 @@ a {
 
   #banner-graphic {
     display: block;
-    margin-left: 17%;
+    margin-left: 10%;
     margin-right: 10%;
-    width: 58%;
-    height: 55%;
+    width: 68%;
+    height: 68%;
   } 
 
   .banner-info {
@@ -215,11 +244,37 @@ a {
     font-weight: bold;
     font-size: 1.45rem;
     text-transform: capitalize;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
   }
 
   .banner-info .countdown {
     margin-left: 2%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .countdown-number {
+    margin: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .countdown-text {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .time {
+    background-color:#2e1c40;
+    border-radius: 10px;
+    border-color:#4a3974;
+    border-width: 1px;
+    border-style: solid;
+    width: 10vh;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 }
@@ -284,8 +339,6 @@ a {
     font-size: 3vw;
   }
 
-  
-
   .banner-info .tagline {
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -311,24 +364,29 @@ a {
   .hide-on-med-and-down {
     display: none !important;
   }
+  #mlh-trust-badge {
+    display: none !important;
+  }
 }
 
 .involve-button {
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 35px;
   transition: transform 0.15s;
   background-color: #d5cbef;
   border-color: #292348;
+  border-width: 1px;
+  border-style: solid;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  font-size: large;
+  font-size: 1rem;
   margin-right: 30px;
 }
 
 .involve-button a {
-  color: #292348;
+  color: #25173d;
   text-decoration: none;
   font-weight: bold;
 }
@@ -361,6 +419,10 @@ nav .home img {
 
 nav li:first-child {
   margin-right: auto;
+}
+
+nav li:last-child {
+  margin-right: 150px;
 }
 
 nav li {
@@ -396,7 +458,7 @@ nav ul a.mobile-registration-link {
   height: 27px;
   padding: 0px 5px;
   margin: 0px 10px;
-  border-radius: 5px;
+  border-radius: 50%;
   position: relative;
   top: 50%;
   font-size: 1.2rem;
