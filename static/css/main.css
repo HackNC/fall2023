@@ -70,7 +70,7 @@ a {
 }
 .hamburger-menu{
   position: fixed;
-  right: -50%;
+  right: -100%;
   transition: all 0.8s ease;
   z-index: 998;
   background-color: var(--hamburger-back-color);
