@@ -1,7 +1,10 @@
 * {
   font-family: 'Lora', serif;
 }
-
+:root{
+  --main-text-color:#d5cbef;
+  --hamburger-back-color: #292348;
+}
 html,
 body {
   font-size: 16px;
@@ -48,7 +51,50 @@ p {
 a {
   color: #23183b;
 }
+/* Hambuger Button in Mobile View */
+.hamburger-btn{
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c9";
+  appearance: none;
+  color: var(--main-text-color);
+  -webkit-text-stroke: 1px black;
+  visibility: hidden;
+  z-index: 999;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+}
+.hamburger-btn:checked::before{
+  font-size: 3rem;
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00d";
+}
+.hamburger-menu{
+  position: fixed;
+  right: -100%;
+  transition: all 0.8s ease;
+  z-index: 998;
+  background-color: var(--hamburger-back-color);
+  width: 50vw;
+  height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hamburger-menu *{
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 0.8cm;
+}
+@media only screen and (max-width: 993px) {
+  .hamburger-btn{
+    visibility: visible;
+  }
+  .hamburger-btn.fa-bars:checked + .hamburger-menu{
+    right: 0;
+  }
+}
 /* Main Banner */
 .splash {
   background-color: #292348;
