@@ -479,17 +479,23 @@ nav ul a:hover::before {
 }
 
 #about-past-projects{
-  margin: 10px 30px 20px 0px;
-  border-radius: 5px;
+  margin-top: 20px;
+  border-radius: 35px;
   transition: transform 0.15s;
-  background-color: #292348;
+  background-color: #d5cbef;
   border-color: #292348;
-  padding: 1vw 2vw;
-  font-size: large;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 1rem;
+  margin-right: 30px;
 }
 
 #about-past-projects a {
-  color: #d5cbef;
+  color: #292348;
   text-decoration: none;
   font-weight: bold;
 }
