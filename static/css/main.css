@@ -2,6 +2,11 @@
   font-family: 'Lora', serif;
 }
 
+:root {
+  --main-text-color: #d5cbef;
+  --hamburger-back-color: #292348;
+}
+
 html,
 body {
   font-size: 16px;
@@ -19,6 +24,7 @@ body {
     width: 90%;
   }
 }
+
 /* @media only screen and (max-width: 736px) {
   .container {
     width: 90%;
@@ -31,7 +37,7 @@ h1 {
   margin-top: 0px;
   text-align: center;
   font-size: 4vw;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 736px) {
@@ -46,7 +52,61 @@ p {
 
 
 a {
-  color: red;
+  color: #23183b;
+}
+
+/* Hambuger Button in Mobile View */
+.hamburger-btn {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9";
+  appearance: none;
+  color: var(--main-text-color);
+  -webkit-text-stroke: 1px black;
+  visibility: hidden;
+  z-index: 999;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+}
+
+.hamburger-btn:checked::before {
+  font-size: 3rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00d";
+}
+
+.hamburger-menu {
+  position: fixed;
+  right: -100%;
+  transition: all 0.8s ease;
+  z-index: 998;
+  background-color: var(--hamburger-back-color);
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburger-menu * {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 0.8cm;
+}
+
+@media only screen and (max-width: 993px) {
+  .hamburger-btn {
+    visibility: visible;
+  }
+
+  .hamburger-btn.fa-bars:checked+.hamburger-menu {
+    right: 0;
+  }
 }
 
 /* Main Banner */
@@ -55,7 +115,7 @@ a {
   background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/banner smoke.svg");
   background-position: 0% 0%, bottom;
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover; 
+  background-size: 89%, cover;
   position: relative;
   padding-bottom: 80px;
 }
@@ -76,10 +136,10 @@ a {
   position: absolute;
   right: 5px;
   top: 15vh;
-  color: #d5cbef;  
+  color: #d5cbef;
 }
 
-.banner-info .apply {
+.banner-info .mobile-registration-link {
   margin-top: 40px;
   display: none;
   text-align: right;
@@ -88,9 +148,21 @@ a {
 .banner-info .haunted {
   text-transform: lowercase;
   font-style: oblique;
-  color: #bb5c0e;
+  color: #d25f00;
+  text-shadow: #292348 -3px 3px;
   font-size: 3rem;
 }
+
+.banner-info .techortreat {
+  text-transform: lowercase;
+  font-style: italic;
+  color: #bb5c0e;
+  font-size: 2rem;
+  margin-top: -10px;
+  text-align: left;
+}
+
+
 
 .banner-info .tagline {
   font-size: 4rem;
@@ -110,9 +182,40 @@ a {
 .banner-info .countdown {
   color: #d5cbef;
   display: flex;
-  justify-content: center;
-  text-align: right;
-  align-items: right;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+}
+
+.time {
+  background-color: #2e1c40;
+  border-radius: 10px;
+  border-color: #4a3974;
+  border-width: 1px;
+  border-style: solid;
+  width: 7vw;
+  height: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.countdown-text {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+#days,
+#hours,
+#mins,
+#secs {
+  font-weight: bold;
 }
 
 .banner-info .countdown .time {
@@ -130,11 +233,11 @@ a {
 
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .splash {
-  /* background-repeat: no-repeat, no-repeat;
+    /* background-repeat: no-repeat, no-repeat;
   background-size: contain, cover; 
   position: relative;
   padding-bottom: 80px; */
-  min-height: 50vh;
+    min-height: 50vh;
   }
 
   .banner {
@@ -146,11 +249,11 @@ a {
 
   #banner-graphic {
     display: block;
-    margin-left: 17%;
+    margin-left: 10%;
     margin-right: 10%;
-    width: 58%;
-    height: 55%;
-  } 
+    width: 68%;
+    height: 68%;
+  }
 
   .banner-info {
     /* height: 20px; */
@@ -165,7 +268,7 @@ a {
     margin-left: -51%;
     color: #d5cbef;
     text-align: center;
-    
+
   }
 
   .banner-info .haunted {
@@ -175,10 +278,15 @@ a {
     margin-bottom: 0px;
   }
 
-  .banner-info .apply {
+  .banner-info .techortreat {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .banner-info .mobile-registration-link {
     text-decoration: none;
     background-color: #d5cbef;
-    display:block;
+    display: block;
     color: #292348;
     font-weight: bold;
     width: max-content;
@@ -188,7 +296,7 @@ a {
     font-size: 3vw;
   }
 
-  .banner-info .apply:last-child {
+  .banner-info .mobile-registration-link:last-child {
     margin-bottom: 0px;
   }
 
@@ -204,11 +312,37 @@ a {
     font-weight: bold;
     font-size: 1.45rem;
     text-transform: capitalize;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
   }
 
   .banner-info .countdown {
     margin-left: 2%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .countdown-number {
+    margin: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .countdown-text {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .time {
+    background-color: #2e1c40;
+    border-radius: 10px;
+    border-color: #4a3974;
+    border-width: 1px;
+    border-style: solid;
+    width: 10vh;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 }
@@ -237,7 +371,7 @@ a {
     margin-right: 10%;
     width: 58%;
     height: 55%;
-  } 
+  }
 
   .banner-info {
     width: 100%;
@@ -250,7 +384,7 @@ a {
     margin-left: -51%;
     color: #d5cbef;
     text-align: center;
-    
+
   }
 
   .banner-info .haunted {
@@ -260,10 +394,10 @@ a {
     margin-bottom: 0px;
   }
 
-  .banner-info .apply {
+  .banner-info .mobile-registration-link {
     text-decoration: none;
     background-color: #d5cbef;
-    display:block;
+    display: block;
     color: #292348;
     font-weight: bold;
     width: max-content;
@@ -272,8 +406,6 @@ a {
     border-radius: 5px;
     font-size: 3vw;
   }
-
-  
 
   .banner-info .tagline {
     font-size: 1.7rem;
@@ -300,24 +432,30 @@ a {
   .hide-on-med-and-down {
     display: none !important;
   }
+
+  #mlh-trust-badge {
+    display: none !important;
+  }
 }
 
 .involve-button {
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 35px;
   transition: transform 0.15s;
   background-color: #d5cbef;
   border-color: #292348;
+  border-width: 1px;
+  border-style: solid;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  font-size: large;
+  font-size: 1rem;
   margin-right: 30px;
 }
 
 .involve-button a {
-  color: #292348;
+  color: #25173d;
   text-decoration: none;
   font-weight: bold;
 }
@@ -352,6 +490,10 @@ nav li:first-child {
   margin-right: auto;
 }
 
+nav li:last-child {
+  margin-right: 150px;
+}
+
 nav li {
   margin: 0px 15px 0px 15px;
   list-style-type: none;
@@ -380,12 +522,12 @@ nav ul a {
   position: relative;
 }
 
-nav ul a.apply {
+nav ul a.mobile-registration-link {
   background-color: #a12027;
   height: 27px;
   padding: 0px 5px;
   margin: 0px 10px;
-  border-radius: 5px;
+  border-radius: 50%;
   position: relative;
   top: 50%;
   font-size: 1.2rem;
@@ -396,7 +538,7 @@ nav ul a.apply {
   -webkit-transform: translateY(-50%);
 }
 
-nav ul a.apply:hover {
+nav ul a.mobile-registration-link:hover {
   -webkit-transform: scale(1.05) translateY(-50%);
   transform: scale(1.05) translateY(-50%);
   transition: transform 0.3s;
@@ -406,7 +548,7 @@ nav ul a.apply:hover {
   top: 50%;
 }
 
-nav ul a.apply:hover::before {
+nav ul a.mobile-registration-link:hover::before {
   visibility: hidden;
 }
 
@@ -440,7 +582,7 @@ nav ul a:hover::before {
 /* About */
 .about {
   background: #4a3974 url("/static/assets/images/halloween-art/about\ smoke.svg") no-repeat center center;
-  background-size: cover; 
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -450,7 +592,7 @@ nav ul a:hover::before {
 
 .about-description {
   background-color: #d5cbef;
-  color:#23183b;
+  color: #23183b;
   border-radius: 5px;
   border-color: #23183b;
   padding: 1rem;
@@ -511,20 +653,24 @@ nav ul a:hover::before {
   .about {
     min-height: 0vh;
   }
+
   .about-info {
     position: relative;
     top: -110px;
   }
+
   .about-heading {
     font-size: 1.4rem;
     width: max-content;
   }
+
   .about-description {
     font-size: .8rem;
     margin-bottom: 10px;
     width: 145%;
     margin-right: 5px;
   }
+
   #about-graphic {
     width: 170px;
     position: relative;
@@ -533,17 +679,21 @@ nav ul a:hover::before {
 
   }
 }
+
 @media only screen and (max-width: 375px) {
   .about-info {
     top: -90px;
   }
+
   .about-heading {
     font-size: 1.2rem;
   }
+
   #about-graphic {
     width: 160px;
     right: 90px;
   }
+
   .about-description {
     font-size: .80rem;
     width: 149%;
@@ -552,17 +702,20 @@ nav ul a:hover::before {
 
 
 @media only screen and (max-width: 320px) {
-  .about-info{
+  .about-info {
     top: -60px;
   }
+
   .about-heading {
     font-size: 1.2rem;
   }
+
   #about-graphic {
     width: 120px;
     right: 70px;
     top: 197px;
   }
+
   .about-description {
     font-size: .75rem;
     width: 128%;
@@ -580,12 +733,14 @@ nav ul a:hover::before {
   color: #d5cbef;
 }
 
+
+
 #faq-container {
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   margin: -1vw;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 #faq-container div {
@@ -639,12 +794,13 @@ nav ul a:hover::before {
 }
 
 .accordion-header p.faq-question {
-  margin: 5px; 
+  margin: 5px;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-.active, .accordion-header:hover {
+.active,
+.accordion-header:hover {
   cursor: pointer;
   background-color: #2e1c40;
 }
@@ -670,10 +826,11 @@ nav ul a:hover::before {
 
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -682,9 +839,11 @@ nav ul a:hover::before {
   .faq-header {
     font-size: 1.7rem;
   }
+
   .accordion-header p.faq-question {
     font-size: .9rem;
   }
+
   .accordion-body p.faq-answer {
     font-size: .8rem;
   }
@@ -697,11 +856,11 @@ nav ul a:hover::before {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
-  padding:  0 0 15vh 0;
+  padding: 0 0 15vh 0;
   color: #d5cbef;
 }
 
-#sponsor-section{
+#sponsor-section {
   display: flex;
   flex-direction: column;
 }
@@ -719,7 +878,7 @@ nav ul a:hover::before {
 }
 
 .sponsor-email {
-  color:#796bae;
+  color: #796bae;
 }
 
 .sponsor-container {
@@ -736,33 +895,28 @@ nav ul a:hover::before {
   padding: 4rem;
 }
 
-#JohnDeere-logo{
+#JohnDeere-logo {
   height: 7rem;
   width: 10rem;
 }
 
-#KTP-logo, #DeutscheBank-logo{
+#KTP-logo,
+#DeutscheBank-logo {
   height: 5rem;
 }
 
-#CapitalOne-logo{
+#WellsFargo-logo {
+  height: 7rem;
+}
+
+#Pearson-logo,
+#Infosys-logo,
+#Cisco-logo {
   height: 4rem;
-  width: 10rem;
 }
 
-#Infosys-logo {
-  height: 3rem; 
-}
-
-#CreditSuisse-logo{
-  height: 3rem;
-}
-
-#CoStar-logo, #Accenture-logo, #Genesys-logo, #Optum-logo, #UltraPress-logo{
-  height: 3rem;
-}
-
-#CapTech-logo {
+#CapTech-logo,
+#Revvity-logo {
   height: 6rem;
 }
 
@@ -770,11 +924,15 @@ nav ul a:hover::before {
   height: 9rem;
 }
 
-.sponsor-image{
+#Principal-logo {
+  height: 11rem;
+}
+
+.sponsor-image {
   mix-blend-mode: multiply;
 }
 
-.sponsor-image:hover{
+.sponsor-image:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transition: transform 0.3s;
@@ -785,6 +943,7 @@ nav ul a:hover::before {
   .sponsors-header {
     font-size: 1.8rem;
   }
+
   .sponsorFooter {
     font-size: .9rem;
   }
@@ -796,7 +955,7 @@ footer {
   color: #d5cbef;
   font-size: 1.3rem;
   text-align: center;
-  padding-bottom:5vh;
+  padding-bottom: 5vh;
 }
 
 footer p {
@@ -808,6 +967,7 @@ footer p {
     height: 15vh;
   }
 }
+
 footer a {
   color: #d5cbef;
   margin: 0 10px;
