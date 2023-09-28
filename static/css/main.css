@@ -617,6 +617,35 @@ nav ul a:hover::before {
 
 #about-graphic {
   height: 300px;
+  float: right;
+}
+
+#about-past-projects{
+  margin-top: 20px;
+  border-radius: 35px;
+  transition: transform 0.15s;
+  background-color: #d5cbef;
+  border-color: #292348;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 1rem;
+  margin-right: 30px;
+}
+
+#about-past-projects a {
+  color: #292348;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#about-past-projects:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transition: transform 0.3s;
 }
 
 /* [Mobile] About */
