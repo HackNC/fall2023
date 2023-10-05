@@ -212,6 +212,13 @@ nav ul a.selected {
   to {opacity: 1}
 }
 
+.mySlides > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* slide show end */
 
 #yeti {
