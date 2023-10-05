@@ -10,6 +10,25 @@
   text-align: center;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: calc(15% - 20px); /* 25% width with some spacing */
+  margin-right: 20px; /* Adjust spacing between columns */
+  margin-bottom: 20px; /* Adjust spacing between rows */
+}
+
+/* Add responsive styles for smaller screens if needed */
+@media screen and (max-width: 768px) {
+  .column {
+      flex-basis: calc(50% - 20px); /* Two columns for smaller screens */
+  }
+}
+
 html,
 body {
   background-color: #292348;
