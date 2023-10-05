@@ -18,8 +18,8 @@
 
 .column {
   flex-basis: calc(15% - 20px); /* 25% width with some spacing */
-  margin-right: 20px; /* Adjust spacing between columns */
-  margin-bottom: 20px; /* Adjust spacing between rows */
+  margin-right: 10px; /* Adjust spacing between columns */
+  margin-bottom: 10px; /* Adjust spacing between rows */
 }
 
 /* Add responsive styles for smaller screens if needed */
@@ -335,8 +335,8 @@ nav ul a.selected {
 	padding: 1rem;
 	text-decoration:none;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   float: left;
   text-align: center;
   width: 15vw;
