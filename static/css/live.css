@@ -12,7 +12,7 @@
 
 html,
 body {
-  background-color: #882323;
+  background-color: #292348;
   font-family: "Quicksand";
   font-size: 16px;
   margin: 0;
@@ -79,7 +79,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 99;
-  background-color: #EB6566;
+  background-color: #A49EE0;
   font-family: "Quicksand";
   box-shadow: 0px 0px 8px #000000;
   text-align: center;
@@ -146,9 +146,9 @@ nav ul a.selected {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -162,7 +162,7 @@ nav ul a.selected {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  color: #858585;
 }
 
 /* Caption text */
@@ -202,7 +202,7 @@ nav ul a.selected {
 }
 
 /* Fading animation */
-.fade {
+/* .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -210,9 +210,9 @@ nav ul a.selected {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
+} */
 
-.mySlides > img {
+.mySlides > a > img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -283,6 +283,52 @@ nav ul a.selected {
   max-width: 90vw;
   margin-left: 5vw;
   margin-right: 5vw;
+}
+.HackNCButton2020 {
+	background-color: #292348;
+	border-radius:5px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:22px;
+	padding: 1rem 1rem;
+	text-decoration:none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+}
+.HackNCButton2020:hover {
+	background-color: #A49EE0;
+}
+.HackNCButton2020:active {
+	position:relative;
+	top:1px;
+}
+
+.resource-button {
+	background-color: #292348;
+	border-radius:20px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	padding: 1rem;
+	text-decoration:none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+  text-align: center;
+  width: 15vw;
+  height: 7vw;
+}
+.resource-button:hover {
+	background-color: #A49EE0;
+}
+.resource-button:active {
+	position:relative;
+	top:1px;
 }
 
 #mobile-nav-div {
