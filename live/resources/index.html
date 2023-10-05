@@ -51,144 +51,151 @@
                 <li><a href="/live/resources">Resources</a></li>
             </ul>
         </div>
-         <!-- Slideshow container -->
-         <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="../../static/assets/images/past-projects/brevity.jpeg" style="width:100%">
-                <div class="text">Caption Text</div>
-              </div>
-            
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="../../static/assets/images/past-projects/brevity.jpeg" style="width:100%">
-                <div class="text">Caption Two</div>
-              </div>
-            
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="../../static/assets/images/past-projects/brevity.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-              </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
         <div class="container">
             <div id="resources" class="card full-width">
-                <h1>WIFI For the Event: </h1>
-                <div class="container">
-                    <div id="links" class="card">
-                        <div>
-                            <p> <b>Username:</b> <br>UNC-HackNC<br> <b>Password:</b> 2021FetzerHackNC </p>
+                <div class="past-winner-section">
+                    <nav class="mobile-nav">
+                        <img onclick="getElementById('mobile-nav-div').classList.add('active')"
+                            src="../../static/assets/images/hamburger.png">
+                    </nav>
+                    <div id="mobile-nav-div">
+                        <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
+                            src="../../static/assets/images/x.png">
+                        <ul>
+                            <li><a href="/">HackNC</a></li>
+                            <li><a class="selected" href="/live">Live</a></li>
+                            <li><a href="/live/schedule">Schedule</a></li>
+                            <li><a href="/live/prizes">Tracks/Prizes</a></li>
+                            <li><a href="/live/resources">Resources</a></li>
+                        </ul>
+                    </div>
+                            <!-- Slideshow container -->
+                    <div class="slideshow-container">
 
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="../../static/assets/images/past-projects/brevity.jpeg" style="width:100%">
+                            <div class="text">Caption Text</div>
                         </div>
 
-                    </div>
-                </div>
-
-                <br>
-                <h1>Hacker Guide</h1>
-                <div class="container">
-                    <div id="links" class="card">
-                        <div>
-                            <a
-                                href="https://docs.google.com/document/d/1bBz7pL9GsCa99OKpBAR_fskHtJVXd61gb5DHy8tiRN0/edit#heading=h.h9pimw3ucgpv">HackNC
-                                2021 Hacker Guide</a>
-
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="../../static/assets/images/past-projects/brevity.jpeg" style="width:100%">
+                            <div class="text">Caption Two</div>
                         </div>
 
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="../../static/assets/images/past-projects/brevity.jpeg" style="width:100%">
+                            <div class="text">Caption Three</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-                </div>
+                    <br>
 
-
-                <h1>Technical Resources</h1>
-                <div class="container">
-                    <div class="card full-width">
-                        <h2 style="text-align: center;">Sponsors</h2>
-                        <h3>Square</h3>
-                        <ul>
-                            <li><a href="https://developer.squareup.com/docs">Square Developer Docs</a></li>
-                            <li><a href="https://developer.squareup.com/docs/orders-api/quick-start/start">Orders API
-                                    Quick
-                                    Start</a></li>
-                            <li><a
-                                    href="https://github.com/square/connect-api-examples/tree/master/connect-examples/v2/node_orders-payments">Order-Ahead
-                                    Sample App GitHub Repo</a></li>
-                        </ul>
-                        <h3>Capital One</h3>
-                        <ul>
-                            <li>
-                                <a href="http://api.reimaginebanking.com">Nessie API</a> - Capital One’s Hackathon API
-                                that
-                                gives you access to a multitude of real public-facing data - such as ATM and bank branch
-                                locations - along with mock customer account data.
-                            </li>
-                        </ul>
-                        <h3>Google Cloud</h3>
-                        <ul>
-                            <li><a href="http://goo.gle/hackathon-toolkit">Google Cloud Hackathon Toolkit</a></li>
-                        </ul>
-
-
-
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
-                    <div class="card half-width">
-                        <h2 style="text-align: center;">APIs/Tools</h2>
-                        <h3>Communication</h3>
-                        <ul>
-                            <li><a href="https://www.twilio.com/docs">Twilio’s Communication APIs</a></li>
-                            <li><a href="https://newsapi.org/docs/get-started">NewsAPI</a></li>
-                            <li><a href="https://www.yelp.com/developers">Yelp</a></li>
-                        </ul>
-                        <h3>Social Media</h3>
-                        <ul>
-                            <li><a href="https://developer.twitter.com/en">Twitter’s APIs</a></li>
-                            <li><a href="https://developers.facebook.com/">Facebook For Developers</a></li>
-                        </ul>
-                        <h3>Geolocation</h3>
-                        <ul>
-                            <li><a href="https://developers.google.com/maps/documentation">Google Maps</a></li>
-                            <li><a href="https://developer.here.com/">HERE Technologies Developer</a></li>
-                            <li><a href="https://developers.arcgis.com/documentation/">ArcGIS</a></li>
-                        </ul>
-                        <h3>Machine Learning</h3>
-                        <ul>
-                            <li><a href="https://www.ibm.com/watson/developer-resources/">IBM Watson</a></li>
-                            <li><a href="https://cloud.google.com/dialogflow/docs/quick">Google Dialogflow (Text/Voice
-                                    Interfaces)</a></li>
-                        </ul>
-                    </div>
-                    <div class="card half-width">
-                        <h2 style="text-align: center;">Starter Packs</h2>
-                        <h3>MLH</h3>
-                        <ul>
-                            <li><a href="https://hack.mlh.io/learn/">Hackathon Starter Kits & Guides</a></li>
-                        </ul>
-                        <h3>IBM</h3>
-                        <ul>
-                            <li><a href="https://github.com/Call-for-Code/Solution-Starter-Kit-Cooperation-2020">COVID-19
-                                    Cooperation Starter Kit</a></li>
-                            <li><a href="https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020">COVID-19
-                                    Communication Starter Kit</a></li>
-                            <li><a href="https://github.com/Call-for-Code/Solution-Starter-Kit-Education-2020">COVID-19
-                                    Education Starter Kit</a></li>
-                        </ul>
-                    </div>
+                    <div class="container">
+                        <div id="resources" class="card full-width">
+                            <div class="past-winner-section">
+                                <nav class="mobile-nav">
+                                    <img onclick="getElementById('mobile-nav-div').classList.add('active')"
+                                        src="../../static/assets/images/hamburger.png">
+                                </nav>
+                                <div id="mobile-nav-div">
+                                    <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
+                                        src="../../static/assets/images/x.png">
+                                    <ul>
+                                        <li><a href="/">HackNC</a></li>
+                                        <li><a class="selected" href="/live">Live</a></li>
+                                        <li><a href="/live/schedule">Schedule</a></li>
+                                        <li><a href="/live/prizes">Tracks/Prizes</a></li>
+                                        <li><a href="/live/resources">Resources</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Slideshow container -->
 
-                </div>
-            </div>
+                                <div class="flex-container">
+
+                                    <h3>Basic Resources</h3>
+
+                                </div>
+                                <div class="past-winner-container">
+                                    <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601"
+                                        class="resource-button" target="_blank">
+                                        <p class="resource-text">WTF is a Hackathon?</p>
+                                    </a>
+                                    <a href="https://sendgrid.com/blog/prepare-hackathon/" class="resource-button"
+                                        target="_blank">
+                                        <p class="resource-text">How to Prepare for a Hackathon</p>
+                                    </a>
+                                    <a href="https://news.mlh.io/your-first-hackathon-10-07-2013"
+                                        class="resource-button" target="_blank">
+                                        <p class="resource-text">Your First Hackathon</p>
+                                    </a>
+                                    <a href="https://medium.com/@xinisterlayer/hackathon-ing-as-a-non-developer-ec994e50458c"
+                                        class="resource-button" target="_blank">
+                                        <p class="resource-text">Hackathon-ing as a Non-Developer</p>
+                                    </a>
+                                    <a href="https://www.wolframcloud.com/objects/microsites/ProjectGenerator/idea?n=526"
+                                        class="resource-button" target="_blank">
+                                        <p class="resource-text">Hackathon Idea Generator</p>
+                                    </a>
+                                    <a href="https://hackthenorth.medium.com/building-projects-effectively-at-hackathons-997e5b1c2b1d"
+                                        class="resource-button" target="_blank">
+                                        <p class="resource-text">Building Projects at Hackathons</p>
+                                    </a>
+                                    <a href="https://techcrunch.com/2014/09/01/how-to-crush-your-hackathon-demo/"
+                                        class="resource-button" target="_blank">
+                                        <p class="resource-text">How to Crush Your Hackathon Demo</p>
+                                    </a>
+                                    <a href="https://girlknowstech.com/10-tips-win-hackathon/" class="resource-button"
+                                        target="_blank">
+                                        <p class="resource-text">10 Tips to Win Your Next Hackathon</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="card">
+                                    <h2 style="text-align: center;">APIs/Tools</h2>
+                                    <h3>Communication</h3>
+                                    <ul>
+                                        <li><a href="https://www.twilio.com/docs">Twilio’s Communication APIs</a></li>
+                                        <li><a href="https://newsapi.org/docs/get-started">NewsAPI</a></li>
+                                        <li><a href="https://www.yelp.com/developers">Yelp</a></li>
+                                    </ul>
+                                    <h3>Social Media</h3>
+                                    <ul>
+                                        <li><a href="https://developer.twitter.com/en">Twitter’s APIs</a></li>
+                                        <li><a href="https://developers.facebook.com/">Facebook For Developers</a></li>
+                                    </ul>
+                                    <h3>Geolocation</h3>
+                                    <ul>
+                                        <li><a href="https://developers.google.com/maps/documentation">Google Maps</a>
+                                        </li>
+                                        <li><a href="https://developer.here.com/">HERE Technologies Developer</a></li>
+                                        <li><a href="https://developers.arcgis.com/documentation/">ArcGIS</a></li>
+                                    </ul>
+                                    <h3>Machine Learning</h3>
+                                    <ul>
+                                        <li><a href="https://www.ibm.com/watson/developer-resources/">IBM Watson</a>
+                                        </li>
+                                        <li><a href="https://cloud.google.com/dialogflow/docs/quick">Google Dialogflow
+                                                (Text/Voice
+                                                Interfaces)</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
 
     </main>
 

@@ -248,6 +248,36 @@ nav ul a.selected {
     margin: 15px;
   }
 }
+
+.past-winner-section {
+  padding: 1.5rem;
+}
+
+.past-winner-box {
+  border-radius: 5px;
+  background-color: #a1e8f7;
+  width: 60vw;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.past-winner-box-h3 {
+  margin: 0;
+}
+
+.past-winner-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
 #mobile-nav-div {
   display: none;
   background-color: #F7F2D8;
