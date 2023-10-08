@@ -620,7 +620,7 @@ nav ul a:hover::before {
   float: right;
 }
 
-#about-past-projects{
+#about-past-projects {
   margin-top: 20px;
   border-radius: 35px;
   transition: transform 0.15s;
@@ -905,7 +905,8 @@ nav ul a:hover::before {
   height: 5rem;
 }
 
-#WellsFargo-logo {
+#WellsFargo-logo,
+#StickerMule-logo {
   height: 7rem;
 }
 
