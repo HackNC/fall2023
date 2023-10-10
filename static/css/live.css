@@ -10,12 +10,60 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
 html,
 body {
-  background-color: #882323;
+  background-color: #3c2654;
+  background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  -webkit-background-size: contain, contain;
+  -moz-background-size: contain, contain;
+  -o-background-size: contain, contain;
+  padding-bottom: 0px;
   font-family: "Quicksand";
   font-size: 16px;
   margin: 0;
+}
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 2000px) {
+  html,
+  body {
+    background-color: #3c2654;
+    background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
+    
+    background-position: left top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px, contain;
+    /*-webkit-background-size: contain, contain;
+    -moz-background-size: contain, contain;
+    -o-background-size: contain, contain;*/
+    padding-bottom: 0px;
+    font-family: "Quicksand";
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 2001px) {
+  html,
+  body {
+    background-color: #3c2654;
+    background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
+    
+    background-position: left top, center bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px, contain;
+    -webkit-background-size: 1200px, contain;
+    -moz-background-size: 1200px, contain;
+    -o-background-size: 1200px, contain;
+    padding-bottom: 0px;
+    font-family: "Quicksand";
+    font-size: 16px;
+    margin: 0;
+  }
 }
 
 h2 {
