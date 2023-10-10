@@ -12,16 +12,16 @@ var myfunc = setInterval(function () {
 
     if (timeleft < 0) {
       clearInterval(myfunc);
-      document.getElementById("days").innerHTML = ""
-      document.getElementById("hours").innerHTML = "" 
-      document.getElementById("mins").innerHTML = ""
-      document.getElementById("secs").innerHTML = ""
-      document.getElementById("end").innerHTML = "00:00:00";
+      document.getElementById("days").innerText = ""
+      document.getElementById("hours").innerText = "" 
+      document.getElementById("mins").innerText = ""
+      document.getElementById("secs").innerText = ""
+      document.getElementById("end").innerText = "00:00:00";
   } else {
-      document.getElementById("days").innerHTML = days
-      document.getElementById("hours").innerHTML = hours
-      document.getElementById("mins").innerHTML = minutes
-      document.getElementById("secs").innerHTML = seconds
+      document.getElementById("days").innerText = days
+      document.getElementById("hours").innerText = hours
+      document.getElementById("mins").innerText = minutes
+      document.getElementById("secs").innerText = seconds
   }
 }, 1000);
 
