@@ -133,7 +133,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 99;
-  background-color: #EB6566;
+  background-color: #A49EE0;
   font-family: "Quicksand";
   box-shadow: 0px 0px 8px #000000;
   text-align: center;
@@ -164,7 +164,7 @@ nav ul a {
 }
 
 nav ul a.selected {
-  color: #882323;
+  color: #3C2653;
 }
 
 .card {
