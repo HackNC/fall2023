@@ -1,11 +1,5 @@
-@font-face {
-  font-family: "Creepster";
-  src: url("/static/assets/Creepster-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: DellmonteSans;
-  src: url("/static/assets/dellmonte-sans.otf") format("opentype");
+* {
+  font-family: 'Lora', serif;
 }
 
 .center {
@@ -25,7 +19,6 @@
     -moz-background-size: contain, contain;
     -o-background-size: contain, contain;
     padding-bottom: 0px;
-    font-family: "Quicksand";
     font-size: 16px;
     margin: 0;
   }
@@ -42,7 +35,6 @@
     background-repeat: no-repeat, no-repeat;
     background-size: 1200px, contain;
     padding-bottom: 0px;
-    font-family: "Quicksand";
     font-size: 16px;
     margin: 0;
   }
@@ -62,7 +54,6 @@
     -moz-background-size: 1200px, contain;
     -o-background-size: 1200px, contain;
     padding-bottom: 0px;
-    font-family: "Quicksand";
     font-size: 16px;
     margin: 0;
   }
@@ -101,7 +92,6 @@ h2 {
 
 h1 {
   letter-spacing: 0.075em;
-  font-family: "lobster two";
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -127,16 +117,30 @@ a {
   padding: 35px 0px 5px 0px;
 }
 
+/* Nav Bar */
 nav {
   width: 100%;
   height: 64px;
   position: fixed;
   top: 0;
   z-index: 99;
-  background-color: #A49EE0;
-  font-family: "Quicksand";
+  background-color: #292348;
   box-shadow: 0px 0px 8px #000000;
   text-align: center;
+}
+
+nav .home {
+  display: flex;
+  align-items: center;
+}
+
+nav .home img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav li:first-child {
+  margin-right: auto;
 }
 
 nav li {
@@ -145,17 +149,21 @@ nav li {
 }
 
 nav ul {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
   margin: auto;
   padding: 0px;
 }
 
 nav ul a {
   cursor: pointer;
+  text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  color: #F7F2D8;
+  color: #d5cbef;
   padding: 0px 10px;
   height: 64px;
   font-size: 1.5rem;
@@ -164,7 +172,7 @@ nav ul a {
 }
 
 nav ul a.selected {
-  color: #3C2653;
+  color: #4a3974;
 }
 
 .card {
