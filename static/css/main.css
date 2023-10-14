@@ -951,6 +951,14 @@ nav ul a:hover::before {
   height: 11rem;
 }
 
+#Zilliz-logo {
+  height: 8rem;
+}
+
+#PSTC-logo {
+  height: 7rem;
+}
+
 .sponsor-image {
   mix-blend-mode: multiply;
 }
