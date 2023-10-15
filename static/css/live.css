@@ -177,6 +177,7 @@ nav {
   background-color: #292348;
   box-shadow: 0px 0px 8px #000000;
   text-align: center;
+  position: sticky;
 }
 
 nav .home {
