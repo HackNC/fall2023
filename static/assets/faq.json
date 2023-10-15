@@ -8,16 +8,24 @@
         "answer2": "This year, we are running a completely in-person hackathon! We have lots of fun events and workshops for you all and most importantly, free food!"
     },
     {
-        "question1": "What if I've never hacked before?",
-        "answer1": "That's totally fine! We'll have plenty of resources to help you get started, including beginner workshops, mentors, and more."
+        "question1": "Can I still register?",
+        "answer1": "Yes! Registration will remain open until the day of the event! (Until Friday, Oct 27th)"
     },
     {
-        "question2": "Can I hack?",
-        "answer2": "High schoolers over 18, undergraduates, and graduate students are welcome to participate as hackers. Professionals interested in mentorship should click the \"Mentor Registration\" button to get started."
+        "question2": "Do I have to be present all day? Do I have to show up on Friday?",
+        "answer2": "Nope! Hackers are free to leave and come back whenever on all three days as long as they check in. Attendance is voluntary, but if you’re submitting a project, make sure to be there during judging on Sunday!"
+    },
+    {
+        "question1": "Do I need extensive coding knowledge for HackNC?",
+        "answer1": "Not at all! HackNC is a completely beginner friendly event, and we have a project track specifically for beginners. We'll have plenty of resources to help you get started, including beginner workshops, mentors, and more."
+    },
+    {
+        "question2": "I don’t go to UNC, can I still hack?",
+        "answer2": "High schoolers over 18, undergraduates, and graduate students from any school are welcome to participate as hackers. Professionals interested in mentorship should click the \"Mentor Registration\" button above to get started."
     },
     {
         "question1": "How do teams work?",
-        "answer1": "Teams can be organized prior to HackNC or during the event itself. We will host team building and pitch events before hacking begins. We don’t hold a strict limit on your team size, but we strongly recommend around 3-4 members. Prizes will be limited to a maximum of 4 members."
+        "answer1": "Teams can be organized prior to HackNC or during the event itself. We have a team building event on Friday (Oct 27th). If you are already in a team, then you’re all set! You just have to write your members’ names on the Devpost submission. We don’t hold a strict limit on your team size, but we strongly recommend around 3-4 members. Prizes will be limited to a maximum of 4 members. "
     },
     {
         "question2": "Can I do a hardware hack?",
@@ -26,6 +34,22 @@
     {
         "question1": "Can I use old code?",
         "answer1": "You may use all the publicly available code and APIs that you want, but the code you will be judged on at the end of the hackathon must be new."
+    },
+    {
+        "question2": "When will we get a schedule for the event?",
+        "answer2": "Hacker schedules will be sent out the week before to people who are registered and posted on our website!"
+    },
+    {
+        "question1": "I’m committed to this project. Are there places to sleep at the event?",
+        "answer1": "Yep! We will provide bedding at Fetzer Gym in designated sleeping areas."
+    },
+    {
+        "question2": "Is this a Campus Life Experience?",
+        "answer2": "Yes! UNC students will be able to receive CLE credit by attending this event."
+    },
+    {
+        "question1": "I’m coming to HackNC from afar. Are there reimbursements for travel?",
+        "answer1": "Regrettably, we are unable to provide travel reimbursements this year due to budget limitations. We’d love to see you here, though!"
     },
     {
         "question2": "You didn’t answer my question!",

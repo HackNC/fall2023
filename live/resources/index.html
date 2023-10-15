@@ -15,9 +15,8 @@
 
     <title>HackNC 2023</title>
     <link rel="icon" type="image/png" sizes="32x32" href="static/assets/images/halloween-art/purple-favicon.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
-        rel="stylesheet">
 
+    <!-- Load Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,9 +33,8 @@
     <main id="content container">
         <nav class="hide-on-med-and-down">
             <ul>
-                <!-- TO-DO: Change logo -->
                 <li>
-                    <a href="#home">
+                    <a href="/">
                         <div class="home">
                             <img src="/static/assets/images/halloween-art/ram.svg" />
                             HackNC
@@ -46,10 +44,10 @@
                 <li><a href="/live">Live</a></li>
                 <li><a href="/live/schedule">Schedule</a></li>
                 <li><a href="/live/prizes">Tracks/Prizes</a></li>
-                <li><a href="/live/resources">Resources</a></li>
+                <li><a class="selected" href="/live/resources">Resources</a></li>
             </ul>
         </nav>
-    
+
         <nav class="mobile-nav">
             <img onclick="getElementById('mobile-nav-div').classList.add('active')"
                 src="../../static/assets/images/hamburger.png">
@@ -59,10 +57,10 @@
                 src="../../static/assets/images/x.png">
             <ul>
                 <li><a href="/">HackNC</a></li>
-                <li><a class="selected" href="/live">Live</a></li>
+                <li><a href="/live">Live</a></li>
                 <li><a href="/live/schedule">Schedule</a></li>
                 <li><a href="/live/prizes">Tracks/Prizes</a></li>
-                <li><a href="/live/resources">Resources</a></li>
+                <li><a class="selected" href="/live/resources">Resources</a></li>
             </ul>
         </div>
         <div class="container">
@@ -79,10 +77,14 @@
                                 <img src="../../static/assets/images/past-projects/brevity.png" style="width:50%">
                             </a>
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/brevity-sh05n6" class="slidelink" target="_blank">Brevity</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/brevity-sh05n6" class="slidelink"
+                                        target="_blank">Brevity</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Brevity is a chrome extension that programmatically ranks your emails based on their urgency and importance. Additionally, Brevity provides a short summary of each email, captured by only a few sentences.
+                                    Brevity is a chrome extension that programmatically ranks your emails based on their
+                                    urgency and importance. Additionally, Brevity provides a short summary of each
+                                    email, captured by only a few sentences.
                                 </div>
                             </div>
                             <!-- <div class="text">Caption Text</div> -->
@@ -94,10 +96,17 @@
                                     src="../../static/assets/images/past-projects/crittr.png" style="width:50%"></a>
                             <!-- <div class="text">Caption Two</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/crittr" class="slidelink" target="_blank">Crittr</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/crittr" class="slidelink"
+                                        target="_blank">Crittr</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Using geographic data, Crittr creates public forums, or "bubbles," buildings across the UNC campus. Much like other social media platforms, posts can be upvoted or downvoted based on their merit, and posts are deleted after 24 hours to keep bubbles relevant. However, there's a twist -- while bubbles can be read from anywhere, they can only be written from within their vicinity. This location requirement keeps bubbles authentic, and brings community members closer to one another.
+                                    Using geographic data, Crittr creates public forums, or "bubbles," buildings across
+                                    the UNC campus. Much like other social media platforms, posts can be upvoted or
+                                    downvoted based on their merit, and posts are deleted after 24 hours to keep bubbles
+                                    relevant. However, there's a twist -- while bubbles can be read from anywhere, they
+                                    can only be written from within their vicinity. This location requirement keeps
+                                    bubbles authentic, and brings community members closer to one another.
                                 </div>
                             </div>
                         </div>
@@ -109,10 +118,14 @@
                                     style="width:50%"></a>
                             <!-- <div class="text">Caption Three</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/learn-to-fly" class="slidelink" target="_blank">Learn to Fly</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/learn-to-fly" class="slidelink"
+                                        target="_blank">Learn to Fly</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    This game utilizes pygame to create an intractable UI where you are a pterodactyl who falls out of a nest. You control the glide speed and angle with the left and right arrow keys, and avoid obstacles as you move downward.
+                                    This game utilizes pygame to create an intractable UI where you are a pterodactyl
+                                    who falls out of a nest. You control the glide speed and angle with the left and
+                                    right arrow keys, and avoid obstacles as you move downward.
                                 </div>
                             </div>
                         </div>
@@ -123,10 +136,16 @@
                                     src="../../static/assets/images/past-projects/slifer.png" style="width:50%"></a>
                             <!-- <div class="text">Caption Four</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/slifer" class="slidelink" target="_blank">Slifer</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/slifer" class="slidelink"
+                                        target="_blank">Slifer</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Slifer is a native desktop application, build in python, that utilizes spotify user tokens to access their API, and retrieve information about any song contained within Spotify's data banks. From there, that music can then be searched for on youtube, and easily downloaded, before being given all the identifying information that the original music had as well.
+                                    Slifer is a native desktop application, build in python, that utilizes spotify user
+                                    tokens to access their API, and retrieve information about any song contained within
+                                    Spotify's data banks. From there, that music can then be searched for on youtube,
+                                    and easily downloaded, before being given all the identifying information that the
+                                    original music had as well.
                                 </div>
                             </div>
                         </div>
@@ -138,10 +157,15 @@
                                     style="width:50%"></a>
                             <!-- <div class="text">Caption Five</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/sort-royale" class="slidelink" target="_blank">Sort Royale</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/sort-royale" class="slidelink"
+                                        target="_blank">Sort Royale</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Challenge your friends to an intense sorting battle! Choose your sorting algorithm and compete against your friend to be the victor in this 1v1 competition! Try single player mode to get the fastest time. Learn more about different sorting methods in this new educational game!
+                                    Challenge your friends to an intense sorting battle! Choose your sorting algorithm
+                                    and compete against your friend to be the victor in this 1v1 competition! Try single
+                                    player mode to get the fastest time. Learn more about different sorting methods in
+                                    this new educational game!
                                 </div>
                             </div>
                         </div>
@@ -223,31 +247,37 @@
                     </div>
                 </div>
                 <div class="container">
-                        <h2 style="text-align: center;">APIs/Tools</h2>
-                        <div class="row">
-                            <div class="column">
-                                <h3>Communication</h3>
-                                <a class="resource-button" href="https://www.twilio.com/docs">Twilio’s Communication APIs</a>
-                                <a class="resource-button" href="https://newsapi.org/docs/get-started">NewsAPI</a>
-                                <a class="resource-button" href="https://www.yelp.com/developers">Yelp</a>
-                            </div>
-                            <div class="column">
-                                <h3>Social Media</h3>
-                                <a class="resource-button" href="https://developer.twitter.com/en">Twitter’s APIs</a>
-                                <a class="resource-button" href="https://developers.facebook.com/">Facebook For Developers</a>
-                            </div>
-                            <div class="column">
-                                <h3>Geolocation</h3>
-                                <a class="resource-button" href="https://developers.google.com/maps/documentation">Google Maps</a>
-                                <a class="resource-button" href="https://developer.here.com/">HERE Technologies Developer</a>
-                                <a class="resource-button" href="https://developers.arcgis.com/documentation/">ArcGIS</a>
-                            </div>
-                            <div class="column">
-                                <h3>Machine Learning</h3>
-                                <a class="resource-button" href="https://www.ibm.com/watson/developer-resources/">IBM Watson</a>
-                                <a class="resource-button" href="https://cloud.google.com/dialogflow/docs/quick">Google Dialogflow (Text/Voice Interfaces)</a>
-                            </div>
+                    <h2 style="text-align: center;">APIs/Tools</h2>
+                    <div class="row">
+                        <div class="column">
+                            <h3>Communication</h3>
+                            <a class="resource-button" href="https://www.twilio.com/docs">Twilio’s Communication
+                                APIs</a>
+                            <a class="resource-button" href="https://newsapi.org/docs/get-started">NewsAPI</a>
+                            <a class="resource-button" href="https://www.yelp.com/developers">Yelp</a>
                         </div>
+                        <div class="column">
+                            <h3>Social Media</h3>
+                            <a class="resource-button" href="https://developer.twitter.com/en">Twitter’s APIs</a>
+                            <a class="resource-button" href="https://developers.facebook.com/">Facebook For
+                                Developers</a>
+                        </div>
+                        <div class="column">
+                            <h3>Geolocation</h3>
+                            <a class="resource-button" href="https://developers.google.com/maps/documentation">Google
+                                Maps</a>
+                            <a class="resource-button" href="https://developer.here.com/">HERE Technologies
+                                Developer</a>
+                            <a class="resource-button" href="https://developers.arcgis.com/documentation/">ArcGIS</a>
+                        </div>
+                        <div class="column">
+                            <h3>Machine Learning</h3>
+                            <a class="resource-button" href="https://www.ibm.com/watson/developer-resources/">IBM
+                                Watson</a>
+                            <a class="resource-button" href="https://cloud.google.com/dialogflow/docs/quick">Google
+                                Dialogflow (Text/Voice Interfaces)</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
