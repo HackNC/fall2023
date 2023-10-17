@@ -69,21 +69,443 @@
             <div id="links" class="card full-width">
                 <div>
                     <a target="_blank" href="https://unc.zoom.us/j/97488576870">
-                        <img src="/static/assets/images/Zoom.png" style="size: 100px">
+                        <img id="team-logo" src="/static/assets/images/Zoom.png" style="size: 100px">
                         <p>Workshop Livestreams</p>
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.youtube.com/channel/UCDRN6TMC27uSDsZosIwUrZg">
-                        <img src="/static/assets/images/youtube.png">
+                        <img id="team-logo" src="/static/assets/images/youtube.png">
                         <p>Workshop Recordings</p>
                     </a>
                 </div>
             </div>
             <div id="schedule" class="card full-width">
-                <h1>Workshop Schedule</h1>
+                <h1>Schedule</h1>
                 <div id="schedule-container"></div>
+                <div>
+                    <div class="calendarBody">
+                        <div class="calendar">
+                            <div class="legend-container">
+                                <div class="legend-item">
+                                    <div class="color-box events"></div>
+                                    <p class="color-description">Events</p>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="color-box food"></div>
+                                    <p class="color-description">Food</p>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="color-box workshop"></div>
+                                    <p class="color-description">Workshops</p>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="color-box activity"></div>
+                                    <p class="color-description">Activities</p>
+                                </div>
+                            </div>
+
+                            <div class="calendar_title"
+                                style="display: flex; justify-content: center; align-items: center">
+                                <p class="calendar-header"><span></span><strong>Oct 27 – Oct 29</strong> 2023</p>
+                            </div>
+                            <div style="align-self: flex-start; flex: 0 0 1"></div>
+
+                            <div class="outer">
+
+                                <table class="offset">
+                                    <thead>
+                                        <tr>
+                                            <th class="headcol"></th>
+                                            <th>Fri, 27</th>
+                                            <th>Sat, 28</th>
+                                            <th>Sun, 29</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <div class="wrap">
+                                    <table class="offset">
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="headcol">8 AM</td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event one-hour food">
+                                                        <p class="event-title">Hacker Check-In Begins & Breakfast</p>
+                                                        <p class="event-description">Fetzer Gym A</p>
+                                                        <p class="event-description">8 - 9 AM</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="event one-hour food">
+                                                        <p class="event-title">Breakfast</p>
+                                                        <p class="event-description">Fetzer Gym A</p>
+                                                        <p class="event-description">8 - 9 AM</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">9 AM</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">10 AM</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event one-hour events">
+                                                        <p class="event-title">Opening Ceremony</p>
+                                                        <p class="event-description">Hamilton 100</p>
+                                                        <p class="event-description">10:30 - 11:30 AM</p>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">11 AM</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event one-hour left workshop">
+                                                        <p class="event-title">Beginner and Sponsor Workshops</p>
+                                                        <p class="event-description">Fetzer Gym Classrooms</p>
+                                                        <p class="event-description">11:30 AM - 12:30 PM</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="event one-hour left events">
+                                                        <p class="event-title">Hacking Ends & Devpost Submit</p>
+                                                        <p class="event-description">Fetzer Gym </p>
+                                                        <p class="event-description">11:30 AM</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">12 PM</td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event two-hours right food">
+                                                        <p class="event-title">Lunch</p>
+                                                        <p class="event-description">Fetzer Gym A</p>
+                                                        <p class="event-description">12 - 2 PM</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="event two-hours right food">
+                                                        <p class="event-title">Lunch</p>
+                                                        <p class="event-description">Fetzer Gym A</p>
+                                                        <p class="event-description">12 - 2 PM</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">1 PM</td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event three-hours left events">
+                                                        <p class="event-title">Sponsorship Fair</p>
+                                                        <p class="event-description">Fetzer Gym B</p>
+                                                        <p class="event-description">1 - 3 PM</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="event two-hours left events">
+                                                        <p class="event-title">Judging</p>
+                                                        <p class="event-description">Woollen Gym</p>
+                                                        <p class="event-description">1 - 3 PM</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">2 PM</td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event two-hours right workshop">
+                                                        <p class="event-title">Career Workshops</p>
+                                                        <p class="event-description">Fetzer Gym Classrooms</p>
+                                                        <p class="event-description">2 - 4 PM</p>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">3 PM</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event one-hour events">
+                                                        <p class="event-title">Judges Deliberate</p>
+                                                        <p class="event-description">Woollen Gym</p>
+                                                        <p class="event-description">3 - 4 PM</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">4 PM</td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event one-hour left food">
+                                                        <p class="event-title">Boba</p>
+                                                        <p class="event-description">Woollen Gym</p>
+                                                        <p class="event-description">4 - 5 PM</p>
+                                                    </div>
+                                                    <div class="event one-hour right workshop">
+                                                        <p class="event-title">AI/XR Workshops</p>
+                                                        <p class="event-description">Fetzer Gym Classrooms</p>
+                                                        <p class="event-description">4 - 5 PM</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="event one-hour events">
+                                                        <p class="event-title">Closing Ceremony</p>
+                                                        <p class="event-description">Hamilton 100</p>
+                                                        <p class="event-description">4 - 5 PM</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">5 PM</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td>
+                                                    <div class="event two-hours events">
+                                                        <p class="event-title">HackNC Kickoff</p>
+                                                        <p class="event-description">Fetzer Classroom 104</p>
+                                                        <p class="event-description">5 - 7 PM</p>
+                                                        <a class="schedule-link" target=“_blank”
+                                                            href="https://forms.gle/rWfE4BRpsjirVLau7">Registration
+                                                            Link</a>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">6 PM</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event one-half-hours left food">
+                                                        <p class="event-title">Dinner</p>
+                                                        <p class="event-description">Fetzer Gym A</p>
+                                                        <p class="event-description">6:30 - 8 PM</p>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">7 PM</td>
+                                                <td></td>
+
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">8 PM</td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="event two-hours activity">
+                                                        <p class="event-title">Smash Bros Tournament</p>
+                                                        <p class="event-description">Fetzer Classrom 106</p>
+                                                        <p class="event-description">8 - 10 PM</p>
+                                                        <a class="schedule-link" target=“_blank”
+                                                            href="https://docs.google.com/forms/d/e/1FAIpQLSfJVmik-R9KH2d1nO2ZmC4ZBDML3INhb2geZzTz_-MbdMZryQ/viewform?usp=sf_link">Registration
+                                                            Link</a>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">9 PM</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol">10 PM</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="headcol"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="card full-width">
+                <div class="workshop-schedule">
+
+                    <div id="wsheader" <h5>Workshop Schedule</h5>
+                    </div>
+                    <div class='flex'>
+                        <table class='grant-table'>
+                            <tr>
+                                <th>Workshop</th>
+                                <th>Location</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>API Workshop</td>
+                                <td>FB 009</td>
+                                <td>10/25</td>
+                                <td>6 - 7 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Mastering Git: A Version Control Workshop</td>
+                                <td>FB 009</td>
+                                <td>10/25</td>
+                                <td>7 - 8 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Introduction to iOS Development Workshop</td>
+                                <td>SN 014</td>
+                                <td>10/26</td>
+                                <td>6:30 - 7:30 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>React Native Workshop</td>
+                                <td>Fetzer Classroom 104</td>
+                                <td>10/28</td>
+                                <td>11:30 AM - 12:30 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Making a High Fidelity Prototype Design in Figma</td>
+                                <td>Fetzer Classroom 106</td>
+                                <td>10/28</td>
+                                <td>11:30 AM - 12:30 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Pittsburgh Patient Safety</td>
+                                <td>Fetzer Classroom 109</td>
+                                <td>10/28</td>
+                                <td>11:30 AM - 12:30 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Professional Development, Networking, and Resumes in CS</td>
+                                <td>Fetzer Classroom 109</td>
+                                <td>10/28</td>
+                                <td>2 - 3 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>The Future of Cybersecurity in an AI-Driven World</td>
+                                <td>Fetzer Classroom 106</td>
+                                <td>10/28</td>
+                                <td>3 - 4 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Generative AI & Prompt Engineering</td>
+                                <td>Fetzer Classroom 104</td>
+                                <td>10/28</td>
+                                <td>3 - PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Introduction to XR</td>
+                                <td>Fetzer Classroom 104</td>
+                                <td>10/28</td>
+                                <td>4 - 5 PM</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Demystifying OpenAI</td>
+                                <td>Fetzer Classroom 104</td>
+                                <td>10/28</td>
+                                <td>4 - 5 PM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </main>
