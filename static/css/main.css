@@ -233,10 +233,6 @@ a {
 
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .splash {
-    /* background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover; 
-  position: relative;
-  padding-bottom: 80px; */
     min-height: 50vh;
   }
 
@@ -256,11 +252,8 @@ a {
   }
 
   .banner-info {
-    /* height: 20px; */
-    /* vertical-align: bottom; */
     width: 100%;
     margin: auto;
-    /* position: relative; */
     top: 54%;
     right: 100%;
     left: 50%;
@@ -376,7 +369,6 @@ a {
   .banner-info {
     width: 100%;
     margin: auto;
-    /* position: relative; */
     top: 54%;
     right: 100%;
     left: 50%;
@@ -480,7 +472,7 @@ nav {
   -webkit-text-stroke-width: 0.6px;
 }
 
-nav.sticky{
+nav.sticky {
   background-color: #292348;
   -webkit-text-stroke-width: 0px;
 }
@@ -532,7 +524,7 @@ nav ul a {
   transition: all 0.5s ease;
 }
 
-nav ul a:hover{
+nav ul a:hover {
   text-shadow: -2px -2px #25173d;
 }
 
