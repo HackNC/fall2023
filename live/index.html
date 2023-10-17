@@ -9,12 +9,11 @@
 
     <meta property="og:url" content="https://hacknc.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="HackNC 2021">
+    <meta property="og:title" content="HackNC 2023">
     <meta property="og:description" content="UNC-Chapel Hill's annual fall hackathon" />
-    <meta property="og:image" content="https://hacknc.com/static/assets/images/art/favicon.png" />
 
-    <title>HackNC 2021</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/images/art/option2.png">
+    <title>HackNC 2023</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/images/halloween-art/purple-favicon.jpg">
 
     <!-- Load Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +66,7 @@
         <div class="container">
 
             <div class="card full-width">
-                <h1>HackNC 2021 Live</h1>
+                <h1>HackNC 2023 Live</h1>
                 <div id="clock">
                     <div>
                         <p class="display" id="d">00</p>
@@ -86,49 +85,80 @@
                     <p class="divider"></p>
                     <p class="label">s</p>
                     <br /> <br />
-                    <p>UNTIL HACKING ENDS!</p>
+                    <p>UNTIL HACKING BEGINS!</p>
                 </div>
-            </div>
-            <div class="card full-width">
-                <h2>Please Note: <b>If you are hacking at Fetzer Gym today, After Hacking ends we are closing the gym at
-                        2:00pm. Hope you guys had fun and come back next year ~</b> </h>
             </div>
 
             <div id="links" class="card full-width">
                 <div>
-                    <a target="_blank" href="https://tinyurl.com/hacknc2021discord">
-                        <img src="../static/assets/images/discord.svg">
+                    <a target="_blank" href="https://discord.gg/x7rmdfcdz9">
+                        <img id="discord-logo" src="../static/assets/images/discord.svg">
                         <p>The Place to Be</p>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://Twitch.tv/hacknc">
-                        <img src="../static/assets/images/twitch.svg">
-                        <p>Watch Our Closing Ceremony Live Here!</p>
+                    <a target="_blank" href="https://tinyurl.com/hacknc2023teammatesearch">
+                        <img id="team-logo" src="../static/assets/images/halloween-art/tshirt-logo.png">
+                        <p>Team Matching Form</p>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://hacknc2021.devpost.com/">
-                        <img src="../static/assets/images/devpost.svg">
+                    <a target="_blank" href="https://hacknc-2023.devpost.com/">
+                        <img id="devpost-logo" src="../static/assets/images/devpost.svg">
                         <p>Project Submissions</p>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://tinyurl.com/hacknc2021brazen">
-                        <img src="../static/assets/images/brazen.png">
-                        <p>Sponsor Fair</p>
-                    </a>
-                </div>
-                <div>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCDRN6TMC27uSDsZosIwUrZg">
-                        <img src="../static/assets/images/youtube.png">
-                        <p>Recordings</p>
+                    <a target="_blank"
+                        href="https://docs.google.com/document/d/1K1Ew4rQsLge6_ZUSv5rBdRYnB6gbH10ItRsjGY6KYss/edit?usp=sharing">
+                        <img id="hacker-logo" src="../static/assets/images/halloween-art/hacknc-sticker.PNG">
+                        <p>Hacker Guide</p>
                     </a>
                 </div>
             </div>
 
             <div id="schedule" class="card full-width">
-                <div id="schedule-container"></div>
+                <h1>WIFI For the Event: </h1>
+                <div id="links" class="card">
+                    <div>
+                        <p> <b>Username:</b> <br>UNC-HackNC<br> <b>Password:</b> 2021FetzerHackNC </p>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h1 style="text-align:center">Location</h1>
+                    <div class="map-container">
+                        <iframe id="location" frameborder="0" style="border:0" src="" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    var url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAg_BauvZVpIZAeT0AcbWnIxsQmYfflD88&q=Wollen+Gym+UNC+NC";
+                    var map = document.getElementById('location');
+                    map.setAttribute('src', url);
+                </script>
+
+                <div id="travel">
+                    <div class="live-section">
+                        <br>
+                        <br>
+                        <h1>Parking</h1>
+                        <p style="font-size: 1rem;">Free parking is available over the weekend everywhere on campus, but
+                            we
+                            recommend the following decks:</p>
+                        <ul>
+                            <li style="display:block;"><a class="link"
+                                    href="https://www.google.com/maps/dir/Cobb+Parking+Deck,+Chapel+Hill,+NC+27514/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9107229,-79.0479376,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2ea68ddf24b:0x38f6620f02eadfae!2m2!1d-79.0456143!2d35.911746!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Cobb
+                                    Parking Deck</a></li>
+                            <li style="display:block;"><a class="link"
+                                    href="https://www.google.com/maps/dir/Bell+Tower+Parking+Deck,+Chapel+Hill,+NC/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9082111,-79.0502803,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2eedc3bd00f:0x2dd3a16fc7f5b0c9!2m2!1d-79.0500641!2d35.9067103!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Bell
+                                    Tower Parking Deck</a></li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
 
         </div>
