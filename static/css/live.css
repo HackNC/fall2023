@@ -478,4 +478,444 @@ a {
   margin-bottom: 0;
 }
 
+.map-container {
+  width: 100%;
+  height: 400px; }
+
+.map-container iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+
+.travel-details li {
+      display: block;
+  }
+
+.prize-text {
+  margin: auto;
+  display: inline-block;
+}
+
+.prize-container {
+  background-color: #83DEF1;
+  padding: 0.75rem;
+  text-align: center;
+  display: inline-flex;
+  width: 20vw;
+  height: 25vh;
+  border-radius: 25px;
+}
+
+.prize-container:hover {
+  background-color: #B5F6FF;
+}
+
+.grant-table{
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th {
+  padding-top: 12px;
+padding-bottom: 12px;
+background-color: #463a71;
+color: #d5cbef;
+}
+
+.live-section {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 1.5rem;
+}
+
+.social-container {
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #ddd;
+  padding: 20px; 
+  width: 100%;
+  height: 150px;  
+}
+
+.social-button {
+  background-color: #006A94;
+  border-radius:20px;
+  border: none;
+  display:block;
+  color:#ffffff;
+  padding: 1rem;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 15vw;
+  height: 7vw;
+}
+.social-button:hover {
+  background-color: #2999bc;
+}
+
+.social-button:active {
+  position:relative;
+  top:1px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.prize-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.outer {
+  position:relative;
+}
+
+.calendar {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: inherit;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2) , 0px 3px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.wrap {
+  border-radius: 8px;
+}
+
+thead {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+thead th {
+
+  text-align: center;
+  width: 100%;
+
+}
+
+header h1 {
+ font-size: 1.25rem;
+ text-align: center;
+ font-weight: normal;
+
+}
+tbody {
+    position: relative;
+}
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+}
+
+.faq-text-bold {
+  margin: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.25rem;
+  padding-left: 0.75rem;
+  font-weight: bold;
+}
+
+
+
+.headcol {
+  width: 60px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0.25rem 0;
+  text-align: center;
+  border: 0;
+  border-bottom: 1px solid transparent;
+}
+
+thead th {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+}
+
+thead {
+    z-index: 2;
+    border-bottom: 2px solid #ddd;
+
+}
+
+tr, tr td {
+  height: 20px;
+}
+td {
+  text-align: center;
+}
+tr:nth-child(odd) td:not(.headcol) {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+tr:nth-child(even) td:not(.headcol) {
+  border-bottom: 1px solid #eee;
+}
+
+tr td {
+  border-right: 1px solid #eee;
+  padding: 0;
+  white-space: none;
+  word-wrap: nowrap;
+}
+
+tbody tr td {
+  position: relative;
+  vertical-align: top;
+  height: 40px;
+  padding: 0.25rem 0.25rem 0 0.25rem;
+  width: auto;
+
+}
+
+.secondary {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.schedule-link {
+  color: white;
+  z-index: 2;
+}
+
+.event {
+  background: #00B4FC;
+  color: white;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.875rem;
+  overflow-x: hidden;
+  transition: all 0.2s;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.event.one-hour {
+  height: 200%;
+}
+.event.one-half-hours {
+  height: 315%;
+}
+.event::-webkit-scrollbar { 
+  display: none;
+}
+.event.two-hours {
+  height: 425%;
+}
+.event.three-hours {
+  height: 650%;
+}
+
+.event-title {
+  padding:auto;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.event-description {
+  font-size: .8em;
+  margin-top:0;
+}
+.no-description {
+  margin-bottom: 1em;
+}
+
+.overlap {
+  display:flex;
+}
+
+.left, .right {
+  width: 49%;
+}
+.right {
+  margin-left: 51%;
+}
+.legend-container {
+  display: flex;
+  justify-content: space-around;
+}
+.legend-item {
+  display:flex;
+}
+.color-box {
+  height: 20px;
+  width: 20px;
+  margin-top: 1.35em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.food {
+background-color:  #483660;
+}
+
+.activity {
+background-color: #292348;
+}
+
+.events {
+background-color:#6b5d9c;
+}
+
+.workshop {
+background-color: #aa9dcc
+}
+
+button.secondary {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 0.5rem 0.75rem;
+  font-size: 14px;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button.secondary:hover {
+  background: #fafafa;
+}
+button.secondary:active {
+  box-shadow: none;
+}
+button.secondary:focus {
+  outline: 0;
+}
+
+.today {
+  color: red;
+}
+
+.now {
+  box-shadow: 0px -1px 0px 0px red;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.icon:hover {
+  color: red;
+}
+.calendarBody {
+  flex-direction: column;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+margin-top:-20px;
+padding-top: 20px;
+font-family: "DINPro", "Helvetica Neue",
+}
+
+.calendar-header {
+  font-size: .3em;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.workshop-schedule {
+  flex-direction: column;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+margin-left: 5%;
+margin-right: 5%;
+font-size: 15px;
+background-color: white;
+padding-top: 20px;
+padding-bottom: 50px;
+position: relative;
+}
+
+.workshop-schedule::after {
+  content: ''; /* Add content to the pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Adjust the height to match your padding */
+  background-color: #23183b; /* Change "your-color" to the color you desire */
+}
+
+#wsheader{
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .offset td:nth-child(2) {
+    display: none
+  }
+  .offset th:nth-child(2) {
+    display: none
+  }
+  .calendar {
+    margin-left:0;
+    margin-right:0;
+  }
+  .color-box {
+    margin-top: 1em;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  .headcol {
+    width: 50px;
+  }
+  .offset td:nth-child(3) {
+    width:50%;
+  }
+  .offset th:nth-child(3) {
+    width: 150%;
+  }
+  .event.one-hour.workshop {
+    height: 170%;
+  }
+  .social-button {
+    width: 150px;
+    height: 100px;
+    margin:0;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .row.buttons {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .button-section {
+    padding:0;
+  }
+
+  .faq-text {
+    margin-top: 0.5rem !important;
+  }
+}
+
 /*# sourceMappingURL=live.css.map */
