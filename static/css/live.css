@@ -1075,6 +1075,7 @@ button.secondary:focus {
 }
 
 .calendarBody {
+  background-color: inherit;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -1297,7 +1298,7 @@ th {
 .calendar {
   margin-left: 5%;
   margin-right: 5%;
-  background-color: inherit;
+  background-color: white;
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2), 0px 3px 7px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
