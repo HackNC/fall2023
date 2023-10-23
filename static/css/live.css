@@ -1098,19 +1098,6 @@ button.secondary:focus {
   position: relative;
 }
 
-.workshop-schedule::after {
-  content: '';
-  /* Add content to the pseudo-element */
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  /* Adjust the height to match your padding */
-  background-color: #23183b;
-  /* Change "your-color" to the color you desire */
-}
-
 #wsheader {
   font-size: 25px;
   padding-bottom: 10px;
