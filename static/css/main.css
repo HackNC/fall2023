@@ -578,6 +578,17 @@ nav ul a:hover::before {
   -webkit-transform: scaleX(1);
 }
 
+#nav-section {
+  background-color: #292348;
+  border-radius: .5em;
+}
+
+#nav-section a {
+  line-height: 0;
+  height: 15px;
+  margin-top: 15px;
+}
+
 /* About */
 .about {
   background: #4a3974 url("/static/assets/images/halloween-art/about\ smoke.svg") no-repeat center center;
