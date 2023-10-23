@@ -724,25 +724,6 @@ nav ul a.selected {
   display: block;
 }
 
-.prize-text {
-  margin: auto;
-  display: inline-block;
-}
-
-.prize-container {
-  background-color: #83DEF1;
-  padding: 0.75rem;
-  text-align: center;
-  display: inline-flex;
-  width: 20vw;
-  height: 25vh;
-  border-radius: 25px;
-}
-
-.prize-container:hover {
-  background-color: #B5F6FF;
-}
-
 .grant-table {
   border-collapse: collapse;
   text-align: center;
