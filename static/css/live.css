@@ -1094,22 +1094,10 @@ button.secondary:focus {
   font-size: 15px;
   background-color: white;
   padding-top: 20px;
-  padding-bottom: 50px;
   position: relative;
 }
 
-.workshop-schedule::after {
-  content: '';
-  /* Add content to the pseudo-element */
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  /* Adjust the height to match your padding */
-  background-color: #23183b;
-  /* Change "your-color" to the color you desire */
-}
+
 
 #wsheader {
   font-size: 25px;
@@ -1139,6 +1127,7 @@ button.secondary:focus {
   .headcol {
     width: 50px;
   }
+
 
   .offset td:nth-child(3) {
     width: 50%;
@@ -1176,7 +1165,7 @@ button.secondary:focus {
   }
 
   .workshop-schedule {
-    margin: 0;
+    font-size: 12px;
   }
 }
 
