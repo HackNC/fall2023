@@ -20,8 +20,8 @@
         "answer1": "Not at all! HackNC is a completely beginner friendly event, and we have a project track specifically for beginners. We'll have plenty of resources to help you get started, including beginner workshops, mentors, and more."
     },
     {
-        "question2": "I don’t go to UNC, can I still hack?",
-        "answer2": "High schoolers over 18, undergraduates, and graduate students from any school are welcome to participate as hackers. Professionals interested in mentorship should click the \"Mentor Registration\" button above to get started."
+        "question2": "Who can hack?",
+        "answer2": "If you are a student at UNC, there is no age requirement. If you are coming from outside UNC, you must be 18 years of age or older to attend! High schoolers, undergraduates, and graduate students from any school are welcome to participate as hackers. Professionals interested in mentorship should register above to get started."
     },
     {
         "question1": "How do teams work?",
@@ -48,8 +48,16 @@
         "answer2": "Yes! UNC students will be able to receive CLE credit by attending this event."
     },
     {
-        "question1": "I’m coming to HackNC from afar. Are there reimbursements for travel?",
-        "answer1": "Regrettably, we are unable to provide travel reimbursements this year due to budget limitations. We’d love to see you here, though!"
+        "question1": "Where do I park?",
+        "answer1": "Parking will be free over the weekend. Please find availability in places like Rams Deck, Craige Deck, or Cobb Deck."
+    },
+    {
+        "question2": "I’m coming to HackNC from afar. Are there reimbursements for travel?",
+        "answer2": "Regrettably, we are unable to provide travel reimbursements this year due to budget limitations. We’d love to see you here, though!"
+    },
+    {
+        "question1": "Do I need to bring a form of ID to the event?",
+        "answer1": "Yes. If you are a UNC student, you can bring your OneCard. Otherwise, you can bring any form of valid ID."
     },
     {
         "question2": "You didn’t answer my question!",
