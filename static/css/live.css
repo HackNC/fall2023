@@ -1165,6 +1165,22 @@ button.secondary:focus {
   .workshop-schedule {
     margin: 0;
   }
+
+  .title-col {
+    width: 38%
+  }
+
+  .loc-col {
+    width: 25%
+  }
+
+  .date-col {
+    width: 17%
+  }
+
+  .time-col {
+    width: 18%
+  }
 }
 
 /* Hambuger Button in Mobile View */
