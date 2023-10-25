@@ -22,9 +22,10 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
-
+    <script src="https://kit.fontawesome.com/95c7888398.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="static/js/hambuger-menu.js"></script>
     <link rel="stylesheet" href="../static/css/live.css">
 </head>
 
@@ -48,21 +49,16 @@
                 <li><a href="/live/resources">Resources</a></li>
             </ul>
         </nav>
-        <nav class="mobile-nav">
-            <img onclick="getElementById('mobile-nav-div').classList.add('active')"
-                src="../static/assets/images/hamburger.png">
-        </nav>
-        <div id="mobile-nav-div">
-            <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
-                src="../static/assets/images/x.png">
-            <ul>
-                <li><a href="/">HackNC</a></li>
-                <li><a class="selected" href="/live">Live</a></li>
-                <li><a href="/live/schedule">Schedule</a></li>
-                <li><a href="/live/prizes">Tracks/Prizes</a></li>
-                <li><a href="/live/resources">Resources</a></li>
-            </ul>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" class="hamburger-btn fa-solid fa-bars" id="hamburger-btn" />
+        <div class="hamburger-menu">
+            <a href="/">HackNC</a>
+            <a href="/live">Live</a>
+            <a href="/live/schedule">Schedule</a>
+            <a href="/live/prizes">Tracks/Prizes</a>
+            <a href="/live/resources">Resources</a>
         </div>
+
         <div class="container">
 
             <div class="card full-width">
@@ -121,7 +117,7 @@
                 <h1>WIFI For the Event: </h1>
                 <div id="links" class="card">
                     <div>
-                        <p> <b>Username:</b> <br>UNC-HackNC<br> <b>Password:</b> 2021FetzerHackNC </p>
+                        <p> <b>Username:</b> <br>HackNC2023<br> <b>Password:</b> <br>2023FetzerHackNC </p>
 
                     </div>
                 </div>
@@ -135,7 +131,7 @@
                 </div>
 
                 <script type="text/javascript">
-                    var url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAg_BauvZVpIZAeT0AcbWnIxsQmYfflD88&q=Wollen+Gym+UNC+NC";
+                    var url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12926.182294551567!2d-79.0470491!3d35.9091438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2ebcfb4e35d%3A0xb991103885fe76ce!2sFetzer%20Gym!5e0!3m2!1sen!2sus!4v1698071757883!5m2!1sen!2sus";
                     var map = document.getElementById('location');
                     map.setAttribute('src', url);
                 </script>

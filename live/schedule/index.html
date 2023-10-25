@@ -23,8 +23,10 @@
         rel="stylesheet">
 
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
+    <script src="https://kit.fontawesome.com/95c7888398.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="static/js/hambuger-menu.js"></script>
     <link rel="stylesheet" href="../../static/css/live.css">
 </head>
 
@@ -49,20 +51,14 @@
             </ul>
         </nav>
 
-        <nav class="mobile-nav">
-            <img onclick="getElementById('mobile-nav-div').classList.add('active')"
-                src="../../static/assets/images/hamburger.png">
-        </nav>
-        <div id="mobile-nav-div">
-            <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
-                src="../../static/assets/images/x.png">
-            <ul>
-                <li><a href="/">HackNC</a></li>
-                <li><a href="/live">Live</a></li>
-                <li><a class="selected" href="/live/schedule">Schedule</a></li>
-                <li><a href="/live/prizes">Tracks/Prizes</a></li>
-                <li><a href="/live/resources">Resources</a></li>
-            </ul>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" class="hamburger-btn fa-solid fa-bars" id="hamburger-btn" />
+        <div class="hamburger-menu">
+            <a href="/">HackNC</a>
+            <a href="/live">Live</a>
+            <a href="/live/schedule">Schedule</a>
+            <a href="/live/prizes">Tracks/Prizes</a>
+            <a href="/live/resources">Resources</a>
         </div>
 
         <div class="container">

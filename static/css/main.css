@@ -25,12 +25,6 @@ body {
   }
 }
 
-/* @media only screen and (max-width: 736px) {
-  .container {
-    width: 90%;
-  }
-} */
-
 h1 {
   letter-spacing: 0.075em;
   margin-bottom: 0px;
@@ -576,6 +570,17 @@ nav ul a:hover::before {
   visibility: visible;
   transform: scaleX(1);
   -webkit-transform: scaleX(1);
+}
+
+#nav-section {
+  background-color: #292348;
+  border-radius: .5em;
+}
+
+#nav-section a {
+  line-height: 0;
+  height: 15px;
+  margin-top: 15px;
 }
 
 /* About */

@@ -2,6 +2,10 @@
   font-family: 'Lora', serif;
 }
 
+:root {
+  --main-text-color: #292348;
+  --hamburger-back-color: #3c2654;
+}
 
 .center {
   text-align: center;
@@ -46,11 +50,6 @@
 
 .mySlides:hover .pieceinfo {
   opacity: 1;
-}
-
-.username {
-  display: inline;
-  margin-right: 10px;
 }
 
 /* Add responsive styles for smaller screens if needed */
@@ -551,7 +550,6 @@ nav ul a.selected {
 
 /* Links Section */
 #links {
-  
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -569,9 +567,8 @@ nav ul a.selected {
 }
 
 #links p {
-  width: 400px;
   font-size: 20px;
-  margin: 6px 0 0 0;
+  margin: 3px 0 0 0;
   color: #4f3426;
 }
 
@@ -728,26 +725,7 @@ nav ul a.selected {
 
 
 .travel-details li {
-  display:block;
-}
-
-.prize-text {
-  margin: auto;
-  display: inline-block;
-}
-
-.prize-container {
-  background-color: #83DEF1;
-  padding: 0.75rem;
-  text-align: center;
-  display: inline-flex;
-  width: 20vw;
-  height: 25vh;
-  border-radius: 25px;
-}
-
-.prize-container:hover {
-  background-color: #B5F6FF;
+  display: block;
 }
 
 .grant-table {
@@ -1116,10 +1094,9 @@ button.secondary:focus {
   font-size: 15px;
   background-color: white;
   padding-top: 20px;
+  padding-bottom: 50px;
   position: relative;
 }
-
-
 
 #wsheader {
   font-size: 25px;
@@ -1149,7 +1126,6 @@ button.secondary:focus {
   .headcol {
     width: 50px;
   }
-
 
   .offset td:nth-child(3) {
     width: 50%;
@@ -1187,23 +1163,60 @@ button.secondary:focus {
   }
 
   .workshop-schedule {
-    font-size: 12px;
-    
+    margin: 0;
+  }
+}
+
+/* Hambuger Button in Mobile View */
+.hamburger-btn {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9";
+  appearance: none;
+  color: var(--main-text-color);
+  -webkit-text-stroke: 1px black;
+  visibility: hidden;
+  z-index: 999;
+  position: fixed;
+  top: 0rem;
+  right: 1.4rem;
+  font-size: 3rem;
+}
+
+.hamburger-btn:checked::before {
+  font-size: 3rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00d";
+}
+
+.hamburger-menu {
+  position: fixed;
+  right: -100%;
+  transition: all 0.8s ease;
+  z-index: 998;
+  background-color: var(--hamburger-back-color);
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburger-menu * {
+  color: #d5cbef;
+  text-decoration: none;
+  font-size: 0.5cm;
+}
+
+@media only screen and (max-width: 993px) {
+  .hamburger-btn {
+    visibility: visible;
   }
 
-  .title-col {
-    width: 38%
-  }
-
-  .loc-col {
-    width: 25%
-  }
-
-  .date-col {
-    width: 17%
-  }
-
-  .time-col {
-    width: 18%
+  .hamburger-btn.fa-bars:checked+.hamburger-menu {
+    right: 0;
   }
 }
