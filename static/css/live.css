@@ -48,6 +48,11 @@
   opacity: 1;
 }
 
+.username {
+  display: inline;
+  margin-right: 10px;
+}
+
 /* Add responsive styles for smaller screens if needed */
 @media screen and (max-width: 768px) {
   .column {
@@ -546,6 +551,7 @@ nav ul a.selected {
 
 /* Links Section */
 #links {
+  
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -563,8 +569,9 @@ nav ul a.selected {
 }
 
 #links p {
+  width: 400px;
   font-size: 20px;
-  margin: 3px 0 0 0;
+  margin: 6px 0 0 0;
   color: #4f3426;
 }
 
@@ -721,7 +728,7 @@ nav ul a.selected {
 
 
 .travel-details li {
-  display: block;
+  display:block;
 }
 
 .prize-text {
