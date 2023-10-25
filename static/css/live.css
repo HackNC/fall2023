@@ -1181,5 +1181,22 @@ button.secondary:focus {
 
   .workshop-schedule {
     font-size: 12px;
+    
+  }
+
+  .title-col {
+    width: 38%
+  }
+
+  .loc-col {
+    width: 25%
+  }
+
+  .date-col {
+    width: 17%
+  }
+
+  .time-col {
+    width: 18%
   }
 }
