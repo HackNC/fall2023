@@ -451,6 +451,7 @@ nav .home {
   .resource-button{
     width:50vw;
     height: 12vw;
+    font-size: 13px;
 
   }
 }
