@@ -9,13 +9,17 @@
 
     <meta property="og:url" content="https://hacknc.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="HackNC 2024">
+    <meta property="og:title" content="HackNC 2023">
     <meta property="og:description" content="UNC-Chapel Hill's annual fall hackathon" />
-    <meta property="og:image" content="https://hacknc.com/static/assets/images/art/favicon.png" />
 
     <title>HackNC 2023</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/images/halloween-art/purple-favicon.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/assets/images/halloween-art/purple-favicon.jpg">
+
+    <!-- Load Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +28,10 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
+    <script src="https://kit.fontawesome.com/95c7888398.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="static/js/hambuger-menu.js"></script>
     <link rel="stylesheet" href="../../static/css/live.css">
 </head>
 
@@ -34,9 +40,8 @@
     <main id="content container">
         <nav class="hide-on-med-and-down">
             <ul>
-                <!-- TO-DO: Change logo -->
                 <li>
-                    <a href="#home">
+                    <a href="/">
                         <div class="home">
                             <img src="/static/assets/images/halloween-art/ram.svg" />
                             HackNC
@@ -46,25 +51,20 @@
                 <li><a href="/live">Live</a></li>
                 <li><a href="/live/schedule">Schedule</a></li>
                 <li><a href="/live/prizes">Tracks/Prizes</a></li>
-                <li><a href="/live/resources">Resources</a></li>
+                <li><a class="selected" href="/live/resources">Resources</a></li>
             </ul>
         </nav>
-    
-        <nav class="mobile-nav">
-            <img onclick="getElementById('mobile-nav-div').classList.add('active')"
-                src="../../static/assets/images/hamburger.png">
-        </nav>
-        <div id="mobile-nav-div">
-            <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
-                src="../../static/assets/images/x.png">
-            <ul>
-                <li><a href="/">HackNC</a></li>
-                <li><a class="selected" href="/live">Live</a></li>
-                <li><a href="/live/schedule">Schedule</a></li>
-                <li><a href="/live/prizes">Tracks/Prizes</a></li>
-                <li><a href="/live/resources">Resources</a></li>
-            </ul>
+
+        <!-- Hamburger Menu -->
+        <input type="checkbox" class="hamburger-btn fa-solid fa-bars" id="hamburger-btn" />
+        <div class="hamburger-menu">
+            <a href="/">HackNC</a>
+            <a href="/live">Live</a>
+            <a href="/live/schedule">Schedule</a>
+            <a href="/live/prizes">Tracks/Prizes</a>
+            <a href="/live/resources">Resources</a>
         </div>
+
         <div class="container">
             <div id="resources" class="card full-width">
                 <h2 style="text-align: center;">Past Winners</h2>
@@ -73,75 +73,101 @@
                     <div class="slideshow-container">
 
                         <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
+                        <div class="mySlides">
                             <!-- <div class="numbertext">1 / 5</div> -->
                             <a href="https://devpost.com/software/brevity-sh05n6" class="slide-link">
                                 <img src="../../static/assets/images/past-projects/brevity.png" style="width:50%">
                             </a>
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/brevity-sh05n6" class="slidelink" target="_blank">Brevity</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/brevity-sh05n6" class="slidelink"
+                                        target="_blank">Brevity</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Brevity is a chrome extension that programmatically ranks your emails based on their urgency and importance. Additionally, Brevity provides a short summary of each email, captured by only a few sentences.
+                                    Brevity is a chrome extension that programmatically ranks your emails based on their
+                                    urgency and importance. Additionally, Brevity provides a short summary of each
+                                    email, captured by only a few sentences.
                                 </div>
                             </div>
                             <!-- <div class="text">Caption Text</div> -->
                         </div>
 
-                        <div class="mySlides fade">
+                        <div class="mySlides">
                             <!-- <div class="numbertext">2 / 5</div> -->
                             <a href="https://devpost.com/software/crittr" class="slide-link"><img
                                     src="../../static/assets/images/past-projects/crittr.png" style="width:50%"></a>
                             <!-- <div class="text">Caption Two</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/crittr" class="slidelink" target="_blank">Crittr</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/crittr" class="slidelink"
+                                        target="_blank">Crittr</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Using geographic data, Crittr creates public forums, or "bubbles," buildings across the UNC campus. Much like other social media platforms, posts can be upvoted or downvoted based on their merit, and posts are deleted after 24 hours to keep bubbles relevant. However, there's a twist -- while bubbles can be read from anywhere, they can only be written from within their vicinity. This location requirement keeps bubbles authentic, and brings community members closer to one another.
+                                    Using geographic data, Crittr creates public forums, or "bubbles," buildings across
+                                    the UNC campus. Much like other social media platforms, posts can be upvoted or
+                                    downvoted based on their merit, and posts are deleted after 24 hours to keep bubbles
+                                    relevant. However, there's a twist -- while bubbles can be read from anywhere, they
+                                    can only be written from within their vicinity. This location requirement keeps
+                                    bubbles authentic, and brings community members closer to one another.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mySlides fade">
+                        <div class="mySlides">
                             <!-- <div class="numbertext">3 / 5</div> -->
                             <a href="https://devpost.com/software/learn-to-fly" class="slide-link"><img
                                     src="../../static/assets/images/past-projects/learn-to-fly.jpeg"
                                     style="width:50%"></a>
                             <!-- <div class="text">Caption Three</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/learn-to-fly" class="slidelink" target="_blank">Learn to Fly</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/learn-to-fly" class="slidelink"
+                                        target="_blank">Learn to Fly</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    This game utilizes pygame to create an intractable UI where you are a pterodactyl who falls out of a nest. You control the glide speed and angle with the left and right arrow keys, and avoid obstacles as you move downward.
+                                    This game utilizes pygame to create an intractable UI where you are a pterodactyl
+                                    who falls out of a nest. You control the glide speed and angle with the left and
+                                    right arrow keys, and avoid obstacles as you move downward.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mySlides fade">
+                        <div class="mySlides">
                             <!-- <div class="numbertext">4 / 5</div> -->
                             <a href="https://devpost.com/software/slifer" class="slide-link"><img
                                     src="../../static/assets/images/past-projects/slifer.png" style="width:50%"></a>
                             <!-- <div class="text">Caption Four</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/slifer" class="slidelink" target="_blank">Slifer</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/slifer" class="slidelink"
+                                        target="_blank">Slifer</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Slifer is a native desktop application, build in python, that utilizes spotify user tokens to access their API, and retrieve information about any song contained within Spotify's data banks. From there, that music can then be searched for on youtube, and easily downloaded, before being given all the identifying information that the original music had as well.
+                                    Slifer is a native desktop application, build in python, that utilizes spotify user
+                                    tokens to access their API, and retrieve information about any song contained within
+                                    Spotify's data banks. From there, that music can then be searched for on youtube,
+                                    and easily downloaded, before being given all the identifying information that the
+                                    original music had as well.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mySlides fade">
+                        <div class="mySlides">
                             <!-- <div class="numbertext">5 / 5</div> -->
                             <a href="https://devpost.com/software/sort-royale" class="slide-link"><img
                                     src="../../static/assets/images/past-projects/sort-royale.png"
                                     style="width:50%"></a>
                             <!-- <div class="text">Caption Five</div> -->
                             <div class="pieceinfo">
-                                <div class="piecetext"><a style="color: white" href="https://devpost.com/software/sort-royale" class="slidelink" target="_blank">Sort Royale</a></br><br> 
+                                <div class="piecetext"><a style="color: white"
+                                        href="https://devpost.com/software/sort-royale" class="slidelink"
+                                        target="_blank">Sort Royale</a></br><br>
                                     <!-- <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
                                     <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br> -->
-                                    Challenge your friends to an intense sorting battle! Choose your sorting algorithm and compete against your friend to be the victor in this 1v1 competition! Try single player mode to get the fastest time. Learn more about different sorting methods in this new educational game!
+                                    Challenge your friends to an intense sorting battle! Choose your sorting algorithm
+                                    and compete against your friend to be the victor in this 1v1 competition! Try single
+                                    player mode to get the fastest time. Learn more about different sorting methods in
+                                    this new educational game!
                                 </div>
                             </div>
                         </div>
@@ -223,31 +249,37 @@
                     </div>
                 </div>
                 <div class="container">
-                        <h2 style="text-align: center;">APIs/Tools</h2>
-                        <div class="row">
-                            <div class="column">
-                                <h3>Communication</h3>
-                                <a class="resource-button" href="https://www.twilio.com/docs">Twilio’s Communication APIs</a>
-                                <a class="resource-button" href="https://newsapi.org/docs/get-started">NewsAPI</a>
-                                <a class="resource-button" href="https://www.yelp.com/developers">Yelp</a>
-                            </div>
-                            <div class="column">
-                                <h3>Social Media</h3>
-                                <a class="resource-button" href="https://developer.twitter.com/en">Twitter’s APIs</a>
-                                <a class="resource-button" href="https://developers.facebook.com/">Facebook For Developers</a>
-                            </div>
-                            <div class="column">
-                                <h3>Geolocation</h3>
-                                <a class="resource-button" href="https://developers.google.com/maps/documentation">Google Maps</a>
-                                <a class="resource-button" href="https://developer.here.com/">HERE Technologies Developer</a>
-                                <a class="resource-button" href="https://developers.arcgis.com/documentation/">ArcGIS</a>
-                            </div>
-                            <div class="column">
-                                <h3>Machine Learning</h3>
-                                <a class="resource-button" href="https://www.ibm.com/watson/developer-resources/">IBM Watson</a>
-                                <a class="resource-button" href="https://cloud.google.com/dialogflow/docs/quick">Google Dialogflow (Text/Voice Interfaces)</a>
-                            </div>
+                    <h2 style="text-align: center;">APIs/Tools</h2>
+                    <div class="row">
+                        <div class="column">
+                            <h3>Communication</h3>
+                            <a class="resource-button" href="https://www.twilio.com/docs">Twilio’s Communication
+                                APIs</a>
+                            <a class="resource-button" href="https://newsapi.org/docs/get-started">NewsAPI</a>
+                            <a class="resource-button" href="https://www.yelp.com/developers">Yelp</a>
                         </div>
+                        <div class="column">
+                            <h3>Social Media</h3>
+                            <a class="resource-button" href="https://developer.twitter.com/en">Twitter’s APIs</a>
+                            <a class="resource-button" href="https://developers.facebook.com/">Facebook For
+                                Developers</a>
+                        </div>
+                        <div class="column">
+                            <h3>Geolocation</h3>
+                            <a class="resource-button" href="https://developers.google.com/maps/documentation">Google
+                                Maps</a>
+                            <a class="resource-button" href="https://developer.here.com/">HERE Technologies
+                                Developer</a>
+                            <a class="resource-button" href="https://developers.arcgis.com/documentation/">ArcGIS</a>
+                        </div>
+                        <div class="column">
+                            <h3>Machine Learning</h3>
+                            <a class="resource-button" href="https://www.ibm.com/watson/developer-resources/">IBM
+                                Watson</a>
+                            <a class="resource-button" href="https://cloud.google.com/dialogflow/docs/quick">Google
+                                Dialogflow (Text/Voice Interfaces)</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
