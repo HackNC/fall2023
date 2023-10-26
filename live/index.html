@@ -9,60 +9,52 @@
 
     <meta property="og:url" content="https://hacknc.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="HackNC 2023">
+    <meta property="og:title" content="HackNC 2021">
     <meta property="og:description" content="UNC-Chapel Hill's annual fall hackathon" />
+    <meta property="og:image" content="https://hacknc.com/static/assets/images/art/favicon.png" />
 
-    <title>HackNC 2023</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/images/halloween-art/purple-favicon.jpg">
-
-    <!-- Load Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    <title>HackNC 2021</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/images/art/option2.png">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
         rel="stylesheet">
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
-    <script src="https://kit.fontawesome.com/95c7888398.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="static/js/hambuger-menu.js"></script>
     <link rel="stylesheet" href="../static/css/live.css">
 </head>
 
 <body>
-
+  
     <main id="content container">
 
         <nav class="hide-on-med-and-down">
             <ul>
-                <li>
-                    <a href="/">
-                        <div class="home">
-                            <img src="/static/assets/images/halloween-art/ram.svg" />
-                            HackNC
-                        </div>
-                    </a>
-                </li>
+                <li><a href="/">HackNC</a></li>
                 <li><a class="selected" href="/live">Live</a></li>
                 <li><a href="/live/schedule">Schedule</a></li>
                 <li><a href="/live/prizes">Tracks/Prizes</a></li>
                 <li><a href="/live/resources">Resources</a></li>
             </ul>
         </nav>
-        <!-- Hamburger Menu -->
-        <input type="checkbox" class="hamburger-btn fa-solid fa-bars" id="hamburger-btn" />
-        <div class="hamburger-menu">
-            <a href="/">HackNC</a>
-            <a href="/live">Live</a>
-            <a href="/live/schedule">Schedule</a>
-            <a href="/live/prizes">Tracks/Prizes</a>
-            <a href="/live/resources">Resources</a>
+        <nav class="mobile-nav">
+            <img onclick="getElementById('mobile-nav-div').classList.add('active')"
+                src="../static/assets/images/hamburger.png">
+        </nav>
+        <div id="mobile-nav-div">
+            <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
+                src="../static/assets/images/x.png">
+            <ul>
+                <li><a href="/">HackNC</a></li>
+                <li><a class="selected" href="/live">Live</a></li>
+                <li><a href="/live/schedule">Schedule</a></li>
+                <li><a href="/live/prizes">Tracks/Prizes</a></li>
+                <li><a href="/live/resources">Resources</a></li>
+            </ul>
         </div>
-
         <div class="container">
 
             <div class="card full-width">
-                <h1>HackNC 2023 Live</h1>
+                <h1>HackNC 2021 Live</h1>
                 <div id="clock">
                     <div>
                         <p class="display" id="d">00</p>
@@ -81,79 +73,48 @@
                     <p class="divider"></p>
                     <p class="label">s</p>
                     <br /> <br />
-                    <p>UNTIL HACKING BEGINS!</p>
+                    <p>UNTIL HACKING ENDS!</p>
                 </div>
             </div>
-
+            <div class="card full-width">
+                <h2>Please Note: <b>If you are hacking at Fetzer Gym today, After Hacking ends we are closing the gym at 2:00pm. Hope you guys had fun and come back next year ~</b> </h>
+            </div>
+            
             <div id="links" class="card full-width">
                 <div>
-                    <a target="_blank" href="https://discord.gg/x7rmdfcdz9">
-                        <img id="discord-logo" src="../static/assets/images/discord.svg">
+                    <a target="_blank" href="https://tinyurl.com/hacknc2021discord">
+                        <img src="../static/assets/images/discord.svg">
                         <p>The Place to Be</p>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://tinyurl.com/hacknc2023teammatesearch">
-                        <img id="team-logo" src="../static/assets/images/halloween-art/tshirt-logo.png">
-                        <p>Team Matching Form</p>
+                    <a target="_blank" href="https://Twitch.tv/hacknc">
+                        <img src="../static/assets/images/twitch.svg">
+                        <p>Watch Our Closing Ceremony Live Here!</p>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://hacknc-2023.devpost.com/">
-                        <img id="devpost-logo" src="../static/assets/images/devpost.svg">
+                    <a target="_blank" href="https://hacknc2021.devpost.com/">
+                        <img src="../static/assets/images/devpost.svg">
                         <p>Project Submissions</p>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank"
-                        href="https://docs.google.com/document/d/1K1Ew4rQsLge6_ZUSv5rBdRYnB6gbH10ItRsjGY6KYss/edit?usp=sharing">
-                        <img id="hacker-logo" src="../static/assets/images/halloween-art/hacknc-sticker.PNG">
-                        <p>Hacker Guide</p>
+                    <a target="_blank" href="https://tinyurl.com/hacknc2021brazen">
+                        <img src="../static/assets/images/brazen.png">
+                        <p>Sponsor Fair</p>
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCDRN6TMC27uSDsZosIwUrZg">
+                        <img src="../static/assets/images/youtube.png">
+                        <p>Recordings</p>
                     </a>
                 </div>
             </div>
 
             <div id="schedule" class="card full-width">
-                <h1>WIFI For the Event: </h1>
-                <div id="links" class="card">
-                    <div>
-                        <p> <b>Username:</b> <br>HackNC2023<br> <b>Password:</b> <br>2023FetzerHackNC </p>
-
-                    </div>
-                </div>
-
-                <div>
-                    <h1 style="text-align:center">Location</h1>
-                    <div class="map-container">
-                        <iframe id="location" frameborder="0" style="border:0" src="" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-                <script type="text/javascript">
-                    var url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12926.182294551567!2d-79.0470491!3d35.9091438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2ebcfb4e35d%3A0xb991103885fe76ce!2sFetzer%20Gym!5e0!3m2!1sen!2sus!4v1698071757883!5m2!1sen!2sus";
-                    var map = document.getElementById('location');
-                    map.setAttribute('src', url);
-                </script>
-
-                <div id="travel">
-                    <div class="live-section">
-                        <br>
-                        <h1>Parking</h1>
-                        <p style="font-size: 1rem;">Free parking is available over the weekend everywhere on campus, but
-                            we
-                            recommend the following decks:</p>
-                        <ul>
-                            <li style="display:block;"><a class="link"
-                                    href="https://www.google.com/maps/dir/Cobb+Parking+Deck,+Chapel+Hill,+NC+27514/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9107229,-79.0479376,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2ea68ddf24b:0x38f6620f02eadfae!2m2!1d-79.0456143!2d35.911746!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Cobb
-                                    Parking Deck</a></li>
-                            <li style="display:block;"><a class="link"
-                                    href="https://www.google.com/maps/dir/Bell+Tower+Parking+Deck,+Chapel+Hill,+NC/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9082111,-79.0502803,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2eedc3bd00f:0x2dd3a16fc7f5b0c9!2m2!1d-79.0500641!2d35.9067103!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Bell
-                                    Tower Parking Deck</a></li>
-                        </ul>
-
-                    </div>
-                </div>
+                <div id="schedule-container"></div>
             </div>
 
         </div>

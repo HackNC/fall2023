@@ -1,10 +1,10 @@
 
-var countDownDate = new Date("October 28 2023 11:30:00 EDT").getTime();
+var countDownDate = new Date("November 07 2021 12:30:00 EDT").getTime();
 var myfunc = setInterval(function () {
 
 
     var now = new Date().getTime();
-
+ 
     var timeleft = countDownDate - now;
 
     var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));

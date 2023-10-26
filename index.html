@@ -14,6 +14,8 @@
 
     <title>HackNC 2023</title>
     <link rel="icon" type="image/png" sizes="32x32" href="static/assets/images/halloween-art/purple-favicon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
+        rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,14 +31,15 @@
     <script src="static/js/main.js"></script>
     <script src="static/js/countdown.js"></script>
     <script src="static/js/hambuger-menu.js"></script>
-    <script src="static/js/navbar.js" defer></script>
     <link rel="stylesheet" href="static/css/main.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="hide-on-med-and-down" id="navbar">
+    <!-- TO-DO: Make nav bar transparent on banner page and NOT take up extra space. -->
+    <nav class="hide-on-med-and-down">
         <ul>
+            <!-- TO-DO: Change logo -->
             <li>
                 <a href="#home">
                     <div class="home">
@@ -45,19 +48,18 @@
                     </div>
                 </a>
             </li>
-            <li id="nav-section"><a href="https://hacknc.com/live/">Live</a></li>
-            <li id="nav-section"><a href="#about">About</a></li>
-            <li id="nav-section"><a href="#faq">FAQ</a></li>
-            <li id="nav-section"><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
         </ul>
     </nav>
 
     <!-- Hamburger Menu -->
     <input type="checkbox" class="hamburger-btn fa-solid fa-bars" id="hamburger-btn" />
+    <!-- <input type="checkbox" class="hamburger-btn fa-solid fa-x"/> -->
 
     <div class="hamburger-menu">
         <a href="#home">Home</a>
-        <a href="https://hacknc.com/live/">Live</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
         <a href="#sponsors">Sponsors</a>
@@ -65,6 +67,7 @@
 
     <!-- Logo and header -->
     <div class="splash">
+        <a class="nav-anchor" id="home"></a>
         <div class="banner">
             <img id="banner-graphic" src="/static/assets/images/halloween-art/combined banner graphic.svg"
                 alt="Banner Graphic SVG" />
@@ -94,14 +97,10 @@
                     </div>
                 </div>
 
-                <button class="involve-button hide-on-med-and-down"><a href="https://hacknc1.typeform.com/hacknc2023"
+                <button class="involve-button hide-on-med-and-down"><a href="https://tinyurl.com/hacknc2023"
                         target="_blank">Participant/Mentor/Volunteer Registration</a></button>
-                <a class="mobile-registration-link" href="https://hacknc1.typeform.com/hacknc2023"
+                <a class="mobile-registration-link" href="https://tinyurl.com/hacknc2023"
                     target="_blank">Participant/Mentor/Volunteer Registration</a>
-
-                <button class="involve-button hide-on-med-and-down"><a href="https://hacknc.com/live/">HACKNC
-                        LIVE: Day-Of Logistics</a></button>
-                <a class="mobile-registration-link" href="https://hacknc.com/live/">HACKNC LIVE: Day-Of Logistics</a>
 
             </div>
         </div>
@@ -115,14 +114,15 @@
                 <!-- Images -->
                 <div class="about-detail">
                     <h1 class="about-heading">What is HackNC?</h1>
+                    <!-- TO-DO: Rewrite Description -->
                     <div class="about-description-button">
                         <p class="about-description">
                             HackNC is a weekend for students of all skill levels to broaden their talents. Your
                             challenge is to make an awesome project in just 24 hours.
-                            You will have access to hands-on tech workshops, sponsor networking, as well as exciting
+                            You will have access to hands-on workshops and demos from our sponsors, as well as exciting
                             talks about the awesome things happening right now
                             with computer science and technology - not to mention all of the free food, shirts,
-                            stickers, and swag! We are the largest hackathon in the southeastern United States.
+                            stickers, and swag!
                         </p>
                         <button id="about-past-projects"><a href="https://hacknc-2022.devpost.com/project-gallery"
                                 target="_blank">Explore Past Projects</a></button>
@@ -140,6 +140,7 @@
         <a class="nav-anchor" id="faq"></a>
         <div class="container">
             <h1 class="faq-header">FAQ</h1>
+            <!-- TO-DO: Update FAQ questions -->
             <div id="faq-container">
                 <div class="faq-column" id="faq-column-1"></div>
                 <div class="faq-column" id="faq-column-2"></div>
@@ -187,16 +188,6 @@
                 <a target="_blank" href='https://www.revvity.com/'>
                     <img alt="Revvity logo" id="Revvity-logo" class='sponsor-image'
                         src='static/assets/images/sponsors/revvity.jpg'></a>
-                <a target="_blank" href='https://mule.to/p4fh/'>
-                    <img alt="Sticker Mule logo" id="StickerMule-logo" class='sponsor-image'
-                        src='static/assets/images/sponsors/stickermule.png'></a>
-                <a target="_blank" href='https://zilliz.com'>
-                    <img alt="Zilliz logo" id="Zilliz-logo" class='sponsor-image'
-                        src='static/assets/images/sponsors/zilliz.png'></a>
-                <a target="_blank" href='https://www.patientsafetytech.com'>
-                    <img alt="PSTC logo" id="PSTC-logo" class='sponsor-image'
-                        src='static/assets/images/sponsors/patientsafety.png'></a>
-
             </div>
         </div>
     </div>
