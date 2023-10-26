@@ -12,16 +12,27 @@
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
+  display: flex; /* Use flexbox to center the columns */
+  flex-wrap: wrap; /* Wrap the columns if they don't fit on a single row */
+  justify-content: center; /* Center the columns horizontally */
 }
 
 .column {
   flex-basis: calc(15% - 20px);
   /* 25% width with some spacing */
   /* margin: 5 5; */
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+      /* flex-basis: calc(50% - 20px); Two columns for smaller screens */
+      /* display: block; or remove if it's a block-level element by default */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+  }
 }
 
 .pieceinfo {
@@ -240,6 +251,16 @@ nav ul a.selected {
   margin: 3vh auto;
 }
 
+@media only screen and (max-width: 993px) {
+  .card {
+    width: 100%
+  }
+}
+
+.card.full-width {
+  flex: 0 0 97.5%;
+}
+
 .card.full-width {
   flex: 0 0 97.5%;
 }
@@ -355,7 +376,12 @@ nav ul a.selected {
 }
 
 .mobile-nav {
-  display: none;
+  display: flex !important;
+  justify-content: space-between;
+  background-color: #d5cbef;
+  box-shadow: none;
+  position: relative;
+  /* height: 50%; */
 }
 
 @media only screen and (max-width: 993px) {
@@ -448,6 +474,15 @@ nav ul a.selected {
   /* You can adjust this width as needed */
   height: 7vw;
   /* You can adjust this height as needed */
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 993px) {
+  .resource-button{
+    width:50vw;
+    height: 12vw;
+
+  }
 }
 
 
@@ -462,7 +497,7 @@ nav ul a.selected {
 
 #mobile-nav-div {
   display: none;
-  background-color: #F7F2D8;
+  background-color: #D5CAEF;
   position: fixed;
   top: 0;
   left: 0;
@@ -471,23 +506,23 @@ nav ul a.selected {
   z-index: 1000;
 }
 
-#mobile-nav-div ul {
-  list-style-type: none;
-}
-
 #mobile-nav-div li {
   padding: 10px;
+  color: black;
+}
+#mobile-nav-div img {
+  height: 65px;
+  padding: 15px;
+}
+
+#mobile-nav-div ul {
+  list-style-type: none;
 }
 
 #mobile-nav-div a {
   text-decoration: none;
   color: #4f3426;
   font-size: 5vw;
-}
-
-#mobile-nav-div img {
-  height: calc(0.65 * 64px);
-  padding: 15px;
 }
 
 #mobile-nav-div.active {
