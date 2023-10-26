@@ -455,6 +455,12 @@ nav .home {
   }
 }
 
+.row {
+  display: flex; /* Use flexbox to center the columns */
+  flex-wrap: wrap; /* Wrap the columns if they don't fit on a single row */
+  justify-content: center; /* Center the columns horizontally */
+}
+
 
 .resource-button:hover {
 	background-color: #A49EE0;
