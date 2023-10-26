@@ -47,7 +47,13 @@
 /* Add responsive styles for smaller screens if needed */
 @media screen and (max-width: 768px) {
   .column {
-      flex-basis: calc(50% - 20px); /* Two columns for smaller screens */
+      /* flex-basis: calc(50% - 20px); Two columns for smaller screens */
+      /* display: block; or remove if it's a block-level element by default */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
   }
 }
 
@@ -210,6 +216,13 @@ nav .home {
   padding: 15px;
   margin: 3vh auto;
 }
+
+@media only screen and (max-width: 993px) {
+  .card {
+    width: 100%
+  }
+}
+
 .card.full-width {
   flex: 0 0 97.5%;
 }
@@ -337,12 +350,12 @@ nav .home {
   .mobile-nav {
     display: flex !important;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: #d5cbef;
     box-shadow: none;
     position: relative;
+    /* height: 50%; */
   }
   .mobile-nav img {
-    height: 65%;
     margin: 15px;
   }
 }
@@ -375,6 +388,7 @@ nav .home {
   margin-left: 5vw;
   margin-right: 5vw;
 }
+
 .HackNCButton2020 {
 	background-color: #292348;
 	border-radius:35px;
@@ -433,6 +447,14 @@ nav .home {
   height: 7vw; /* You can adjust this height as needed */
 }
 
+@media only screen and (max-width: 993px) {
+  .resource-button{
+    width:50vw;
+    height: 12vw;
+
+  }
+}
+
 
 .resource-button:hover {
 	background-color: #A49EE0;
@@ -444,19 +466,21 @@ nav .home {
 
 #mobile-nav-div {
   display: none;
-  background-color: #F7F2D8;
+  background-color: #D5CAEF;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 1000;
+
 }
 #mobile-nav-div ul {
   list-style-type: none;
 }
 #mobile-nav-div li {
   padding: 10px;
+  color: black;
 }
 #mobile-nav-div a {
   text-decoration: none;
@@ -464,7 +488,7 @@ nav .home {
   font-size: 5vw;
 }
 #mobile-nav-div img {
-  height: calc(0.65 * 64px);
+  height: 65px;
   padding: 15px;
 }
 #mobile-nav-div.active {
