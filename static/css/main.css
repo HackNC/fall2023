@@ -270,7 +270,7 @@ a {
     font-size: 1.5rem;
   }
 
-  .banner-info .mobile-registration-link {
+  .banner-info .register-button {
     text-decoration: none;
     background-color: #d5cbef;
     display: block;
@@ -281,6 +281,20 @@ a {
     margin: 10px auto;
     border-radius: 5px;
     font-size: 3vw;
+  }
+
+  .banner-info .live-button {
+    text-decoration: none;
+    background-color: #d5cbef;
+    display: block;
+    color: #292348;
+    font-weight: bold;
+    width: 75%;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 2em;
+    text-align: center;
   }
 
   .banner-info .mobile-registration-link:last-child {
@@ -1011,4 +1025,6 @@ footer u {
   font-size: 1rem;
 }
 
-/*# sourceMappingURL=main.css.map */
+.live-button {
+  font-size: 2.5em;
+}
